@@ -102,6 +102,9 @@ export default {
     '@nuxt/content',
 
   ],
+  generate: {
+    dir: 'public'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
