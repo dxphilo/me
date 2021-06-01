@@ -1,21 +1,17 @@
 <template>
   <div class="font-serif">
-    <Advertising />
     <Header />
     <Nuxt />
     <Footer />
   </div>
 </template>
 <script>
-const Advertising = () =>
-  import(/*webpackChunkName: "Advertising"*/ "@/components/Advertising");
 const Header = () =>
   import(/*webpackChunkName: "Header"*/ "@/components/Header");
 const Footer = () =>
   import(/*webpackChunkName: "Footer"*/ "@/components/Footer");
 export default {
   components: {
-    Advertising,
     Header,
     Footer,
   },
