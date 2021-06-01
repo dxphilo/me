@@ -7,6 +7,9 @@ This is my portfolio and blog website
 </div>
 
 
+![Blogsite website](/assets/Blogsite.JPG "Blogsite")
+
+
 #### Built with
 
     - NuxtJs (Nuxt-content)
