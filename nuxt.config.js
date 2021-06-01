@@ -103,7 +103,7 @@ export default {
 
   ],
   generate: {
-    dir: 'public'
+    dir: 'dist'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
