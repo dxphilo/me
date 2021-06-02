@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <div class="h-9 pb-1 header">
+  <div class="pb-1 header">
     <!-- Text shadow utilities will be cool -->
     <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
       <div>
@@ -36,6 +36,7 @@ export default {
  <style scoped>
 .header {
   font-size: 19px;
+  height: 70px;
   font-weight: 400;
   letter-spacing: 0.25px;
 }
