@@ -1,16 +1,19 @@
-const purgecss = require('@fullhuman/postcss-purgecss')
-const cssnano = require('cssnano')
-
 module.exports = {
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-    cssnano({
-      preset: 'default'
-    }),
-    purgecss({
-      content: ['./public/*.html'],
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-    })
-  ]
+  mode: 'jit',
+  future: {
+    // removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
+  },
+  purge: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
 }
