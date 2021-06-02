@@ -12,7 +12,7 @@ export default {
 </script>
 <style scoped>
 .w-full {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.533)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.518)),
     url("../assets/2.jpg");
 }
 .w-full h1 {
