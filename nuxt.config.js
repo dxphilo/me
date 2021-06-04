@@ -34,7 +34,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://images.unsplash.com/photo-1591597787791-4b837b0bfa5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+        content: "https://images.unsplash.com/photo-1622841653744-07cc30549d88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80",
       },
       { property: "og:image:width", content: "740" },
       { property: "og:image:height", content: "300" },
@@ -58,7 +58,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "https://images.unsplash.com/photo-1591597787791-4b837b0bfa5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+        content: "https://images.unsplash.com/photo-1622841653744-07cc30549d88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80",
       },
 
     ],
