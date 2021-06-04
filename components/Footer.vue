@@ -24,7 +24,7 @@
         
     </div>
     <Socialmedia />
-    <p class="text-lg">Happy {{day}} &#128526;</p>
+    <p class="text-lg py-4">Happy {{day}} &#128526;</p>
   </div>
 </template>
 <script>
