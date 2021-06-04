@@ -19,13 +19,23 @@
         </span>
         
           by John Philip &copy Terms {{date}}
+          
         
         
     </div>
     <Socialmedia />
+    <p class="text-lg">Happy {{day}} &#128526;</p>
   </div>
 </template>
 <script>
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 const Socialmedia = () =>
   import(/*WebpackChunkName: "Socialmedia"*/ "@/components/Socialmedia");
 export default {
@@ -36,6 +46,7 @@ export default {
   data() {
     return {
       date: new Date().getFullYear(),
+      day: weekday[new Date().getDay()],
     };
   },
 };
