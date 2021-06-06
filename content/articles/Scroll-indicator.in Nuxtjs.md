@@ -7,7 +7,7 @@ alt: scroll idicator Nuxtjs
 
 excerpt: Make a scroll indicator in Nuxtjs
 
-img: vue.jpg
+img: pexels-ready-made-3850924.jpg
 
 tag: Nuxtjs
 
