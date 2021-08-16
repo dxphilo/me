@@ -1,15 +1,15 @@
 ---
-title: Scroll Indicator in Nuxtjs
+title: How to use Props in Vue.js
 
-description: Make a scroll indicator in Nuxtjs
+description: How to use Props in Vue.js
 
-alt: scroll idicator Nuxtjs
+alt: Vue.js Props Components
 
-excerpt: Make a scroll indicator in Nuxtjs
+excerpt: How to use Props in Vue.js
 
 img: pexels-ready-made-3850924.jpg
 
-tag: Nuxtjs
+tag: Vue Js
 
 attribution: photo by John Philip from Pexelry
 ---
