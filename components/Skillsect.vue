@@ -1,6 +1,8 @@
 <<template>
   <!-- about me component -->
   <div class="about-me">
+    <Pcomponent />
+    
       <div class="text-center py-10">
         <h1 class="font-medium text-5xl font-semibold ">About Me</h1>
       </div>
@@ -21,15 +23,18 @@
           rel="noopener noreferrer" href="mailto:developerphilo@gmail.com" class="border px-2  shadow-xl">developerphilo@gmail.com</a> </p>
         </div>
 
-
       </div>
   </div>
  
 </template>
  <script>
+const Pcomponent = () =>
+  import(/*webpackChunkName: "Pcomponent"*/ "@/components/Pcomponent");
 export default {
-  name: "Skillsect",
-};
+  components: {
+    Pcomponent,
+  },
+}
 </script>
 <style scoped>
 a {
@@ -64,4 +69,5 @@ a:hover:after {
 .border {
   border-bottom: 3px solid green;
 }
+
 </style>

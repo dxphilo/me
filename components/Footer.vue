@@ -28,25 +28,24 @@
   </div>
 </template>
 <script>
-var weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
+const date = new Date();
+const today =date.toLocaleDateString('default',{
+  weekday: 'long',
+});
+const Pcomponent = () =>
+  import(/*webpackChunkName: "Pcomponent"*/ "@/components/Pcomponent");
 const Socialmedia = () =>
   import(/*WebpackChunkName: "Socialmedia"*/ "@/components/Socialmedia");
 export default {
   name: "Footer",
   components: {
     Socialmedia,
+    Pcomponent,
   },
   data() {
     return {
       date: new Date().getFullYear(),
-      day: weekday[new Date().getDay()],
+      day: today
     };
   },
 };

@@ -1,5 +1,6 @@
 <template>
   <div class="flex justify-center content-center items-center pb-1">
+    </Pcomponent />
     <ul>
       <!-- github social media svg -->
       <li>
@@ -74,6 +75,12 @@
     </ul>
   </div>
 </template>
+ <script>
+export default {
+  components: {
+  },
+}
+</script>
 <style scoped>
 ul {
   display: flex;
