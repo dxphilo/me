@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <div class="pb-1 header">
+  <div class="header">
     <!-- Text shadow utilities will be cool -->
     <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
       <div>
