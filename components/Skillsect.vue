@@ -16,7 +16,7 @@
         </div>
         <!-- writing -->
         <div>
-          <h3 class="text-3xl py-6 font-semibold ">Writing</h3>
+          <h3 class="text-3xl py-6 font-semibold text-center">Technical Writing</h3>
           <p class="text-xl leading-9 tracking-wide">Aside from coding, I enjoy writing blog articles and tutorials that mean value to the readers. Please check some of my work <a target="_blank"
           rel="noopener noreferrer" href="https://amjohnphilip.medium.com" class="border px-2 shadow-xl">here.</a></p> <br>
           <p class="text-xl leading-9 tracking-wide">I am currently working on my first ever book that I hope will be availabe soon on all the major platforms. <br> <br> If you want to be notified about this please don't hesitate to shoot me an e-mail on <a target="_blank"
