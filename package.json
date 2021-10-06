@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "@nuxt/content": "^1.10.0",
     "autoprefixer": "^9.8.6",
     "axios": "^0.22.0",
