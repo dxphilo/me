@@ -12,7 +12,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@nuxt/content": "^1.10.0",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.3.7",
     "axios": "^0.22.0",
     "core-js": "^3.18.2",
     "nuxt": "^2.15.8",
