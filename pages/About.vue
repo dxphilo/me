@@ -3,8 +3,6 @@
   <div class="about-me">
 
       <div class="w-1/3 m-auto dwabout">
-
-
         <!-- More About Me -->
         <div>
           <h3 class="text-3xl py-6 font-semibold">Yes</h3>
@@ -29,7 +27,7 @@
           </ul>
         </div>
         <!-- my NO'S -->
-                <div>
+        <div>
           <h3 class="text-3xl py-6 font-semibold">No</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap
 ">
@@ -42,7 +40,7 @@
           </ul>
         </div>
                 <!-- best TV Shows -->
-                <div>
+        <div>
           <h3 class="text-3xl py-6 font-semibold">Tv Shows</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap
 ">

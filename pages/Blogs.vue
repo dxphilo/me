@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="pt-0">
     <Btemplate />
     <div>
       <div class="blogs w-full flex flex-wrap pt-4 pb-4">
