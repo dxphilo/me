@@ -4,7 +4,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  darkMode: 'media',
+  darkMode: 'class',
   purge: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
