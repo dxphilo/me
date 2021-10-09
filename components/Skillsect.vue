@@ -1,8 +1,6 @@
 <<template>
   <!-- about me component -->
   <div class="about-me">
-    <Pcomponent />
-    
       <div class="text-center py-10">
         <h1 class="font-medium text-5xl font-semibold ">About Me</h1>
       </div>
