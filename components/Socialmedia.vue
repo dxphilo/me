@@ -1,6 +1,5 @@
 <template>
   <div class="flex justify-center content-center items-center pb-1">
-    </Pcomponent />
     <ul>
       <!-- github social media svg -->
       <li>

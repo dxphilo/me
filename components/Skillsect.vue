@@ -26,12 +26,8 @@
  
 </template>
  <script>
-const Pcomponent = () =>
-  import(/*webpackChunkName: "Pcomponent"*/ "@/components/Pcomponent");
 export default {
-  components: {
-    Pcomponent,
-  },
+
 }
 </script>
 <style scoped>
