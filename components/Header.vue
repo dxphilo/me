@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <div class="header">
+  <div class="header" :class=" !darkMode?'bg-gray-900 text-white':''">
     <!-- Text shadow utilities will be cool -->
     <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
       <div>
@@ -82,7 +82,7 @@ export default {
   name: "Header",
   data(){
     return{
-      darkMode:false
+      darkMode:true,
     }
   },
   methods:{
