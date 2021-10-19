@@ -83,8 +83,20 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode'
+    
 
   ],
+  
+  // colorMode: {
+  //   preference: 'system', // default value of $colorMode.preference
+  //   fallback: 'light', // fallback value if not system preference found
+  //   hid: 'nuxt-color-mode-script',
+  //   globalName: '__NUXT_COLOR_MODE__',
+  //   componentName: 'ColorScheme',
+  //   classPrefix: '',
+  //   classSuffix: '-mode',
+  //   storageKey: 'nuxt-color-mode'
+  // },
   // prism-themes/themes/prism-material-oceanic.css
   content: {
     markdown: {
@@ -100,7 +112,7 @@ export default {
   },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content',
+    '@nuxt/content'
 
   ],
   generate: {

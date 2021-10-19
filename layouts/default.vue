@@ -95,15 +95,16 @@ export default {
   },
   methods:{
     toggleSwitch(){
+      this.$colorMode.preference = this.$colorMode.preference === 'light' ? 'dark' : 'light';
       this.darkMode = !this.darkMode;
-      this.$colorMode.preference=this.$colorMode.preference === 'light'?'dark':'light'
     }
 
   }
 };
 </script>
 
-<style>
+<style >
+
 html {
   font-family: Avenir, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -128,10 +129,10 @@ html:focus-within {
   padding: 0;
 }
 .light-mode {
-        @apply bg-bgwhite text-txcolor;
+        @apply text-txcolor bg-bgwhite;
 }
 .dark-mode {
-        @apply bg-darkbg text-textwhite;
+        @apply text-textwhite bg-darkbg;
 }
 
 .header {

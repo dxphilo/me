@@ -31,24 +31,24 @@ export default {
 }
 </script>
 <style scoped>
-a {
-  text-decoration: none;
-  position: relative;
-}
-a:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 60%;
-  left: -0.1em;
-  right: -0.1em;
-  bottom: 0;
-  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: rgba(55, 192, 85, 0.5);
-}
-a:hover:after {
-  top: 0%;
-}
+      a {
+        text-decoration: none;
+        position: relative;
+      }
+      a:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 60%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background-color: rgba(79, 192, 141, 0.5);
+      }
+      a:hover:after {
+        top: 0%;
+      }
 @media (max-width: 900px) {
   .dwabout {
     width: 70%;
@@ -60,7 +60,7 @@ a:hover:after {
     margin: 0 auto;
   }
 }
-.border {
+.border{
   border-bottom: 3px solid green;
 }
 
