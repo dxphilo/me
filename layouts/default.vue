@@ -105,22 +105,6 @@ export default {
 
 <style >
 
-html {
-  font-family: Avenir, Tahoma, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  letter-spacing: 0.25px;
-  line-height: 1.5;
-  font-size: calc(10px + 0.35vw);
-  scroll-behavior: smooth;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 *,
 *::before,
 *::after {
@@ -128,13 +112,6 @@ html:focus-within {
   margin: 0;
   padding: 0;
 }
-.light-mode {
-        @apply text-txcolor bg-bgwhite;
-}
-.dark-mode {
-        @apply text-textwhite bg-darkbg;
-}
-
 .header {
   font-size: 19px;
   height: 70px;
