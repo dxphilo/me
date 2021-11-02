@@ -13,6 +13,7 @@ tag: tips coding
 
 attribution: photo by John Philip from Pexelry
 ---
+
 Software development is an ever-changing field with every coming day. The only way to become relevant in the job market is to keep learning now and again. New technologies crop in every time and learning is the best way to become relevant in this ever-changing space.
 While learning and adopting new technologies at the same time may be difficult. In some instances, you may be quite as well wasting a lot of time when learning things.
 This piece is for you if you always find it difficult to learn a new technology or skill. In this piece, you are going to learn some methods that you can use to improve your learning process and stop wasting a lot of time.
