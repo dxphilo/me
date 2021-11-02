@@ -1,11 +1,11 @@
 ---
-title: How to Generate Article Ideas for Technical Writing
+title: Generate Article Ideas for Technical Writing
 
 description: idea generation
 
 alt: my first blog post
 
-excerpt: How to Generate Article Ideas for Technical Writing
+excerpt: Generate Article Ideas for Technical Writing
 
 img: pexels-cottonbro-4101143.jpg
 
