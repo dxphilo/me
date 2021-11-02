@@ -1,5 +1,5 @@
 ---
-title: Stop Wasting your Time When Learning to Code
+title: Stop Wasting Time When Learning to Code
 
 description: coding tips
 
