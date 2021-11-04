@@ -6,14 +6,6 @@
     <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
       <div>
         <a href="/" class="flex text-normal pl-10">
-          <img
-            :src="require(`~/assets/john-philip.webp`)"
-            class="img-rounded h-10 w-10"
-            width="10"
-            height="10"
-            alt="icon of john philip"
-            srcset=""
-          />
           <span class="text-2xl pl-3">John Philip</span>
         </a>
       </div>
