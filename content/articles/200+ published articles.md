@@ -21,6 +21,7 @@ You don't want to write articles that your audience finds challenging to read.
 
 
 **2.	Make use of outlines**
+
 Outlines guide you on what you need to write and how to structure your piece; doing this saves you a lot of time when you have none.
 
 
