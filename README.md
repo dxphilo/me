@@ -13,7 +13,7 @@ This is my portfolio and blog website
 #### Built with
 
     - NuxtJs
-    - NuxtJs (Nuxt-content)
+    - Nuxt-content
     - Tailwind CSS
     - Prism Themes
     - Vue Scroll Indicator
