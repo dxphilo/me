@@ -50,4 +50,10 @@ $ npm run generate
 
 ```
 
+
+## Authors
+
+- [John Philip](https://www.github.com/developerphilo)
+
+
 For detailed explanation on how things work, check out [Getting Started With Nuxt](https://medium.com/javascript-in-plain-english/getting-started-with-nuxt-4652bc83ddc6).
