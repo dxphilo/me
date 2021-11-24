@@ -9,7 +9,7 @@ excerpt:  Capsule Social — The Next Chapter of My Life
 
 img: 1626177013782.png
 
-tag: WORK
+tag: WORK WRITING
 
 attribution: photo by Capsule Social
 ---
