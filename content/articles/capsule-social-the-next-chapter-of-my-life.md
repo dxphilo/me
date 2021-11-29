@@ -1,11 +1,11 @@
 ---
-title: Capsule Social — The Next Chapter of My Life
+title: Capsule Social — Next Chapter of My Life
 
-description: Capsule Social — The Next Chapter of My Life
+description: Capsule Social — Next Chapter of My Life
 
-alt:  Capsule Social — The Next Chapter of My Life
+alt:  Capsule Social — Next Chapter of My Life
 
-excerpt:  Capsule Social — The Next Chapter of My Life
+excerpt:  Capsule Social — Next Chapter of My Life
 
 img: 1626177013782.png
 
