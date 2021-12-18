@@ -2,41 +2,34 @@
   <!-- component -->
   <div>
     <div class="w-full headerr bg-no-repeat object-center bg-center bg-cover ">
- <h1 class="text-center font-medium text-5xl pt-32">Technical writer & Developer</h1>
- <p class="text-center font-sm text-2xl pt-4">writing code and fighting bugs</p>
+      <div class="flex items-center justify-center">
+         <h1 class="text-center font-medium text-5xl pt-64">Software Developer | Technical Writer</h1>
+      </div>
+
     </div>
-    <Skillsect />
   </div>
 
 </template>
  <script>
-const Skillsect = () =>
-  import(/*webpackChunkName: "Skillsect"*/ "@/components/Skillsect");
 export default {
   components: {
-    Skillsect,
   },
-  computed: {
-    logged() {
+  created(){
+
       console.log(
-        "You can find the repository to this website here https://hitghub.com/developerphilo/my-portfolio"
-      );
-    },
+        "You can find the repository to this website here https://github.com/developerphilo/Portfolio"
+      )
+
   },
 };
 </script>
  <<style scoped>
  .headerr{
-    height:400px;
-    background-image: url('../assets/2.jpg');
+    height:600px;
+    background-image: url('https://images.pexels.com/photos/4792731/pexels-photo-4792731.jpeg?cs=srgb&dl=pexels-anete-lusina-4792731.jpg&fm=jpg');
   
  }
- @media (max-width: 800px) {
- .headerr{
-    height:300px;
-  
- }
-}
+
 
  
  </style>

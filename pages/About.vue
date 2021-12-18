@@ -1,5 +1,9 @@
 <<template>
   <!-- about me component -->
+  <div>
+  <div class="about">
+    <Skillsect />
+  </div>
   <div class="about-me">
 
       <div class="w-1/3 m-auto dwabout">
@@ -68,11 +72,16 @@
 
       </div>
   </div>
- 
+   </div>
 </template>
  <script>
+ const Skillsect = () =>
+  import(/*webpackChunkName: "Skillsect"*/ "@/components/Skillsect");
 export default {
   name: "About",
+    components: {
+    Skillsect,
+  },
 };
 </script>
 <style scoped>
