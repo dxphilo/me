@@ -107,6 +107,9 @@ strong {
   font-size: 26px;
   align-items: center;
 }
+.article-section a{
+  color: rgb(69, 180, 69);
+}
 .nuxt-content ul li {
   list-style-type: disc;
   padding: 8px 0;

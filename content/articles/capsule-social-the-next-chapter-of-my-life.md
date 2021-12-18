@@ -30,6 +30,4 @@ Watch this video to get an in-depth view about Capsule Social.
 
 You can follow me on my socials here.
 
-Twitter: John Philip
-GitHub: John Philip
-YouTube: John Philip
+[Twitter](https://twitter.com/amjohnphilip) | [GitHub](https://github.com/developerphilo) | [YouTube](https://www.youtube.com/channel/UCNCzNrpq0fHxFqQYCmbwAcA)
