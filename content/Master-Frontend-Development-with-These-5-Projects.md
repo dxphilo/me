@@ -3,9 +3,9 @@ title: Master Frontend Development
 
 description: Improve your frontend development by building these 5 projects
 
-alt:  Master Frontend Development
+alt: Master Frontend Development
 
-excerpt:  Master Frontend Development
+excerpt: Master Frontend Development
 
 img: iphone-held-900x600.jpg
 
@@ -13,6 +13,7 @@ tag: TIPS
 
 attribution: photo by John Philip from Pexelry
 ---
+
 In this article, we are going to look at some of the best frontend projects that will enable you to master frontend development.
 Many developers believe that the only way to get better at development is by building projects.
 
@@ -29,7 +30,7 @@ What you will learn:
 - Handling user inputs
 - Data and input sanitization
 - Making HTTP calls
--  Working with APIs
+- Working with APIs
 - Styling Data.
 
 **Chat/Messaging Application**
@@ -66,7 +67,7 @@ What you will learn:
 
 This can be simply a replica of any social media clone (Instagram, Twitter, Facebook, YouTube) among other popular platforms.
 
-Building something from these will challenge your creativity whilst also presenting you with amazing features. 
+Building something from these will challenge your creativity whilst also presenting you with amazing features.
 
 Since most of the platforms employ the most up to date technologies, designs and features, they will provide you with the best up-to-date design inspiration and features.
 
@@ -78,7 +79,7 @@ What you will learn:
 - Implementing designs
 - Page structure
 - Colors and fonts
-   
+
 **Project with Login and authentication**
 
 Building a project that has enables login, signup and authentication can make a huge difference to your skill. You will learn some other skills necessary as well as getting to know home data is manipulated.

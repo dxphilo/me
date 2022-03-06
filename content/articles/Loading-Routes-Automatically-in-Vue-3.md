@@ -61,7 +61,6 @@ Now let’s configure vue-router
 Inside the src folder create a file with the name router.js
 This is the file that will contain all the routing functionalities of our application
 
-
 ```js{1,3-5}[vue-scroll-indicator.js]
 import { createWebHistory, createRouter } from ‘vue-router’;
 const routes = [];
@@ -84,7 +83,6 @@ routes
 export default router;
 ```
 
-
 From vue-router, we will import two important functionalities. createWebHistory and createRouter.
 createRouter — creating our router
 createWebHistory — set the routing mode to history.
@@ -101,8 +99,8 @@ true,
 /^(?!.*test).*\.vue$/is,
 );
 ```
-the requireRoutes will be an object with the keys being the filename and the values being the ID of the file.
 
+the requireRoutes will be an object with the keys being the filename and the values being the ID of the file.
 
 The regex code will search inside the components folder for any file with the .vue extension and omit only the test files.
 
@@ -129,14 +127,13 @@ To be noted:
 
 - Ensure you provide a name to your component as shown below otherwise the route will be populated without the name.
 
-
 ```js{1,3-5}[vue-scroll-indicator.js]
 <script>
 export default {
  name: “Footer”,
  };
  </script>
- ```
+```
 
 Now any file with the .vue extension inside the components folder will be populated to a route.
 
@@ -148,5 +145,5 @@ Creating a vue application from scratch
 
 - Setting routing from scratch
 - Automatically loading of routes from a specific folder
-  
+
 Thank you for following through this far. I hope you have learnt a thing or two. If you find this article of help, please consider sharing it out.

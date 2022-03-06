@@ -23,7 +23,7 @@ In simple terms, props is the acronym of properties. Props are very essential wh
 
 **When do we use props?**
 
-Props are very useful when building dynamic web pages and when you want to access some data to other components. Pros also make it easier to pass data and information needed by other components. In as much as props are important, their intense use can at times lead to a problem known as prop drilling which can make our program unclean to read and follow up when bugging issues. 
+Props are very useful when building dynamic web pages and when you want to access some data to other components. Pros also make it easier to pass data and information needed by other components. In as much as props are important, their intense use can at times lead to a problem known as prop drilling which can make our program unclean to read and follow up when bugging issues.
 It is generally regarded as a good practice no to pass props too much through many components’ layers.
 
 **How to implement the use of props.**
@@ -64,4 +64,3 @@ Vue.js [Documentation] (https://vuejs.org/v2/guide/components-props.html)
 Props are very important when you want to pass down some data from the parent to child components. On the contrary, make sure to use props moderately or else you may find yourself in a scenario where you implement a lot of prop drilling.
 
 Thank you for reading through this article this far, if you found it helpful, please don't hesitate to share it out with others.
-

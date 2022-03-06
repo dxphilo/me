@@ -5,8 +5,8 @@
       <div class="blogs w-full flex flex-wrap pt-4 pb-4">
         <Singlearticle
           v-for="blog in blogs"
-          :key="blog.slug"
           :id="blog.slug"
+          :key="blog.slug"
           :path="blog.path"
           :title="blog.title"
           :excerpt="blog.excerpt"
@@ -21,31 +21,31 @@
 
 <script>
 const Btemplate = () =>
-  import(/*webpackChunkName: "Btemplate"*/ "@/components/Btemplate");
+	import(/* webpackChunkName: "Btemplate" */ '@/components/Btemplate')
 const Singlearticle = () =>
-  import(/*webpackChunkName: "Singlearticle"*/ "@/components/Singlearticle");
+	import(/* webpackChunkName: "Singlearticle" */ '@/components/Singlearticle')
 export default {
-  components: {
-    Btemplate,
-    Singlearticle,
-  },
-  async asyncData({ $content, params }) {
-    const blogs = await $content("articles", params.slug)
-      .sortBy("createdAt", "asc")
-      .fetch();
-    return { blogs };
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("en", options);
-    },
-  },
-};
+	components: {
+		Btemplate,
+		Singlearticle,
+	},
+	async asyncData({ $content, params }) {
+		const blogs = await $content('articles', params.slug)
+			.sortBy('createdAt', 'asc')
+			.fetch()
+		return { blogs }
+	},
+	methods: {
+		formatDate(date) {
+			const options = { year: 'numeric', month: 'long', day: 'numeric' }
+			return new Date(date).toLocaleDateString('en', options)
+		},
+	},
+}
 </script>
 <style scoped>
 .blogs {
-  max-width: 900px;
-  margin: 0 auto;
+	max-width: 900px;
+	margin: 0 auto;
 }
 </style>
