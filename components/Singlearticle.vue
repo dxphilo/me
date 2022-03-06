@@ -6,7 +6,7 @@
           :src="require(`~/assets/${img}`)"
           :alt="title"
           class="object-cover object-center rounded-lg shadow-md"
-        />
+        >
 
         <div class="relative px-4 -mt-16">
           <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -27,8 +27,7 @@
               <span class="text-gray-600 text-sm">{{ excerpt }}</span>
             </div>
             <div class="mt-4">
-              <span class="text-teal-600 text-md font-semibold"
-                >{{ published }}
+              <span class="text-teal-600 text-md font-semibold">{{ published }}
               </span>
               <span class="text-sm text-gray-600 pl-2">John Philip</span>
             </div>
@@ -41,19 +40,19 @@
 
 <script>
 export default {
-  name: "Singlearticle",
-  props: ["path", "id", "title", "excerpt", "published", "img", "tag"],
-};
+	name: 'Singlearticle',
+	props: ['path', 'id', 'title', 'excerpt', 'published', 'img', 'tag'],
+}
 </script>
 <style scoped>
 img {
-  width: 400px;
-  height: 300px;
+	width: 400px;
+	height: 300px;
 }
 .grow:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  transition-duration: 0.3s;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	transition-duration: 0.3s;
 }
 </style>

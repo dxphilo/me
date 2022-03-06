@@ -52,6 +52,7 @@ export default {
 <style scoped>
 </style>
 ```
+
 From the code snippet above, if the name value is truthy, the div will be rendered into the components block.
 
 We can similarly use v-else for fallback in case the condition does not compute to be truthy.
@@ -79,6 +80,7 @@ export default {
 <style scoped>
 </style>
 ```
+
 From the code snippet, we have added the v-else directive in case the conditional is not truthy.
 
 What if you want to conditionally render elements based on not only one but various certain conditions?

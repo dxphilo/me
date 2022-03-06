@@ -14,12 +14,11 @@ tag: ideation writing
 attribution: photo by John Philip from Pexelry
 ---
 
-
 **How to Generate Article Ideas for Technical Writing**
 
 **My approach for generating article ideas**
 
-Maintaining consistency while writing is a great skill many people would want to have and hone. While this might not always come easy especially when you have little to no article ideas. 
+Maintaining consistency while writing is a great skill many people would want to have and hone. While this might not always come easy especially when you have little to no article ideas.
 
 Over the past six months, I have found a better serving way to get article ideas and keep writing consistently.
 
@@ -37,7 +36,7 @@ this is one of the ways I get ideas for my article and it is very effective for 
 
 **Projects I am building**
 
-This approach  I implement after building some projects or particular features in a given project. This is a good way of documenting new features into your projects or portfolio and can help other two who would want to implement such features.
+This approach I implement after building some projects or particular features in a given project. This is a good way of documenting new features into your projects or portfolio and can help other two who would want to implement such features.
 
 A clear example of this was when I was building and incorporating a blog section into my portfolio website. Being a Vue.js enthusiast I implemented NuxtJS content which offers some great and powerful capabilities.
 
@@ -65,6 +64,3 @@ This has proved to be great in getting to know other people’s opinions on vari
 My article idea generation with the following methods has proved to be very handy in getting what to write about. These methods have fed me daily writing ideas for the past six months and counting.
 
 You can try and implement these on your own and see the crazy number of ideas you can write about.
-
-
-

@@ -22,6 +22,7 @@ This article will act as a guide and provide you with a background to get you st
 Know the basics of programming.
 
 I would suggest to start with the basics and try out:
+
 - HTML
 - CSS
 - JavaScript
@@ -29,13 +30,13 @@ I would suggest to start with the basics and try out:
 Though you can start with any language of your choice if you are stuck in making a choice I would suggest that. This is my own sincere opinion though.
 
 Decide on what you want to dive into:
+
 - Frontend
 - Backend
 - Machine Learning
 - Data Science
 - Game Development
 - Mobile applications
-
 
 Software engineering is a vast field ranging from frontend/backend/Full Stack/Machine Learning/Data Science/Game Development.
 
@@ -44,25 +45,19 @@ Where to Start.
 
 1. **Boot Camps**
 
-
-
 Programming Boot camps offer a good professional background to get you started with the right mentoring and coaching. It also ensures that you work on a real-life project that will help you understand what it takes to start and finish projects.
 
 Most boot camps are paid but if you do not have the cash for it I would suggest some other best resources.
 
 2. **Internship Programs**
 
-
-
 Internship programs are great in kickstarting your developer journey. Most internships offer you with a senior mentor to guide you through and give you frequent progress checks.
 
-On top of that, you will also be exposed to developing real-world projects and applications that will supercharge your development career. 
+On top of that, you will also be exposed to developing real-world projects and applications that will supercharge your development career.
 
 These programs may also offer you with potential job opportunities.
 
-3) **YouTube**
-
-
+3. **YouTube**
 
 YouTube has so many and vast video resources and tutorial guides to get you started pretty quick. Depending on your niche and technology stack there are thousands of tutorial guides at your disposal.
 
@@ -76,9 +71,7 @@ There are some great YouTube channels for developers mentioned in this article b
 
 4. **FreecodeCamp**
 
-
-
-Freecodecamp is a free platform that offers you free programming lessons. What you need is to only create an account on the platform and start. 
+Freecodecamp is a free platform that offers you free programming lessons. What you need is to only create an account on the platform and start.
 
 What’s good about this platform is that they also give you projects at the end of every course to test and improve your skills.
 
@@ -87,8 +80,6 @@ With a dedicated person if you finish their curriculum I am sure you will be a b
 Upon completion of their curriculum, you will be provided by certificates after completion. They’re also a tone of other best websites that provide you with free coding classes and guides.
 
 **Conclusion**
-
-
 
 Starting as a junior can be a bit frustrating with so many things to learn and you can get stuck in choosing where to start. You can leverage and start with the above-mentioned resources.
 

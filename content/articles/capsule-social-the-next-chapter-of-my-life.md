@@ -3,9 +3,9 @@ title: Capsule Social — Next Chapter of My Life
 
 description: Capsule Social — Next Chapter of My Life
 
-alt:  Capsule Social — Next Chapter of My Life
+alt: Capsule Social — Next Chapter of My Life
 
-excerpt:  Capsule Social — Next Chapter of My Life
+excerpt: Capsule Social — Next Chapter of My Life
 
 img: 1626177013782.png
 
@@ -21,10 +21,10 @@ Check out the initial tweet from the co-founder Nadim Kobeissi.
 
 I’ll be joining the incredible team at Capsule Social to help build the future of decentralized social media platform.
 
-Capsule Social’s main aim is to build a decentralised social media platform that just works. This means the platform will offer a social media network without biasness and content that is resistant to takedowns and individual censorship. 
+Capsule Social’s main aim is to build a decentralised social media platform that just works. This means the platform will offer a social media network without biasness and content that is resistant to takedowns and individual censorship.
 
 The project started from a tweet that has seen many people attract the idea.
-Being trusted with such a task mean a lot to me and I will provide my best to ensure the success of this project. 
+Being trusted with such a task mean a lot to me and I will provide my best to ensure the success of this project.
 
 Watch this video to get an in-depth view about Capsule Social.
 

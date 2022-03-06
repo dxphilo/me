@@ -6,9 +6,7 @@ This is my portfolio and blog website
 
 </div>
 
-
-![Blogsite website](/assets/Blogsite.JPG "Blogsite")
-
+![Blogsite website](/assets/Blogsite.JPG 'Blogsite')
 
 #### Built with
 
@@ -50,10 +48,8 @@ $ npm run generate
 
 ```
 
-
 ## Authors
 
 - [John Philip](https://www.github.com/developerphilo)
-
 
 For detailed explanation on how things work, check out [Getting Started With Nuxt](https://medium.com/javascript-in-plain-english/getting-started-with-nuxt-4652bc83ddc6).

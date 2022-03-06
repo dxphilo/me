@@ -6,28 +6,20 @@
   </article>
 </template>
 
-
-
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const blog = await $content("articles", params.slug).fetch();
-    const [prev, next] = await $content("articles")
-      .only(["title", "slug"])
-      .sortBy("createdAt", "asc")
-      .surround(params.slug, { before: 1, after: 1 })
-      .fetch();
-    return {
-      blog,
-    };
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("en", options);
-    },
-  },
-};
+	async asyncData({ $content, params }) {
+		const blog = await $content('articles', params.slug).fetch()
+		return {
+			blog,
+		}
+	},
+	methods: {
+		formatDate(date) {
+			const options = { year: 'numeric', month: 'long', day: 'numeric' }
+			return new Date(date).toLocaleDateString('en', options)
+		},
+	},
+}
 </script>
-<style scoped>
-</style>
+<style scoped></style>

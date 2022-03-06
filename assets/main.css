@@ -1,25 +1,21 @@
- 
 body {
-    font-family: Avenir, Tahoma, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.25px;
-    line-height: 1.5;
-    background-color: var(--bg);
-    color: var(--color);
-    transition: background-color 0.3s;
-    font-size: calc(10px + 0.35vw);
-    scroll-behavior: smooth;
+	font-family: Avenir, Tahoma, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.25px;
+	line-height: 1.5;
+	background-color: var(--bg);
+	color: var(--color);
+	transition: background-color 0.3s;
+	font-size: calc(10px + 0.35vw);
+	scroll-behavior: smooth;
 }
 :root {
-    --color: #f1f4f6;
-    --bg: #111827;
-
+	--color: #f1f4f6;
+	--bg: #111827;
 }
 .dark-mode {
-    --color: #1a6183;
-    --bg: #f1f4f6;
-
+	--color: #1a6183;
+	--bg: #f1f4f6;
 }
- 

@@ -51,13 +51,14 @@ Technology is always changing and so should you with the new changes to stay abr
 
 This is the part that some people ignore but is very crucial for your growth too. Assume you’re the best in a certain language or framework, who will know you’re the best if you don’t associate with people.
 
-Engaging with other developers also introduces you to other people which might open up opportunities for you. 
+Engaging with other developers also introduces you to other people which might open up opportunities for you.
 
-This can be achieved by joining 
+This can be achieved by joining
+
 - Twitter
 - Reddit
 - StackOverflow
-- LinkedIn groups. 
+- LinkedIn groups.
 
 For a matter of fact #tech twitter has some amazing people who are ready to help out anytime.
 
