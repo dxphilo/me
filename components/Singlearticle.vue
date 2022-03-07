@@ -41,7 +41,43 @@
 <script>
 export default {
 	name: 'Singlearticle',
-	props: ['path', 'id', 'title', 'excerpt', 'published', 'img', 'tag'],
+	props: {
+		path: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		id: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		title: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		excerpt: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		published: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		img: {
+			type: String,
+			required: true,
+			default: '',
+		},
+		tag: {
+			type: Object,
+			required: true,
+			default: () => ({}),
+		},
+	},
 }
 </script>
 <style scoped>

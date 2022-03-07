@@ -11,11 +11,6 @@ export default {
 	components: {
 		Intro,
 	},
-	created() {
-		console.log(
-			'You can find the repository to this website here https://github.com/developerphilo/Portfolio',
-		)
-	},
 }
 </script>
 <
