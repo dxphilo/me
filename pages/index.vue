@@ -1,9 +1,9 @@
 <
 <template>
-  <!-- component -->
-  <div>
-    <Intro />
-  </div>
+	<!-- component -->
+	<div>
+		<Intro />
+	</div>
 </template>
 <script>
 import Intro from '@/components/Intro.vue'
