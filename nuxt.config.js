@@ -105,7 +105,7 @@ export default {
 		mode: 'out-in',
 	},
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules: ['@nuxt/content', '~/modules/api'],
+	modules: ['@nuxt/content'],
 	generate: {
 		dir: 'dist',
 	},

@@ -22,7 +22,7 @@ jobs:
         uses: 'actions/checkout@v2'
       - name: 'running npm install'
         run: 'yarn install'
-      - name: 'running http-server'
+      - name: 'running server'
         run: 'yarn dev'
       - name: 'run test'
         run: 'node browserstack.js'
