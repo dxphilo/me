@@ -1,15 +1,15 @@
 <
 <template>
-  <!-- component -->
-  <div>
-    <div class="w-full headerr bg-no-repeat object-center bg-center bg-cover">
-      <div class="flex items-center justify-center">
-        <h1 class="text-center font-medium text-5xl pt-64">
-          Software Developer | Technical Writer
-        </h1>
-      </div>
-    </div>
-  </div>
+	<!-- component -->
+	<div>
+		<div class="w-full headerr bg-no-repeat object-center bg-center bg-cover">
+			<div class="flex items-center justify-center">
+				<h1 class="text-center font-medium text-5xl pt-64">
+					Software Developer | Technical Writer
+				</h1>
+			</div>
+		</div>
+	</div>
 </template>
 <script>
 export default {}

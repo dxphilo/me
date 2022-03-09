@@ -1,9 +1,9 @@
 <template>
-  <article>
-    <h1>{{ blog.title }}</h1>
-    <nuxt-content :document="blog" />
-    <p>Post created on {{ formatDate(blog.createdAt) }}</p>
-  </article>
+	<article>
+		<h1>{{ blog.title }}</h1>
+		<nuxt-content :document="blog" />
+		<p>Post created on {{ formatDate(blog.createdAt) }}</p>
+	</article>
 </template>
 
 <script>
