@@ -23,7 +23,7 @@ jobs:
       - name: 'running npm install'
         run: 'yarn install'
       - name: 'running http-server'
-        run: 'yarn web'
+        run: 'yarn dev'
       - name: 'run test'
         run: 'node browserstack.js'
       - name: 'BrowserStackLocal Stop'
