@@ -1,22 +1,22 @@
 <template>
-	<article class="pt-0">
-		<Btemplate />
-		<div>
-			<div class="blogs w-full flex flex-wrap pt-4 pb-4">
-				<Singlearticle
-					v-for="blog in blogs"
-					:id="blog.slug"
-					:key="blog.slug"
-					:path="blog.path"
-					:title="blog.title"
-					:excerpt="blog.excerpt"
-					:published="formatDate(blog.createdAt)"
-					:img="blog.img"
-					:tag="blog.tag"
-				/>
-			</div>
-		</div>
-	</article>
+  <article class="pt-0">
+    <Btemplate />
+    <div>
+      <div class="blogs w-full flex flex-wrap pt-4 pb-4">
+        <Singlearticle
+          v-for="blog in blogs"
+          :id="blog.slug"
+          :key="blog.slug"
+          :path="blog.path"
+          :title="blog.title"
+          :excerpt="blog.excerpt"
+          :published="formatDate(blog.createdAt)"
+          :img="blog.img"
+          :tag="blog.tag"
+        />
+      </div>
+    </div>
+  </article>
 </template>
 
 <script>
