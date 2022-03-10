@@ -26,8 +26,11 @@ jobs:
       - name: 'Building web application to be tested'
         run: yarn install
 
-      - name: 'Running application under test'
-        run: ./node_modules/.bin/http-server -p 8099 &
+      - name: 'Building application'
+        run:  yarn build
+
+      - name: 'Starting application build'
+        run: yarn start
 
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
         run: node browserstack.js  # See sample test script above
