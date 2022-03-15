@@ -25,7 +25,6 @@ jobs:
       - name: 'Building web application to be tested'
         run: yarn install && yarn build
         start: yarn start
-        wait-on: http://localhost:3000
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
         run: node browserstack.js  # See sample test script above
       - name: 'BrowserStackLocal Stop'  # Terminating the BrowserStackLocal tunnel connection
