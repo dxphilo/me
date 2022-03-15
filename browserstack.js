@@ -21,7 +21,7 @@ const driver = new webdriver.Builder()
 
 driver.get('http://localhost:3000').then(function () {
 	driver.getTitle().then(function (title) {
-		// console.log(title)
+		console.log(title)
 		driver.quit()
 	})
 })
