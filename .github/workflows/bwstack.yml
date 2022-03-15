@@ -24,10 +24,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 'Building web application to be tested'
-        run: yarn install
-
-      - name: 'Building application'
-        run:  yarn build
+        run: yarn install && yarn build
 
       - name: 'Starting application build'
         run: yarn start
