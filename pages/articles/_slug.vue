@@ -1,26 +1,29 @@
 <template>
   <article>
-    <h1 class="text-4xl text-center font-bold">
+	  <div>
+    <div
+      style="background-image: url(https://images.pexels.com/photos/6712114/pexels-photo-6712114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
+      class="bg-fixed w-screen bg-center bg-cover bg-no-repeat imgheader"
+    >
+
+    <h1 class="text-4xl text-center font-bold pt-20 pb-10">
       {{ blog.title }}
     </h1>
-    <p class="published text-center pt-2 font-semibold">
-      Post Published on: {{ formatDate(blog.createdAt) }}
+    <p class="published text-center pt-12 font-semibold">
+		Published on: {{ formatDate(blog.createdAt) }}
     </p>
-    <div class="img-sect">
+      <div class="flex flex-row pt-10 justify-center items-center">
       <img
-        :src="require(`~/assets/${blog.img}`)"
-        width="800"
-        height="500"
-        alt="blog image"
+        :src="require('~/assets/me/johnphilip.jpg')"
+        alt="authorimage"
         srcset=""
-      >
-      <p class="text-center pb-6 pt-3">
-        {{ blog.attribution }}
-      </p>
-    </div>
-
+		class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
+      />
+	  </div>
+	</div>	  
+	  </div>
     <Scroll />
-    <div class="article-section">
+    <div class="article-section pt-20">
       <nuxt-content :document="blog" />
     </div>
 
@@ -45,6 +48,7 @@
   </article>
 </template>
 <script>
+import authorimage from '@/assets/me/johnphilip.jpg'
 const Scroll = () => import('@/components/Scroll')
 export default {
 	components: {
@@ -63,6 +67,11 @@ export default {
 			next,
 		}
 	},
+	data() {
+		return {
+			authorimage,
+		}
+	},
 	methods: {
 		formatDate(date) {
 			const options = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -72,20 +81,12 @@ export default {
 }
 </script>
 <style>
-article {
-	padding-top: 20px;
-}
-img {
-	height: 450px;
-	width: 800px;
-	object-fit: cover;
-	margin: 0 auto;
-	border-radius: 0.5%;
-	padding-top: 6px;
-}
 article h1 {
 	padding-top: 20px;
 	padding-bottom: 6px;
+}
+.imgheader{
+	height: 500px;
 }
 .published {
 	padding-top: 6px;
