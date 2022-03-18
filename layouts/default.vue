@@ -90,7 +90,7 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/blogs" class="p-2 md:p-4">
+            <nuxt-link to="/blog" class="p-2 md:p-4">
               Blog
             </nuxt-link>
           </li>
