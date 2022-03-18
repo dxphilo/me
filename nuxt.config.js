@@ -5,7 +5,7 @@ export default {
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
 		title:
-			'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+			'John Philip',
 		htmlAttrs: {
 			lang: 'en', // it sets the language English
 		},
@@ -18,36 +18,36 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				property: 'og:site_name',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip',
 			},
 			{ hid: 'og:type', property: 'og:type', content: 'website' },
 			{
 				hid: 'og:url',
 				property: 'og:url',
-				content: 'https://portfolio-blogsite.netlify.app',
+				content: 'https://johnphilip.dev',
 			},
 			{
 				hid: 'og:title',
 				property: 'og:title',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip',
 			},
 			{
 				hid: 'og:description',
 				property: 'og:description',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				hid: 'og:image',
 				property: 'og:image',
 				content:
-					'https://images.unsplash.com/photo-1622841653744-07cc30549d88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80',
+					'https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 			},
 			{ property: 'og:image:width', content: '740' },
 			{ property: 'og:image:height', content: '300' },
@@ -56,25 +56,25 @@ export default {
 			{
 				hid: 'twitter:url',
 				name: 'twitter:url',
-				content: 'https://portfolio-blogsite.netlify.app',
+				content: 'https://johnphilip.dev',
 			},
 			{
 				hid: 'twitter:title',
 				name: 'twitter:title',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip',
 			},
 			{
 				hid: 'twitter:description',
 				name: 'twitter:description',
 				content:
-					'John Philip | Front-End Developer | JavaScript, Vue.js, Nuxt.js, Node.js',
+					'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				hid: 'twitter:image',
 				name: 'twitter:image',
 				content:
-					'https://images.unsplash.com/photo-1622841653744-07cc30549d88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80',
+					'https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 			},
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/john-philip.webp' }],
