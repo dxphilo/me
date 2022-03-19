@@ -11,7 +11,7 @@
           {{ blog.title }}
         </h1>
         <p class="published text-center pt-12 font-semibold">
-          Published : {{ formatDate(blog.createdAt) }} •
+          {{ formatDate(blog.createdAt) }} •
           <span> {{ blog.readingStats.text }} </span>
         </p>
         <div class="flex flex-row pt-10 justify-center items-center">
