@@ -77,6 +77,14 @@ export default {
 
 	// Auto import components (https://go.nuxtjs.dev/config-components)
 	components: true,
+	hooks: {
+		'content:file:beforeInsert': (document) => {
+			if (document.extension === '.md') {
+				const stats = require('reading-time')(document.text)
+				document.readingStats = stats
+			}
+		},
+	},
 
 	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
 	buildModules: [

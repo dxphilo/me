@@ -11,8 +11,8 @@
           {{ blog.title }}
         </h1>
         <p class="published text-center pt-12 font-semibold">
-          Published : {{ formatDate(blog.createdAt) }} • {{ timeToRead }} min
-          read
+          Published : {{ formatDate(blog.createdAt) }} •
+          <span> {{ blog.readingStats.text }} </span>
         </p>
         <div class="flex flex-row pt-10 justify-center items-center">
           <img
@@ -52,12 +52,6 @@
 <script>
 import authorimage from '@/assets/me/johnphilip.jpg'
 const Scroll = () => import('@/components/Scroll')
-function readingTime(text) {
-	const wpm = 225
-	const words = text.trim().split(/\s+/).length
-	return Math.ceil(words / wpm)
-}
-
 export default {
 	components: {
 		Scroll,
@@ -80,9 +74,6 @@ export default {
 			authorimage,
 			timeToRead: undefined,
 		}
-	},
-	mounted() {
-		this.timeToRead = readingTime(this.text)
 	},
 	methods: {
 		formatDate(date) {
