@@ -1,27 +1,29 @@
 <template>
   <article>
-	  <div>
-    <div
-      style="background-image: url(https://images.pexels.com/photos/6712114/pexels-photo-6712114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
-      class="bg-fixed w-screen bg-center bg-cover bg-no-repeat imgheader"
-    >
-
-    <h1 class="text-4xl text-center font-bold pt-20 pb-10">
-      {{ blog.title }}
-    </h1>
-    <p class="published text-center pt-12 font-semibold">
-		Published on: {{ formatDate(blog.createdAt) }}
-    </p>
-      <div class="flex flex-row pt-10 justify-center items-center">
-      <img
-        :src="require('~/assets/me/johnphilip.jpg')"
-        alt="authorimage"
-        srcset=""
-		class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
-      />
-	  </div>
-	</div>	  
-	  </div>
+    <div>
+      <div
+        style="
+					background-image: url(https://images.pexels.com/photos/6712114/pexels-photo-6712114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+				"
+        class="bg-fixed w-screen bg-center bg-cover bg-no-repeat imgheader"
+      >
+        <h1 class="text-4xl text-center font-bold pt-20 pb-10">
+          {{ blog.title }}
+        </h1>
+        <p class="published text-center pt-12 font-semibold">
+          Published : {{ formatDate(blog.createdAt) }} • {{ timeToRead }} min
+          read
+        </p>
+        <div class="flex flex-row pt-10 justify-center items-center">
+          <img
+            :src="require('~/assets/me/johnphilip.jpg')"
+            alt="authorimage"
+            srcset=""
+            class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
+          >
+        </div>
+      </div>
+    </div>
     <Scroll />
     <div class="article-section pt-20">
       <nuxt-content :document="blog" />
@@ -50,6 +52,12 @@
 <script>
 import authorimage from '@/assets/me/johnphilip.jpg'
 const Scroll = () => import('@/components/Scroll')
+function readingTime(text) {
+	const wpm = 225
+	const words = text.trim().split(/\s+/).length
+	return Math.ceil(words / wpm)
+}
+
 export default {
 	components: {
 		Scroll,
@@ -70,7 +78,11 @@ export default {
 	data() {
 		return {
 			authorimage,
+			timeToRead: undefined,
 		}
+	},
+	mounted() {
+		this.timeToRead = readingTime(this.text)
 	},
 	methods: {
 		formatDate(date) {
@@ -85,7 +97,7 @@ article h1 {
 	padding-top: 20px;
 	padding-bottom: 6px;
 }
-.imgheader{
+.imgheader {
 	height: 500px;
 }
 .published {
