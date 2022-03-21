@@ -4,8 +4,7 @@ export default {
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
-		title:
-			'John Philip',
+		title: 'John Philip',
 		htmlAttrs: {
 			lang: 'en', // it sets the language English
 		},
@@ -17,13 +16,11 @@ export default {
 			{
 				hid: 'description',
 				name: 'description',
-				content:
-					'John Philip | Software Developer | Tech Writer',
+				content: 'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				property: 'og:site_name',
-				content:
-					'John Philip',
+				content: 'John Philip',
 			},
 			{ hid: 'og:type', property: 'og:type', content: 'website' },
 			{
@@ -34,14 +31,12 @@ export default {
 			{
 				hid: 'og:title',
 				property: 'og:title',
-				content:
-					'John Philip',
+				content: 'John Philip',
 			},
 			{
 				hid: 'og:description',
 				property: 'og:description',
-				content:
-					'John Philip | Software Developer | Tech Writer',
+				content: 'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				hid: 'og:image',
@@ -61,14 +56,12 @@ export default {
 			{
 				hid: 'twitter:title',
 				name: 'twitter:title',
-				content:
-					'John Philip',
+				content: 'John Philip',
 			},
 			{
 				hid: 'twitter:description',
 				name: 'twitter:description',
-				content:
-					'John Philip | Software Developer | Tech Writer',
+				content: 'John Philip | Software Developer | Tech Writer',
 			},
 			{
 				hid: 'twitter:image',
@@ -77,13 +70,21 @@ export default {
 					'https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 			},
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/john-philip.webp' }],
+		link: [{ rel: 'icon', type: 'image/x-icon', href: '/johnphilip.jpg' }],
 	},
 	// Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
 	plugins: [{ src: '~/plugins/vue-scroll-indicator', ssr: false }],
 
 	// Auto import components (https://go.nuxtjs.dev/config-components)
 	components: true,
+	hooks: {
+		'content:file:beforeInsert': (document) => {
+			if (document.extension === '.md') {
+				const stats = require('reading-time')(document.text)
+				document.readingStats = stats
+			}
+		},
+	},
 
 	// Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
 	buildModules: [
