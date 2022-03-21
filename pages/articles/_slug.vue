@@ -78,9 +78,7 @@ export default {
 		}
 	},
 	data() {
-		return {
-			title: '',
-		}
+		return {}
 	},
 	methods: {
 		formatDate(date) {
