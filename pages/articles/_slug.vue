@@ -1,31 +1,40 @@
 <template>
   <article>
     <div>
-      <div
-        style="
-					background-image: url(https://images.pexels.com/photos/6712114/pexels-photo-6712114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-				"
-        class="bg-fixed w-screen bg-center bg-cover bg-no-repeat imgheader"
-      >
-        <h1 class="text-4xl text-center font-bold pt-20 pb-10">
+      <!-- start of revamping here -->
+      <div class="">
+        <img
+          :src="require(`~/assets/${blog.img}`)"
+          alt="postimage"
+          srcset=""
+          class="w-screen bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+        >
+      </div>
+      <!-- end revamping here -->
+      <div>
+        <h1 class="text-4xl text-center font-bold py-12">
           {{ blog.title }}
         </h1>
-        <p class="published text-center pt-12 font-semibold">
-          {{ formatDate(blog.createdAt) }} •
-          <span> {{ blog.readingStats.text }} </span>
-        </p>
-        <div class="flex flex-row pt-10 justify-center items-center">
-          <img
-            :src="require('~/assets/me/johnphilip.jpg')"
-            alt="authorimage"
-            srcset=""
-            class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
-          >
+        <div
+          class="header-details w-96 my-0 mx-auto flex items-center text-center"
+        >
+          <div>
+            <img
+              :src="require('~/assets/me/johnphilip.jpg')"
+              alt="authorimage"
+              srcset=""
+              class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
+            >
+          </div>
+          <div class="published pl-4 font-light text-sm">
+            {{ formatDate(blog.createdAt) }} <span class="pl-3">•</span>
+            <span class="pl-4"> {{ blog.readingStats.text }} </span>
+          </div>
         </div>
       </div>
     </div>
     <Scroll />
-    <div class="article-section pt-20">
+    <div class="article-section pt-12">
       <nuxt-content :document="blog" />
     </div>
 
@@ -50,7 +59,6 @@
   </article>
 </template>
 <script>
-import authorimage from '@/assets/me/johnphilip.jpg'
 const Scroll = () => import('@/components/Scroll')
 export default {
 	components: {
@@ -71,8 +79,7 @@ export default {
 	},
 	data() {
 		return {
-			authorimage,
-			timeToRead: undefined,
+			title: '',
 		}
 	},
 	methods: {
@@ -88,8 +95,11 @@ article h1 {
 	padding-top: 20px;
 	padding-bottom: 6px;
 }
-.imgheader {
-	height: 500px;
+.post-header {
+	height: 600px;
+}
+.header-details {
+	width: ;
 }
 .published {
 	padding-top: 6px;
