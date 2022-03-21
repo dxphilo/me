@@ -35,12 +35,14 @@ Contributing and maintaining documentation is also a great way to showcase your 
 I have got various jobs just by showcasing some of my contributions to technical documentation. On the other hand, some projects may contact you to update and maintain their technical documentation for a fee.
 
 **3. Publishing your own book/e-book**
+
 Writing digital products such as e-books is another good way to Make Money as a technical writer. You can leverage this and publish your book on a given topic of your choice and sell the products.
 
 This is an excellent way to make money, especially if your book is packed with no-nonsense guides and value.
 You can make a decent amount of money just by writing e-books.
 
 **4. Writing on Medium**
+
 Medium dot com is one of the platforms that can make you Money while writing what you love. Having been from the platforms since 2019, I have earned a decent amount of income that has kept me going over this year. With consistent writing and great value, you can make a good amount of money on the platforms.
 
 The platform also houses some of the best publications on the internet with quality writers to learn from and editors. With this, it can help you improve and grow your writing while earning on the side. This is helpful, especially from the beginner standpoint of things.
