@@ -77,6 +77,16 @@ export default {
 			next,
 		}
 	},
+	  head: {
+    title: "title here",
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
 	data() {
 		return {}
 	},
