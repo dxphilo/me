@@ -19,7 +19,7 @@ export default {
 <style scoped>
 .w-full {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.518)),
-		url('../assets/2.jpg');
+		url('https://images.pexels.com/photos/8775535/pexels-photo-8775535.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.5&h=500&sharp=10&w=2000');
 }
 .w-full h1 {
 	padding: 5%;
