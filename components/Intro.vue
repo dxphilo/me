@@ -4,9 +4,12 @@
   <div>
     <div class="w-full headerr bg-no-repeat object-center bg-center bg-cover">
       <div class="flex items-center justify-center">
-        <h1 class="text-center font-medium text-5xl pt-64">
-          Software Developer | Technical Writer
-        </h1>
+        <div class="p-32">
+          <h1 class="text-center font-medium text-6xl">
+            Code & Words
+          </h1>
+          <span class="pt-3 text-xl">Software Developer and Technical Writer</span>
+        </div>
       </div>
     </div>
   </div>
@@ -17,7 +20,7 @@ export default {}
 <
 <style scoped>
 .headerr {
-	height: 600px;
-	background-image: url('https://images.pexels.com/photos/4792731/pexels-photo-4792731.jpeg?cs=srgb&dl=pexels-anete-lusina-4792731.jpg&fm=jpg');
+	height: 450px;
+	background-image: url('https://images.pexels.com/photos/8775535/pexels-photo-8775535.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.5&h=500&sharp=10&w=2000');
 }
 </style>
