@@ -8,7 +8,7 @@
           <h1 class="text-center font-medium text-6xl">
             Code & Words
           </h1>
-          <span class="pt-3 text-xl">Software Developer and Technical Writer</span>
+          <span class="pt-6 text-xl">Software Developer | Technical Writer</span>
         </div>
       </div>
     </div>
