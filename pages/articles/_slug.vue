@@ -105,9 +105,7 @@ export default {
 }
 .post-header {
 	height: 600px;
-}
-.header-details {
-	width: ;
+	widows: 100%;
 }
 .published {
 	padding-top: 6px;
