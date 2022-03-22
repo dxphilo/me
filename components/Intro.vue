@@ -21,6 +21,6 @@ export default {}
 <style scoped>
 .headerr {
 	height: 450px;
-	background-image: url('https://images.pexels.com/photos/8775535/pexels-photo-8775535.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.5&h=500&sharp=10&w=2000');
+	background-image:linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5)),url('https://images.pexels.com/photos/8775535/pexels-photo-8775535.jpeg?auto=compress&cs=tinysrgb&fit=crop&fp-y=0.5&h=500&sharp=10&w=2000');
 }
 </style>
