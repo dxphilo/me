@@ -2,7 +2,7 @@
   <!-- component -->
   <div class="py-6 md:py-20">
     <div class="flex flex-wrap justify-center">
-      <div class="group rounded px-8 py-12 shadow mr-8">
+      <div class="group rounded px-8 py-12 shadow-md mr-8">
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div>
             <img
@@ -20,7 +20,7 @@
           </p>
         </div>
       </div>
-      <div class="group rounded px-8 py-12 shadow">
+      <div class="group rounded px-8 py-12 shadow-md">
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div>
             <img
