@@ -4,7 +4,7 @@
       <!-- start of revamping here -->
       <div class="">
         <img
-          :src="require(`~/assets/${blog.img}`)"
+          :src="require(`~/assets/${article.img}`)"
           alt="postimage"
           srcset=""
           class="w-screen bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
@@ -13,7 +13,7 @@
       <!-- end revamping here -->
       <div>
         <h1 class="text-4xl text-center font-bold py-12">
-          {{ blog.title }}
+          {{ article.title }}
         </h1>
         <div
           class="header-details w-96 my-0 mx-auto flex items-center text-center"
@@ -27,15 +27,15 @@
             >
           </div>
           <div class="published pl-4 font-light text-sm">
-            {{ formatDate(blog.createdAt) }} <span class="pl-3">•</span>
-            <span class="pl-4"> {{ blog.readingStats.text }} </span>
+            {{ formatDate(article.createdAt) }} <span class="pl-3">•</span>
+            <span class="pl-4"> {{ article.readingStats.text }} </span>
           </div>
         </div>
       </div>
     </div>
     <Scroll />
     <div class="article-section pt-12">
-      <nuxt-content :document="blog" />
+      <nuxt-content :document="article" />
     </div>
 
     <div class="flex justify-center pt-6 pb-8">
@@ -59,36 +59,68 @@
   </article>
 </template>
 <script>
-const Scroll = () => import('@/components/Scroll')
+import global from '@/utils/global'
+import getSiteMeta from '@/utils/getSiteMeta'
 export default {
-	components: {
-		Scroll,
-	},
+	name: 'ArticlePage',
 	async asyncData({ $content, params }) {
-		const blog = await $content(`articles/${params.slug}` || 'index').fetch()
+		const article = await $content('articles', params.slug).fetch()
 		const [prev, next] = await $content('articles')
-			.only(['title', 'slug'])
-			.sortBy('createdAt', 'desc')
-			.surround(params.slug, { before: 1, after: 1 })
+			.only(['title', 'slug', 'published'])
+			.sortBy('published', 'desc')
+			.surround(params.slug)
 			.fetch()
 		return {
-			blog,
+			article,
 			prev,
 			next,
 		}
 	},
-	data() {
-		return {}
+	head() {
+		return {
+			title: this.article.title,
+			meta: [
+				...this.meta,
+				{
+					property: 'article:published_time',
+					content: this.article.createdAt,
+				},
+				{
+					property: 'article:modified_time',
+					content: this.article.updatedAt,
+				},
+				{
+					property: 'article:tag',
+					content: this.article.tags ? this.article.tags.toString() : '',
+				},
+				{ name: 'twitter:label1', content: 'Written by' },
+				{ name: 'twitter:data1', content: global.author || '' },
+				{ name: 'twitter:label2', content: 'Filed under' },
+				{
+					name: 'twitter:data2',
+					content: this.article.tags ? this.article.tags.toString() : '',
+				},
+			],
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://johnphilip.dev/articles/${this.$route.params.slug}`,
+				},
+			],
+		}
 	},
-	head: {
-		title: 'title here',
-		meta: [
-			{
-				hid: 'description',
-				name: 'description',
-				content: 'Home page description',
-			},
-		],
+	computed: {
+		meta() {
+			const metaData = {
+				type: 'article',
+				title: this.article.title,
+				description: this.article.description,
+				url: `https://johnphilip.dev/articles/${this.$route.params.slug}`,
+				mainImage: this.article.image,
+			}
+			return getSiteMeta(metaData)
+		},
 	},
 	methods: {
 		formatDate(date) {

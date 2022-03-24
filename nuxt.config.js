@@ -1,3 +1,8 @@
+import global from './utils/global'
+import getRoutes from './utils/getRoutes'
+import getSiteMeta from './utils/getSiteMeta'
+
+const meta = getSiteMeta()
 export default {
 	// Target (https://go.nuxtjs.dev/config-target)
 	target: 'static',
@@ -9,6 +14,7 @@ export default {
 			lang: 'en', // it sets the language English
 		},
 		meta: [
+			...meta,
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
@@ -106,7 +112,7 @@ export default {
 		mode: 'out-in',
 	},
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules: ['@nuxt/content'],
+	modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 	generate: {
 		dir: 'dist',
 	},
@@ -135,5 +141,11 @@ export default {
 			},
 		},
 		analyze: true,
+	},
+	sitemap: {
+		hostname: global.siteUrl,
+		routes() {
+			return getRoutes()
+		},
 	},
 }
