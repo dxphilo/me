@@ -94,7 +94,7 @@
       </nav>
     </div>
     <Nuxt />
-    <FooterComponent />
+    <Footer />
   </div>
 </template>
 <script>

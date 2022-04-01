@@ -13,7 +13,7 @@
 </template>
 <script>
 export default {
-  name: 'BtemplateComponent',
+  name: 'Btemplate',
 }
 </script>
 <style scoped>

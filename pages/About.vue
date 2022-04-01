@@ -3,7 +3,7 @@
   <!-- about me component -->
   <div>
     <div class="about">
-      <SkillsectComponent />
+      <Skillsect />
     </div>
     <div class="about-me">
       <div class="w-1/3 m-auto dwabout">
@@ -76,7 +76,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'AboutComponent',
+  name: 'About',
 })
 </script>
 <style scoped>

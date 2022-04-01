@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <ScrollComponent />
+    <Scroll />
     <div class="article-section pt-12">
       <nuxt-content :document="article" />
     </div>

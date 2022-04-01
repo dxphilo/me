@@ -1,7 +1,7 @@
 <template>
   <div>
-    <IntroComponent />
-    <InfoComponent />
+    <Intro />
+    <Info />
   </div>
 </template>
 

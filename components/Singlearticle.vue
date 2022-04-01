@@ -49,7 +49,7 @@
 
 <script>
 export default {
-  name: 'SinglearticleComponent',
+  name: 'Singlearticle',
   props: {
     path: {
       type: String,

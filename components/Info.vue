@@ -47,7 +47,7 @@
 </template>
 <script>
 export default {
-  name: 'InfoComponent',
+  name: 'Info',
 }
 </script>
 <
