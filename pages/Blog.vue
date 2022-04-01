@@ -3,7 +3,7 @@
     <Btemplate />
     <div>
       <div class="blogs w-full flex flex-wrap pt-4 pb-4">
-        <SinglearticleComponent
+        <Singlearticle
           v-for="blog in blogs"
           :id="blog.slug"
           :key="blog.slug"

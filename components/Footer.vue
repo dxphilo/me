@@ -53,7 +53,7 @@ const today = date.toLocaleDateString('default', {
 const Socialmedia = () =>
   import(/* WebpackChunkName: "Socialmedia" */ '@/components/Socialmedia')
 export default {
-  name: 'FooterComponent',
+  name: 'Footer',
   components: {
     Socialmedia,
   },

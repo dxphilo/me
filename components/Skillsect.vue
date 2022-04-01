@@ -65,7 +65,7 @@
 </template>
 <script>
 export default {
-  name: 'SkillsectComponent',
+  name: 'Skillsect',
 }
 </script>
 <style scoped>

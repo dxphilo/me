@@ -18,11 +18,6 @@ module.exports = {
         'invalid-first-character-of-tag-name': false,
       },
     ],
-    'vue/multi-word-component-names': [
-      'error',
-      {
-        ignores: ['default', 'Blog'],
-      },
-    ],
+    'vue/multi-word-component-names': 0,
   },
 }
