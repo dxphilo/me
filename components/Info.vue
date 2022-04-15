@@ -1,7 +1,7 @@
 <template>
   <!-- component -->
   <div class="py-6 md:py-20">
-    <div class="flex flex-wrap justify-center">
+    <div class="w-1/2 mx-auto flex justify-center">
       <div class="group rounded px-8 py-12 shadow-md mr-8">
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div>
@@ -15,8 +15,9 @@
           <h3 class="pt-8 text-base font-semibold uppercase lg:text-lg">
             SOFTWARE DEVELOPMENT
           </h3>
-          <p class="text-grey pt-4 text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <p class="pt-4 text-sm md:text-base">
+            Passionate about technologies and programming. Frontend of things
+            (VueJS).
           </p>
         </div>
       </div>
@@ -30,16 +31,12 @@
           </div>
         </div>
         <div class="text-center">
-          <h3
-            class="pt-8 text-base font-semibold uppercase text-primary lg:text-lg"
-          >
+          <h3 class="pt-8 text-base font-semibold uppercase lg:text-lg">
             Technical Writing
           </h3>
-          <span class="break-words pt-4 text-sm md:text-base">
-            Aside from code, I like writing down guides on technologies and
-            things I have found amazing. Currently working on Documentation at
-            Capsule Social as a Technical Writer.
-          </span>
+          <p class="pt-4 text-sm md:text-base">
+            I love writing guides on technologies and solutions I find amazing.
+          </p>
         </div>
       </div>
     </div>
