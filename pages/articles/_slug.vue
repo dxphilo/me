@@ -29,14 +29,16 @@
           <div
             class="published pl-4 font-normal text-base font-semibold text-sm"
           >
-            {{ formatDate(article.createdAt) }} <span class="pl-3">•</span>
+            <span class="pl-2"> John Philip </span>
+            <span class="font-light">{{ formatDate(article.createdAt) }}</span>
+            <span class="pl-3">•</span>
             <span class="pl-4"> {{ article.readingStats.text }} </span>
           </div>
         </div>
       </div>
     </div>
     <Scroll />
-    <div class="article-section pt-12">
+    <div class="article-section pt-12 font-normal">
       <nuxt-content :document="article" />
     </div>
 

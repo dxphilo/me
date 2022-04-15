@@ -9,7 +9,7 @@ excerpt: Generate Article Ideas for Technical Writing
 
 img: pexels-cottonbro-4101143.jpg
 
-tag: ideation writing
+tag: IDEATION WRITING
 
 attribution: photo by John Philip from Pexelry
 ---
