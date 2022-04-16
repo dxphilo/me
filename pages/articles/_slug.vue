@@ -2,17 +2,17 @@
   <article>
     <div>
       <!-- start of revamping here -->
-      <div class="">
+      <div class="w-screen">
         <img
           :src="require(`~/assets/${article.img}`)"
           alt="postimage"
           srcset=""
-          class="w-screen bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="pt-6 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
         />
       </div>
       <!-- end revamping here -->
       <div>
-        <h1 class="text-4xl text-center font-bold py-12">
+        <h1 class="text-4xl text-center font-bold py-8">
           {{ article.title }}
         </h1>
         <div
