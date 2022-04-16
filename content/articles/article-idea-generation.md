@@ -32,7 +32,7 @@ In this article, I am going to share my approach to generating article ideas eve
 
 Documenting new things I have learnt always has proved handy in generating article ideas. I try to break it down into things that I can refer to and learn how I did them earlier. This kind of article I like to structure them into "how to" articles.
 
-For instance, when I learn let’s say about conditional rendering in Vue.js, I would write an article related to the title “how to perform conditional rendering in Vue.js”.
+For instance, when I learn let’s say about conditional rendering in Vue.js, I would write an article on “conditional rendering in Vue.js”.
 
 this is one of the ways I get ideas for my article and it is very effective for everyone.
 
