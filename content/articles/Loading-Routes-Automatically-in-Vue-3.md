@@ -11,6 +11,8 @@ img: movies-ui.jpg
 
 tag: Vue 3
 
+createdAt: 1/8/2021
+
 attribution: photo by John Philip from Pexelry
 ---
 

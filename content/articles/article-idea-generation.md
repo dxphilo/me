@@ -12,6 +12,8 @@ img: pexels-cottonbro-4101143.jpg
 tag: IDEATION WRITING
 
 attribution: photo by John Philip from Pexelry
+
+createdAt: 11/16/2021
 ---
 
 **How to Generate Article Ideas for Technical Writing**
