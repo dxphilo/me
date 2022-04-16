@@ -181,7 +181,8 @@ strong {
   padding: 8px 0;
   font-weight: 500;
   margin-left: 30px;
-  font-size: 19px;
+  font-size: 1.25em;
+  line-height: 1.5rem;
 }
 .filename {
   font-weight: bold;
