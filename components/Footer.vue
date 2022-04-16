@@ -42,7 +42,9 @@
       by John Philip &copy; Terms {{ date }}
     </div>
     <Socialmedia />
-    <p class="text-lg py-4 text-center">Happy {{ day }} &#128526;</p>
+    <p class="text-lg py-4 text-center font-semibold">
+      Happy {{ day }} &#128526;
+    </p>
   </div>
 </template>
 <script>
