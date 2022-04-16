@@ -25,7 +25,7 @@ export default Vue.extend({
   name: 'Blog',
   async asyncData({ $content, params }) {
     const blogs = await $content('articles', params.slug)
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
       .fetch()
     return { blogs }
   },
