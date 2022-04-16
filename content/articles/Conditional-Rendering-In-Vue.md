@@ -9,7 +9,9 @@ excerpt: Conditional rendering in Vue
 
 img: vue.jpeg
 
-tag: Vuejs
+tag: VueJS
+
+createdAt: 9/15/2021
 
 attribution: photo by John Philip from Pexelry
 ---

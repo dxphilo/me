@@ -27,12 +27,15 @@
             />
           </div>
           <div
-            class="published pl-4 font-normal text-base font-semibold text-sm"
+            class="published flex flex-wrap pl-4 font-normal text-base font-semibold text-sm"
           >
-            <span class="pl-2"> John Philip </span>
-            <span class="font-light">{{ formatDate(article.createdAt) }}</span>
-            <span class="pl-3">•</span>
-            <span class="pl-4"> {{ article.readingStats.text }} </span>
+            <div class="">
+              <p class="pl-2">John Philip</p>
+              <p class="font-light">{{ formatDate(article.createdAt) }}</p>
+            </div>
+            <div class="pl-8">
+              <p>{{ article.readingStats.text }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +97,7 @@ export default Vue.extend({
           property: 'article:tag',
           content: this.article.tags ? this.article.tags.toString() : '',
         },
-        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:label1', content: 'Written by John Philip' },
         { name: 'twitter:data1', content: global.author || '' },
         { name: 'twitter:label2', content: 'Filed under' },
         {

@@ -1,7 +1,7 @@
 const type = 'website'
 const url = 'https://johnphilip.dev'
-const title = 'My Amazing Online Corner'
-const description = 'Articles focused on showcasing my journey and programming'
+const title = 'Welcome to my Internet Corner'
+const description = 'Portfolio blogsite by John Philip'
 const mainImage =
   'https://images.pexels.com/photos/6804581/pexels-photo-6804581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
 

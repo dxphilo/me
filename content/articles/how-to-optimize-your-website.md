@@ -9,7 +9,9 @@ excerpt: How to Optimize Your Website for Speed
 
 img: pexels-ready-made-3850924.jpg
 
-tag: WEBSITE OPTIMIZE SPEED
+tag: WEBSITE OPTIMIZATION
+
+createdAt: 7/3/2021
 
 attribution: photo by John Philip from Pexelry
 ---
