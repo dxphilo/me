@@ -10,7 +10,7 @@
           </a>
         </div>
 
-        <ul class="list-reset flex text-1xl">
+        <ul class="list-reset flex text-xl">
           <li class="pr-3">
             <!-- <button v-if="!darkMode" @click="toggleSwitch">
               <svg
