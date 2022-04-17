@@ -43,7 +43,7 @@
     </div>
     <Socialmedia />
     <p class="text-lg py-4 text-center font-semibold">
-      Have a nice {{ day }} &#128526;
+      Have a nice {{ day }} &#128075;
     </p>
   </div>
 </template>
