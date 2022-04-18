@@ -1,7 +1,7 @@
 ---
 title: Documenting RESTFul API's
 
-description: Documenting RESTFul API's with OPENAPI
+description: RESTFul API Documentation With OpenAPI Specification
 
 alt: Documenting RESTFul API's
 
@@ -29,6 +29,7 @@ Documenting your application programming interfaces will ensure you provide the 
 **API Documentation tools**
 
 Consider a scenario where you have an existing API service that you want to document; what are some of the available tools at your disposal that you can leverage?
+
 There are lots of documentation tools that you can implement depending on your ready architecture and developer preference.
 
 Swagger tops the list as one of the most commonly used or with the most sub-tool built alongside it. Some other API documentation tools include.
@@ -69,13 +70,17 @@ What are some of the benefits of documenting your API services? While most peopl
 
 **Setting up your first RESTFul API documentation**
 
-We will leverage the OpenAPI specification for this purpose as it is the most commonly used specification. OpenAPI also has a lot of tooling around it with excellent resources on the same to get you up to speed.
+We will leverage the OpenAPI specification for this purpose as it is the most commonly used API documentation specification. OpenAPI also has a lot of tooling around it with amazing resources on the same to get you up to speed.
 
-**Our API tooling**
+**API Documentation tooling**
 
-We will leverage a package manager that will let us specify the structure of our API. This will include the data schema, endpoint description, parameter description, definitions, security, body/query parameters, responses, status codes, and request structure.
-The tooling leverages a swagger specification under the hood to process all this. The package will generate a swager.json file that contains all the API documentation info. The auto-generated file will obey the swagger format and specification.
+You can leverage various API tools that implement OpenAPI specifications. These packages will let us specify the structure of our API either by commenting or through auto-generation. The structure will include the data schema, endpoint description, parameter description, definitions, security, body/query parameters, responses, status codes, and request structure.
+
+- Swagger autogen.
+- Swagger-codegen.
+
+This tooling uses a swagger specification under the hood to process all this. The package will generate a swager file that contains all the API documentation info. The auto-generated file will obey the swagger format of OpenAPI specification.
 
 **Final thoughts**
 
-Application programming interfaces (API) are everywhere nowadays, but not most people care to document them. It is a good software development practice to document such services. Documenting your APIs will help your users and developers who will work on such services in the future.
+Application programming interfaces (API) are everywhere nowadays, but not most people care to document them. It is a good software development practice to document such services. Documenting your APIs will heavily help your users and developers who will work on such services in the future.
