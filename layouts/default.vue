@@ -1,7 +1,7 @@
 <template>
   <div class="bg-bgwhite text-txcolor">
     <!-- component -->
-    <div class="header">
+    <div class="header sticky top-0 z-50">
       <!-- Text shadow utilities will be cool -->
       <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
         <div>
@@ -93,8 +93,10 @@
         </ul>
       </nav>
     </div>
-    <Nuxt />
-    <Footer />
+    <div class="relative">
+      <Nuxt />
+      <Footer />
+    </div>
   </div>
 </template>
 <script>
@@ -127,6 +129,8 @@ body {
   height: 70px;
   font-weight: 400;
   letter-spacing: 0.25px;
+  background-color: #f8f9fa;
+  color: #1a6183;
 }
 ul li {
   background-color: transparent;
