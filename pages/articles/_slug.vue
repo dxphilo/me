@@ -45,7 +45,7 @@
       <nuxt-content :document="article" />
     </div>
 
-    <div class="flex justify-center pt-6 pb-8">
+    <div class="flex justify-center pt-6 pb-2">
       <h5
         v-if="prev"
         class="font-bold hover:underline text-teal-500 inline items-center mr-6"
