@@ -71,7 +71,7 @@ export default {
 .footer {
   font-size: 1rem;
   letter-spacing: 1px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-top: 30px;
 }
 svg {
