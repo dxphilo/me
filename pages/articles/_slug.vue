@@ -7,7 +7,7 @@
           :src="require(`~/assets/${article.img}`)"
           alt="postimage"
           srcset=""
-          class="pt-6 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="pt-8 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
         />
       </div>
       <!-- end revamping here -->
