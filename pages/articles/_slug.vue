@@ -97,7 +97,7 @@ export default Vue.extend({
           property: 'article:tag',
           content: this.article.tags ? this.article.tags.toString() : '',
         },
-        { name: 'twitter:label1', content: 'Written by John Philip' },
+        { name: 'twitter:label1', content: 'Article Written by John Philip' },
         { name: 'twitter:data1', content: global.author || '' },
         { name: 'twitter:label2', content: 'Filed under' },
         {
@@ -121,7 +121,7 @@ export default Vue.extend({
         title: this.article.title,
         description: this.article.description,
         url: `https://johnphilip.dev/articles/${this.$route.params.slug}`,
-        mainImage: this.article.image,
+        mainImage: `https://johnphilip.dev/_nuxt/img/${this.article.img}`,
       }
       return getSiteMeta(metaData)
     },
