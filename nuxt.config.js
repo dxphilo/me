@@ -10,6 +10,13 @@ export default {
     htmlAttrs: {
       lang: 'en', // it sets the language English
     },
+    script: [
+      {
+        src: 'https://plausible.io/js/plausible.js',
+        'data-domain': 'johnphilip.dev',
+        defer: true,
+      },
+    ],
     meta: [
       ...meta,
       { charset: 'utf-8' },
@@ -72,7 +79,6 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/johnphilip.jpg' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap',
