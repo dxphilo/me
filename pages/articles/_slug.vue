@@ -41,7 +41,7 @@
       </div>
     </div>
     <Scroll />
-    <div class="article-section pt-12 font-normal">
+    <div class="article-section pt-12 text-lg font-medium">
       <nuxt-content :document="article" />
     </div>
 
@@ -154,7 +154,7 @@ export default Vue.extend({
   padding-bottom: 10px;
 }
 .article-section {
-  width: 645px;
+  width: 800px;
   margin: 0 auto;
   line-height: 2.5rem;
   letter-spacing: 0.05em;
