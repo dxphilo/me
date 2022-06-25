@@ -48,7 +48,7 @@ import Twitter from './icons/Twitter.vue'
 import LinkedIn from './LinkedIn.vue'
 import Close from '@/components/icons/Close.vue'
 export default {
-  name: 'socialShare',
+  name: 'SocialShare',
   components: {
     Twitter,
     LinkedIn,
@@ -57,14 +57,15 @@ export default {
   props: {
     title: {
       required: true,
+      type: string,
     },
     subtitle: {
       required: true,
+      type: string,
     },
   },
   created() {
     window.addEventListener(`click`, this.handleCloseClick, false)
-    console.log(window.location.href)
   },
   destroyed() {
     window.removeEventListener(`click`, this.handleCloseClick)

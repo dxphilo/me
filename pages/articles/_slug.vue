@@ -46,17 +46,17 @@
     </div>
     <div class="text-center py-8">
       <button
-        @click.prevent="socialShare"
         class="rounded-full w-20 h-20 text-center text-teal-500 font-bold text-2xl"
+        @click.prevent="socialShare"
       >
         Share
       </button>
     </div>
     <div v-if="showShare">
       <socialShareVue
-        @close="socialShare"
         :title="article.title"
         :subtitle="article.description"
+        @close="socialShare"
       />
     </div>
 
