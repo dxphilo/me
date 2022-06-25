@@ -7,12 +7,8 @@
           v-for="blog in blogs"
           :id="blog.slug"
           :key="blog.slug"
-          :path="blog.path"
-          :title="blog.title"
-          :excerpt="blog.excerpt"
           :published="formatDate(blog.createdAt)"
-          :img="blog.img"
-          :tag="blog.tag"
+          :blog="blog"
         />
       </div>
     </div>

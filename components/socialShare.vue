@@ -57,11 +57,11 @@ export default {
   props: {
     title: {
       required: true,
-      type: string,
+      type: String,
     },
     subtitle: {
       required: true,
-      type: string,
+      type: String,
     },
   },
   mounted() {
