@@ -29,18 +29,6 @@ export default Vue.extend({
       .fetch()
     return { blogs }
   },
-  methods: {
-    formatDate(sourceDate: Date) {
-      const options: Intl.DateTimeFormatOptions = {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric',
-      }
-      return new Intl.DateTimeFormat('en-GB', options).format(
-        new Date(sourceDate)
-      )
-    },
-  },
   head: {
     title: 'John Philip - Blog',
     meta: [
@@ -53,6 +41,18 @@ export default Vue.extend({
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/johnphilip.jpg' }],
+  },
+  methods: {
+    formatDate(sourceDate: Date) {
+      const options: Intl.DateTimeFormatOptions = {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }
+      return new Intl.DateTimeFormat('en-GB', options).format(
+        new Date(sourceDate)
+      )
+    },
   },
 })
 </script>

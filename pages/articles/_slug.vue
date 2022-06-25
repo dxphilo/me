@@ -44,6 +44,21 @@
     <div class="article-section pt-12 text-lg font-medium">
       <nuxt-content :document="article" />
     </div>
+    <div class="text-center py-8">
+      <button
+        class="rounded-full w-20 h-20 text-center text-teal-500 font-bold text-2xl"
+        @click.prevent="socialShare"
+      >
+        Share
+      </button>
+    </div>
+    <div v-if="showShare">
+      <socialShareVue
+        :title="article.title"
+        :subtitle="article.description"
+        @close="socialShare"
+      />
+    </div>
 
     <div class="flex justify-center pt-6 pb-2">
       <h5
@@ -65,8 +80,12 @@
 import Vue from 'vue'
 import global from '@/utils/global'
 import getSiteMeta from '@/utils/getSiteMeta'
+import socialShareVue from '@/components/socialShare.vue'
 export default Vue.extend({
   name: 'ArticlePage',
+  components: {
+    socialShareVue,
+  },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
     const [prev, next] = await $content('articles')
@@ -78,6 +97,11 @@ export default Vue.extend({
       article,
       prev,
       next,
+    }
+  },
+  data() {
+    return {
+      showShare: false,
     }
   },
   head() {
@@ -136,6 +160,9 @@ export default Vue.extend({
       return new Intl.DateTimeFormat('en-GB', options).format(
         new Date(sourceDate)
       )
+    },
+    socialShare() {
+      this.showShare = !this.showShare
     },
   },
 })
