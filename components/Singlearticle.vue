@@ -54,7 +54,9 @@ export default {
     blog: {
       type: Object,
       required: true,
-      default: '',
+      default() {
+        return {}
+      },
     },
     published: {
       type: String,
