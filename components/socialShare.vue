@@ -64,7 +64,7 @@ export default {
       type: string,
     },
   },
-  created() {
+  mounted() {
     window.addEventListener(`click`, this.handleCloseClick, false)
   },
   destroyed() {
