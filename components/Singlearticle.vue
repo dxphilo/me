@@ -3,8 +3,8 @@
     <div class="flex items-center antialiased ml-4 grow">
       <div>
         <img
-          :src="require(`~/assets/${img}`)"
-          :alt="title"
+          :src="require(`~/assets/${blog.img}`)"
+          :alt="blog.title"
           class="object-cover object-center rounded-lg shadow-md img"
         />
 
@@ -14,17 +14,17 @@
               <span
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"
               >
-                {{ tag }}
+                {{ blog.tag }}
               </span>
             </div>
-            <nuxt-link :to="path">
+            <nuxt-link :to="blog.path">
               <h4 class="mt-1 font-semibold leading-tight truncate">
-                {{ title }}
+                {{ blog.title }}
               </h4>
             </nuxt-link>
 
             <div class="mt-1">
-              <span class="text-gray-600 text-sm">{{ excerpt }}</span>
+              <span class="text-gray-600 text-sm">{{ blog.excerpt }}</span>
             </div>
             <div class="mt-4 flex items-center">
               <div class="author-image">
@@ -51,37 +51,14 @@
 export default {
   name: 'Singlearticle',
   props: {
-    path: {
-      type: String,
+    blog: {
+      type: Object,
       required: true,
-      default: '',
-    },
-    id: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    title: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    excerpt: {
-      type: String,
-      required: true,
-      default: '',
+      default() {
+        return {}
+      },
     },
     published: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    img: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    tag: {
       type: String,
       required: true,
       default: '',
