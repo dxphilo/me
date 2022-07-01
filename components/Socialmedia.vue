@@ -4,7 +4,7 @@
       <!-- github social media svg -->
       <li>
         <a
-          href="https://github.com/developerphilo"
+          href="https://github.com/dxphilo"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
