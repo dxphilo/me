@@ -1,7 +1,7 @@
 <template>
   <div class="foo">
     <div
-      class="footer font-semibold text-center mt-8 text-xl leading-9 tracking-wide"
+      class="footer font-semibold text-center text-xl leading-9 tracking-wide"
     >
       <div class="coded text-sm" />
       Made with
@@ -71,8 +71,8 @@ export default {
 .footer {
   font-size: 1rem;
   letter-spacing: 1px;
-  padding-bottom: 8px;
-  padding-top: 30px;
+  padding-bottom: 0.3rem;
+  padding-top: 0.5rem;
 }
 svg {
   display: inline;

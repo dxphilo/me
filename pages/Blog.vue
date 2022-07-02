@@ -1,8 +1,8 @@
 <template>
   <article class="pt-0">
     <Btemplate />
-    <div>
-      <div class="blogs w-full flex flex-wrap pt-4 pb-4">
+    <div class="pb-32">
+      <div class="max-w-5xl my-0 mx-auto flex flex-wrap">
         <Singlearticle
           v-for="blog in blogs"
           :id="blog.slug"
@@ -52,9 +52,4 @@ export default Vue.extend({
   },
 })
 </script>
-<style scoped>
-.blogs {
-  max-width: 900px;
-  margin: 0 auto;
-}
-</style>
+<style scoped></style>
