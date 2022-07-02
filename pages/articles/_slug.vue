@@ -5,9 +5,9 @@
       <div class="w-screen">
         <img
           :src="require(`~/assets/${article.img}`)"
-          alt="postimage"
+          :alt="article.title"
           srcset=""
-          class="pt-8 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="rounded-md pt-8 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
         />
       </div>
       <!-- end revamping here -->
@@ -44,7 +44,7 @@
     <div class="article-section pt-12 text-lg font-medium">
       <nuxt-content :document="article" />
     </div>
-    <div class="text-center py-8">
+    <div class="text-center">
       <button
         class="rounded-full w-20 h-20 text-center text-teal-500 font-bold text-2xl"
         @click.prevent="socialShare"
@@ -60,7 +60,7 @@
       />
     </div>
 
-    <div class="flex justify-center pt-6 pb-2">
+    <div class="flex justify-center">
       <h5
         v-if="prev"
         class="font-bold hover:underline text-teal-500 inline items-center mr-6"
@@ -174,7 +174,6 @@ export default Vue.extend({
 }
 .post-header {
   height: 600px;
-  widows: 100%;
 }
 .published {
   padding-top: 6px;
