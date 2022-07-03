@@ -9,6 +9,8 @@ excerpt: 5 ways to make money with technical writing
 
 img: iphone-held-900x600.jpg
 
+imgurl: https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
 tag: WRITING
 
 createdAt: 11/7/2021

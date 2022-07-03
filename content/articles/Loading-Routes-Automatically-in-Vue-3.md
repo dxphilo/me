@@ -7,7 +7,9 @@ alt: Loading Routes Automatically
 
 excerpt: Loading Routes Automatically
 
-img: movies-ui.jpg
+img: movies-ui.jpg\
+
+imgurl: https://images.pexels.com/photos/226460/pexels-photo-226460.jpeg?auto=compress&cs=tinysrgb&w=1600
 
 tag: Vue 3
 
