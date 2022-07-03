@@ -179,7 +179,7 @@ export default Vue.extend({
 }
 .nuxt-content p {
   margin-bottom: 20px;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.33rem; /* 20px */
 }
 .content-wrapper {
   width: 40%;
