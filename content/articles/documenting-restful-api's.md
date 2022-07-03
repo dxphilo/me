@@ -9,6 +9,8 @@ excerpt: Documenting RESTFul API's
 
 img: digi-black.jpg
 
+imgurl: https://images.pexels.com/photos/12210049/pexels-photo-12210049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
 tag: DOCUMENTING API'S
 
 createdAt: 4/11/2022

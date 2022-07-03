@@ -3,6 +3,13 @@
     <div class="flex items-center antialiased ml-4 grow">
       <div>
         <img
+          v-if="blog.imgurl"
+          :src="blog.imgurl"
+          :alt="blog.title"
+          class="object-cover object-center rounded-lg shadow-md img"
+        />
+        <img
+          v-else
           :src="require(`~/assets/${blog.img}`)"
           :alt="blog.title"
           class="object-cover object-center rounded-lg shadow-md img"

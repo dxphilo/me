@@ -9,6 +9,8 @@ excerpt: Capsule Social — Next Chapter of My Life
 
 img: 1626177013782.png
 
+imgurl:
+
 tag: JOB WRITING
 
 attribution: photo by Capsule Social
