@@ -1,7 +1,7 @@
 <template>
   <article class="pt-0">
     <Btemplate />
-    <div class="pb-32">
+    <div class="pb-32 pt-8">
       <div class="max-w-5xl my-0 mx-auto flex flex-wrap">
         <Singlearticle
           v-for="blog in blogs"

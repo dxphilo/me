@@ -24,7 +24,7 @@
             rel="noopener noreferrer"
             href="https://twitter.com/kenyavue"
             class="border px-2 shadow-xl"
-            >here.</a
+            >here</a
           >
         </p>
       </div>
@@ -41,13 +41,13 @@
             rel="noopener noreferrer"
             href="https://amjohnphilip.medium.com"
             class="border px-2 shadow-xl"
-            >here.</a
+            >here</a
           >
         </p>
         <br />
         <p class="text-xl leading-9 tracking-wide">
           I am currently working on my first ever book that I hope will be
-          availabe soon on all the major platforms. <br />
+          availabe soon. <br />
           <br />
           If you want to be notified about this please don't hesitate to shoot
           me an e-mail on

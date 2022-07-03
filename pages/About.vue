@@ -1,7 +1,7 @@
 <
 <template>
   <!-- about me component -->
-  <div>
+  <div class="mb-20">
     <div class="about">
       <Skillsect />
     </div>
@@ -11,61 +11,39 @@
         <div>
           <h3 class="text-3xl py-6 font-semibold">Yes</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
-            <li class="border mx-1 px-1 shadow-xl">Learning</li>
-            <li class="border mx-1 px-1 shadow-xl">Reading</li>
-            <li class="border mx-1 px-1 shadow-xl">Motivation</li>
-            <li class="border mx-1 px-1 shadow-xl">Positivity</li>
-            <li class="border mx-1 px-1 shadow-xl">Vs Code</li>
-            <li class="border mx-1 px-1 shadow-xl">GitHub</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Twitter</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Chocolate</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Node Js</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">JavaScript</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">YouTube</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Spotify</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Trello</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Testing</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Mentorship</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Watching</li>
+            <li
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
+              v-for="yes in yesTo"
+              :key="yes"
+            >
+              {{ yes }}
+            </li>
           </ul>
         </div>
         <!-- my NO'S -->
         <div>
           <h3 class="text-3xl py-6 font-semibold">No</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
-            <li class="border mx-1 px-1 shadow-xl">Spam</li>
-            <li class="border mx-1 px-1 shadow-xl">Hate</li>
-            <li class="border mx-1 px-1 shadow-xl">Gossip</li>
-            <li class="border mx-1 px-1 shadow-xl">Tribalism</li>
-            <li class="border mx-1 px-1 shadow-xl">Negativity</li>
-            <li class="border mx-1 px-1 shadow-xl">Scam</li>
+            <li
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
+              v-for="no in nOs"
+              :key="no"
+            >
+              {{ no }}
+            </li>
           </ul>
         </div>
         <!-- best TV Shows -->
         <div>
           <h3 class="text-3xl py-6 font-semibold">Tv Shows</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
-            <li class="border mx-1 px-1 shadow-xl">Shameless Us</li>
-            <li class="border mx-1 px-1 shadow-xl">Narcos</li>
-            <li class="border mx-1 px-1 shadow-xl">Ozark</li>
-            <li class="border mx-1 px-1 shadow-xl">Peaky Blinders</li>
-            <li class="border mx-1 px-1 shadow-xl">Family Guy</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Dogs of Berlin</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">
-              Rise of Empires: Ottoman
+            <li
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
+              v-for="tvshow in tvShows"
+              :key="tvshow"
+            >
+              {{ tvshow }}
             </li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Mr Robot</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Startup</li>
-            <li class="border mx-1 px-1 shadow-xl">Bulletproof</li>
-            <li class="border mx-1 px-1 shadow-xl">Our Planet</li>
-            <li class="border mx-1 px-1 shadow-xl">Lupin</li>
-            <li class="border mx-1 px-1 shadow-xl">The Looney Tunes</li>
-            <li class="border mx-1 px-1 shadow-xl">Hoops</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">G.O.T</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Cursed</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Tribes of Europa</li>
-            <li class="border mx-1 px-1 my-4 shadow-xl">Vampire Diaries</li>
-            <li class="border mx-1 px-1 shadow-xl">Rick and Morty</li>
           </ul>
         </div>
       </div>
@@ -77,6 +55,47 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'About',
+  data() {
+    return {
+      yesTo: [
+        'Learning',
+        'Reading',
+        'Motivation',
+        'Positivity',
+        'Twitter',
+        'Pinterest',
+        'JavaScript',
+        'YouTube',
+        'Spotify',
+        'Testing',
+        'Mentorship',
+        'Watching',
+        'Fifa',
+      ],
+      tvShows: [
+        'Shameless Us',
+        'Narcos',
+        'Ozark',
+        'Peaky Blinders',
+        'Family Guy',
+        'Dogs of Berlin',
+        'Rise of Empires: Ottoman',
+        'Mr Robot',
+        'Startup',
+        'Bulletproof',
+        'Our Planet',
+        'Lupin',
+        'The Looney Tunes',
+        'Hoops',
+        'Game Of Thrones',
+        'Cursed',
+        'Tribes of Europa',
+        'Vampire Diaries',
+        'Rick and Morty',
+      ],
+      nOs: ['Spam', 'Hate', 'Gossip', 'Tribalism', 'Negativity', 'Scam'],
+    }
+  },
 })
 </script>
 <style scoped>

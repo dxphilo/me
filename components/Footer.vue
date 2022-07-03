@@ -1,8 +1,6 @@
 <template>
-  <div class="foo">
-    <div
-      class="footer font-semibold text-center text-xl leading-9 tracking-wide"
-    >
+  <div class="footer">
+    <div class="font-semibold text-center text-xl leading-9 tracking-wide">
       <div class="coded text-sm" />
       Made with
       <span
@@ -42,7 +40,7 @@
       by John Philip &copy; Terms {{ date }}
     </div>
     <Socialmedia />
-    <p class="text-lg py-4 text-center font-semibold">
+    <p class="py-4 text-center font-semibold">
       Have a nice {{ day }} &#128075;
     </p>
   </div>
@@ -69,7 +67,7 @@ export default {
 </script>
 <style scoped>
 .footer {
-  font-size: 1rem;
+  font-size: 1.22rem;
   letter-spacing: 1px;
   padding-bottom: 0.3rem;
   padding-top: 0.5rem;
