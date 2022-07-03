@@ -1,47 +1,49 @@
 <template>
   <!-- component -->
-  <div
-    class="popup bg-darkBG modal-animation fixed top-0 bottom-0 left-0 right-0 z-30 flex h-3/4 my-auto w-1/2 mx-auto items-center justify-center bg-opacity-50 dark:bg-opacity-50"
-  >
+  <Teleport to="body">
     <div
-      style="backdrop-filter: blur(10px)"
-      class="w-full lg:w-600 from-lightBGStart to-lightBGStop card-animation z-10 overflow-y-auto rounded-lg bg-gradient-to-r p-6 pt-4 shadow-lg"
+      class="popup bg-darkBG modal-animation fixed top-0 bottom-0 left-0 right-0 z-30 flex h-3/4 my-auto w-1/2 mx-auto items-center justify-center bg-opacity-50 dark:bg-opacity-50"
     >
-      <div class="sticky flex items-center justify-center">
-        <h2
-          class="text-lightPrimaryText dark:text-darkPrimaryText text-2xl font-semibold"
-        >
-          Share this post
-        </h2>
-        <button
-          class="focus:outline-none bg-gray1 dark:bg-gray5 rounded-full pl-6"
-          @click="$emit(`close`)"
-        >
-          <Close />
-        </button>
-      </div>
-      <div class="sticky flex items-center justify-center">
-        <div class="flex flex-col mt-5 text-center">
-          <div
-            class="flex flex-row flex-wrap text-primary h-52 items-center justify-center"
+      <div
+        style="backdrop-filter: blur(10px)"
+        class="w-full lg:w-600 from-lightBGStart to-lightBGStop card-animation z-10 overflow-y-auto rounded-lg bg-gradient-to-r p-6 pt-4 shadow-lg"
+      >
+        <div class="sticky flex items-center justify-center">
+          <h2
+            class="text-lightPrimaryText dark:text-darkPrimaryText text-2xl font-semibold"
           >
-            <button
-              class="bg-lightInput p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
-              @click="twitterShare"
+            Share this post
+          </h2>
+          <button
+            class="focus:outline-none bg-gray1 dark:bg-gray5 rounded-full pl-6"
+            @click="$emit(`close`)"
+          >
+            <Close />
+          </button>
+        </div>
+        <div class="sticky flex items-center justify-center">
+          <div class="flex flex-col mt-5 text-center">
+            <div
+              class="flex flex-row flex-wrap text-primary h-52 items-center justify-center"
             >
-              <Twitter />
-            </button>
-            <button
-              class="bg-lightInput p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
-              @click="linkedinShare"
-            >
-              <LinkedIn />
-            </button>
+              <button
+                class="bg-lightInput p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
+                @click="twitterShare"
+              >
+                <Twitter />
+              </button>
+              <button
+                class="bg-lightInput p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
+                @click="linkedinShare"
+              >
+                <LinkedIn />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </Teleport>
 </template>
 <script>
 import Twitter from './icons/Twitter.vue'

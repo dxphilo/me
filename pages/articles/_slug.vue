@@ -27,21 +27,23 @@
             />
           </div>
           <div
-            class="published flex flex-wrap pl-4 font-normal text-base font-semibold text-sm"
+            class="pt-1.5 pb-2.5 text-xl flex flex-wrap pl-4 font-normal font-semibold"
           >
-            <div class="">
+            <div>
               <p class="pl-2">John Philip</p>
               <p class="font-light">{{ formatDate(article.createdAt) }}</p>
             </div>
             <div class="pl-8">
-              <p>{{ article.readingStats.text }}</p>
+              <p class="text-lg">{{ article.readingStats.text }}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <Scroll />
-    <div class="article-section pt-12 text-lg font-medium">
+    <div
+      class="sm:w-2/3 md:w-3/5 lg:w-2/5 xl:2/5 my-0 leading-10 tracking-wider mx-auto pl-5 pt-12 text-lg font-medium"
+    >
       <nuxt-content :document="article" />
     </div>
     <div class="text-center">
@@ -60,7 +62,7 @@
       />
     </div>
 
-    <div class="flex justify-center">
+    <div class="flex justify-center pb-12">
       <h5
         v-if="prev"
         class="font-bold hover:underline text-teal-500 inline items-center mr-6"
@@ -106,7 +108,7 @@ export default Vue.extend({
   },
   head() {
     return {
-      title: this.article.title,
+      title: `John Philip - ${this.article.title}`,
       meta: [
         ...this.meta,
         {
@@ -175,20 +177,12 @@ export default Vue.extend({
 .post-header {
   height: 600px;
 }
-.published {
-  padding-top: 6px;
-  padding-bottom: 10px;
-}
-.article-section {
-  width: 800px;
-  margin: 0 auto;
-  line-height: 2.5rem;
-  letter-spacing: 0.05em;
-}
 .nuxt-content p {
-  font-size: 1.25em;
   margin-bottom: 20px;
-  line-height: 2rem;
+  font-size: 1.25rem; /* 20px */
+}
+.content-wrapper {
+  width: 40%;
 }
 h5 {
   font-size: 1.4rem;
@@ -196,7 +190,8 @@ h5 {
   margin-block-end: 1em;
 }
 strong {
-  font-size: 26px;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
   align-items: center;
 }
 .article-section a {
@@ -214,6 +209,7 @@ strong {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
 @media (max-width: 800px) {
   img {
     width: 600px;

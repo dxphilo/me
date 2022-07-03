@@ -18,7 +18,7 @@
               </span>
             </div>
             <nuxt-link :to="blog.path">
-              <h4 class="mt-1 font-semibold leading-tight truncate">
+              <h4 class="mt-1 font-semibold text-lg leading-tight truncate">
                 {{ blog.title }}
               </h4>
             </nuxt-link>
@@ -31,14 +31,12 @@
                 <img
                   class="h-8 w-8 rounded-full bg-no-repeat bg-cover"
                   src="../assets/me/johnphilip.jpg"
-                  alt="Author image John Philip"
+                  alt="Author image of John Philip"
                 />
               </div>
-              <span class="font-normal text-base font-semibold px-2"
-                >{{ published }}
-              </span>
+              <span class="font-semibold px-2 text-lg">{{ published }} </span>
               •
-              <span class="pl-2 text-base">John Philip</span>
+              <span class="pl-2 text-lg font-semibold">John Philip</span>
             </div>
           </div>
         </div>
