@@ -12,9 +12,9 @@
           <h3 class="text-3xl py-6 font-semibold">Yes</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
             <li
-              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
               v-for="yes in yesTo"
               :key="yes"
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
             >
               {{ yes }}
             </li>
@@ -25,9 +25,9 @@
           <h3 class="text-3xl py-6 font-semibold">No</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
             <li
-              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
               v-for="no in nOs"
               :key="no"
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
             >
               {{ no }}
             </li>
@@ -38,9 +38,9 @@
           <h3 class="text-3xl py-6 font-semibold">Tv Shows</h3>
           <ul class="text-xl leading-9 tracking-wide flex flex-wrap">
             <li
-              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
               v-for="tvshow in tvShows"
               :key="tvshow"
+              class="border mx-1 px-1 shadow-xl py-2 px-3 my-2"
             >
               {{ tvshow }}
             </li>
