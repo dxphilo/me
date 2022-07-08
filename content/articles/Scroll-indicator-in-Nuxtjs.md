@@ -7,11 +7,13 @@ alt: scroll idicator Nuxtjs
 
 excerpt: Make a scroll indicator in Nuxtjs
 
-img: pexels-ready-made-3850924.jpg
-
 tag: Nuxtjs
 
-attribution: photo by John Philip from Pexelry
+imgurl: https://images.pexels.com/photos/5986492/pexels-photo-5986492.jpeg?auto=compress&cs=tinysrgb&w=1600
+
+createdAt: 4/6/2021
+
+attribution: Photo by Cottonbro from Pexels
 ---
 
 Scroll indicator can be implemented in blogs for the user to know where he has scrolled to within a page
