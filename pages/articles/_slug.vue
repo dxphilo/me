@@ -1,6 +1,11 @@
 <template>
   <article>
     <div>
+      <div>
+        <h1 class="text-4xl text-center font-bold py-6">
+          {{ article.title }}
+        </h1>
+      </div>
       <!-- start of revamping here -->
       <div class="w-screen">
         <img
@@ -8,24 +13,21 @@
           :src="article.imgurl"
           :alt="article.title"
           srcset=""
-          class="rounded-md pt-8 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="rounded-md pt-4 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
         />
         <img
           v-else
           :src="require(`~/assets/${article.img}`)"
           :alt="article.title"
           srcset=""
-          class="rounded-md pt-8 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="rounded-md pt-4 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
         />
         <a :href="article.imgurl" target="_blank" rel="noopener noreferrer">
-          <p class="text-center pt-6 text-lg">{{ article.attribution }}</p></a
+          <p class="text-center py-4 text-lg">{{ article.attribution }}</p></a
         >
       </div>
       <!-- end revamping here -->
       <div>
-        <h1 class="text-4xl text-center font-bold py-8">
-          {{ article.title }}
-        </h1>
         <div
           class="header-details w-96 my-0 mx-auto flex items-center text-center"
         >
