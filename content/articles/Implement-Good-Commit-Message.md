@@ -9,9 +9,9 @@ excerpt: Good Commit Message Conventions
 
 imgurl: https://images.pexels.com/photos/3861437/pexels-photo-3861437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
-tag: commmit-conventions 
+tag: commmit-conventions
 
-attribution: Photo by RealToughCandy.com from Pexels 
+attribution: Photo by RealToughCandy.com from Pexels
 
 createdAt: 25/19/2022
 ---
@@ -96,12 +96,15 @@ You can use NPM or YARN depending on your favorite package manager.
 ```js{1,3-5}
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
 ```
+
 Run the command below to configure commitlint to use conventional config
 
 Configure commitlint to use conventional config
+
 ```js{1,3-5}
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 ```
+
 **Using Yarn**
 
 ```js{1,3-5}
