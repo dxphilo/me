@@ -7,7 +7,7 @@ alt: Good Commit Message Conventions
 
 excerpt: Good Commit Message Conventions
 
-imgurl: https://images.pexels.com/photos/3861437/pexels-photo-3861437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+imgurl: https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tag: commmit-conventions
 
