@@ -160,7 +160,7 @@ export default Vue.extend({
         title: this.article.title,
         description: this.article.description,
         url: `https://johnphilip.dev/articles/${this.$route.params.slug}`,
-        mainImage: `https://johnphilip.dev/_nuxt/img/${this.article.img}`,
+        mainImage: `${this.article.img}`,
       }
       return getSiteMeta(metaData)
     },
