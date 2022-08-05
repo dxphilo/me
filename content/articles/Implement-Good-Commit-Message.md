@@ -13,7 +13,7 @@ tag: commmit-conventions
 
 attribution: Photo by RealToughCandy.com from Pexels
 
-createdAt: 25/19/2022
+createdAt: 25/07/2022
 ---
 
 **Write better commit messages with conventional commits workflow**
