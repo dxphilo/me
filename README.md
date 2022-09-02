@@ -25,9 +25,7 @@ This is my portfolio and blog website
 ## Getting Started
 
 ```bash
-
 # install dependencies
-
 $ npm install
 
 # serve with hot reload at localhost:3000
@@ -40,7 +38,6 @@ $ npm run start
 
 # generate static project
 $ npm run generate
-
 ```
 
 ## Authors
