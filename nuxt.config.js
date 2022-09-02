@@ -52,7 +52,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-          'https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+          'https://images.pexels.com/photos/3028961/pexels-photo-3028961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       },
       { name: 'twitter:site', content: '@amjohnphilip' },
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -75,10 +75,11 @@ export default {
         hid: 'twitter:image',
         name: 'twitter:image',
         content:
-          'https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+          'https://images.pexels.com/photos/3028961/pexels-photo-3028961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       },
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap',
