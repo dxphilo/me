@@ -21,6 +21,10 @@ export default {
       ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      <meta
+        http-equiv="Content-Security-Policy"
+        content="script-src 'none'"
+      ></meta>,
 
       // hid is used as unique identifier. Do not use `vmid` for it as it will not work
       {
