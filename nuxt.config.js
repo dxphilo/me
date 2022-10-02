@@ -103,7 +103,6 @@ export default {
       }
     },
   },
-  render: { csp: true },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -121,13 +120,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    'nuxt-helmet',
-    '@nuxt/content',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/color-mode',
-  ],
-  helmet: {},
+  modules: ['@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/color-mode'],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   sitemap: {
