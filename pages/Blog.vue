@@ -1,19 +1,3 @@
-<template>
-  <article class="pt-0">
-    <Btemplate />
-    <div class="pb-32 pt-8">
-      <div class="max-w-5xl my-0 mx-auto flex flex-wrap">
-        <Singlearticle
-          v-for="blog in blogs"
-          :id="blog.slug"
-          :key="blog.slug"
-          :published="formatDate(blog.createdAt)"
-          :blog="blog"
-        />
-      </div>
-    </div>
-  </article>
-</template>
 <script lang="ts">
 import Vue from 'vue'
 
@@ -52,4 +36,20 @@ export default Vue.extend({
   },
 })
 </script>
-<style scoped></style>
+<template>
+  <article class="pt-0">
+    <Btemplate />
+    <div class="pb-32 pt-8">
+      <div class="max-w-5xl my-0 mx-auto flex flex-wrap">
+        <Singlearticle
+          v-for="blog in blogs"
+          :id="blog.slug"
+          :key="blog.slug"
+          :published="formatDate(blog.createdAt)"
+          :blog="blog"
+        />
+      </div>
+    </div>
+    <hr class="mb-8 w-2/3 border border-gray-200 mx-auto" />
+  </article>
+</template>
