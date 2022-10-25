@@ -36,12 +36,10 @@
               :src="require('~/assets/me/johnphilip.jpg')"
               alt="authorimage"
               srcset=""
-              class="h-16 w-16 rounded-full bg-no-repeat bg-cover"
+              class="h-14 w-14 rounded-full bg-no-repeat bg-cover"
             />
           </div>
-          <div
-            class="pt-1.5 pb-2.5 text-xl flex flex-wrap pl-4 font-normal font-semibold"
-          >
+          <div class="text-xl flex flex-wrap pl-4 font-normal font-semibold">
             <div>
               <p class="pl-2">John Philip</p>
               <p class="font-light">{{ formatDate(article.createdAt) }}</p>
@@ -67,14 +65,7 @@
         Share
       </button>
     </div>
-    <div v-if="showShare">
-      <socialShareVue
-        :title="article.title"
-        :subtitle="article.description"
-        @close="socialShare"
-      />
-    </div>
-
+    <hr class="mb-8 w-2/3 border border-gray-200 mx-auto" />
     <div class="flex justify-center pb-12">
       <h5
         v-if="prev"
@@ -88,6 +79,13 @@
       >
         <nuxt-link :to="next.slug"> Next </nuxt-link>
       </h5>
+    </div>
+    <div v-if="showShare">
+      <socialShareVue
+        :title="article.title"
+        :subtitle="article.description"
+        @close="socialShare"
+      />
     </div>
   </article>
 </template>
