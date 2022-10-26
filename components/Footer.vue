@@ -40,9 +40,7 @@
       by John Philip &copy; Terms {{ date }}
     </div>
     <Socialmedia />
-    <p class="py-4 text-center font-semibold">
-      Have a nice {{ day }} &#128075;
-    </p>
+    <p class="py-4 text-center font-bold">Have a nice {{ day }} &#128075;</p>
   </div>
 </template>
 <script>

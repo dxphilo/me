@@ -66,19 +66,21 @@
       </button>
     </div>
     <hr class="mb-8 w-2/3 border border-gray-200 mx-auto" />
-    <div class="flex justify-center pb-12">
-      <h5
+    <div class="flex justify-center py-12">
+      <p
         v-if="prev"
-        class="font-bold hover:underline text-teal-500 inline items-center mr-6"
+        class="font-bold hover:underline text-teal-500 inline items-center mr-6 text-xl"
       >
-        <nuxt-link :to="prev.slug"> Previous </nuxt-link>
-      </h5>
-      <h5
+        <nuxt-link :to="prev.slug">
+          <span><ArrowLeft /></span>Previous
+        </nuxt-link>
+      </p>
+      <p
         v-if="next"
-        class="font-bold hover:underline text-teal-500 inline items-center"
+        class="font-bold hover:underline text-teal-500 inline items-center text-xl"
       >
-        <nuxt-link :to="next.slug"> Next </nuxt-link>
-      </h5>
+        <nuxt-link :to="next.slug"> <ArrowRight /> Next </nuxt-link>
+      </p>
     </div>
     <div v-if="showShare">
       <socialShareVue
@@ -94,10 +96,14 @@ import Vue from 'vue'
 import global from '@/utils/global'
 import getSiteMeta from '@/utils/getSiteMeta'
 import socialShareVue from '@/components/socialShare.vue'
+import ArrowRight from '~/components/icons/ArrowRight.vue'
+import ArrowLeft from '~/components/icons/ArrowLeft.vue'
 export default Vue.extend({
   name: 'ArticlePage',
   components: {
     socialShareVue,
+    ArrowRight,
+    ArrowLeft,
   },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
@@ -195,13 +201,10 @@ export default Vue.extend({
 .content-wrapper {
   width: 40%;
 }
-h5 {
-  font-size: 1.4rem;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
+
 strong {
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.7rem;
+  font-weight: bolder;
   line-height: 2.25rem; /* 36px */
   align-items: center;
 }
@@ -219,6 +222,9 @@ strong {
 .filename {
   font-weight: bold;
   font-size: 1.1rem;
+}
+img {
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0, 0.18);
 }
 
 @media (max-width: 800px) {

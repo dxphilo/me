@@ -89,7 +89,10 @@ ul li {
 
 ul li a {
   display: inline-block;
+  border: 2px solid #1a6183;
   width: 55px;
+  height: 55px;
+  border-radius: 50%;
   margin: 0;
   padding: 0;
   transform: scale(0.7);
