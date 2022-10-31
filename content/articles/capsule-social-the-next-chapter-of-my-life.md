@@ -1,6 +1,8 @@
 ---
 title: Capsule Social — Next Chapter of My Life
 
+subtitle: Capsule Social — Next Chapter of My Life
+
 description: Capsule Social — Next Chapter of My Life
 
 alt: Capsule Social — Next Chapter of My Life
@@ -11,7 +13,7 @@ img: 1626177013782.png
 
 imgurl:
 
-tag: JOB WRITING
+tags: ['JOB', 'WRITING']
 
 attribution: photo by Capsule Social
 

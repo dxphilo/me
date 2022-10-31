@@ -1,6 +1,8 @@
 ---
 title: Conditional rendering in Vue
 
+subtitle: Conditional rendering in Vue
+
 description: Conditional rendering in Vue
 
 alt: Conditional rendering in Vue
@@ -11,7 +13,7 @@ img: vue.jpeg
 
 imgurl: https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-tag: VueJS
+tags: ['VueJS']
 
 createdAt: 9/15/2021
 

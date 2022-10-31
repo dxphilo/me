@@ -1,6 +1,8 @@
 ---
 title: Make money with technical writing
 
+subtitle: Make money with technical writing
+
 description: 5 ways to make money with technical writing
 
 alt: 5 ways to make money with technical writing
@@ -9,7 +11,7 @@ excerpt: 5 ways to make money with technical writing
 
 imgurl: https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-tag: WRITING
+tags: ['WRITING']
 
 createdAt: 11/7/2021
 

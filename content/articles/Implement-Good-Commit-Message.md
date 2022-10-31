@@ -1,17 +1,19 @@
 ---
 title: Good Commit Message Conventions
 
+subtitle: Good Commit Message Conventions
+
 description: Write better commit messages with conventional commits workflow
 
 alt: Good Commit Message Conventions
 
 excerpt: Good Commit Message Conventions
 
-imgurl: https://images.pexels.com/photos/11035539/pexels-photo-11035539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+imgurl: https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
-tag: commmit-conventions
+tags: ['commmit convention']
 
-attribution: Photo by RealToughCandy.com from Pexels
+attribution: Photo by Pixabay from Pexels
 
 createdAt: 07/25/2022
 ---

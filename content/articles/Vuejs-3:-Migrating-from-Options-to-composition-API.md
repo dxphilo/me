@@ -1,13 +1,15 @@
 ---
 title: Vuejs 3 Migrating from Options to Composition API
 
+subtitle: Vuejs 3 Options to Composition API
+
 description: Migrating from Options to Composition API
 
 alt: Easily switch to Composition API
 
 excerpt: Easily switch to Composition API
 
-tag: Vuejs
+tags: ['Vuejs 3', 'Composition API']
 
 imgurl: https://images.pexels.com/photos/735988/pexels-photo-735988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
@@ -28,13 +30,14 @@ Some notable benefits of Composition API include:
 - Easier reuse of components logic.
 - Improved TypeScript support.
 - Easier App maintainability.
-  Let us take a glimpse at what has changed from the Options API to the new Composition API.
+
+Let us take a glimpse at what has changed from the Options API to the new Composition API.
 
 **Options API & Composition API structure**
 
 Illustration of the Options and Composition API logic structure.
 
-![Image from lenguajejs.com](https://miro.medium.com/max/4800/1*QpBrPVr7sTsIY_ocShru1g.png)
+![image from lenguajejs.com](https://miro.medium.com/max/4800/1*QpBrPVr7sTsIY_ocShru1g.png)
 
 Image from lenguajejs.com
 
@@ -144,17 +147,17 @@ Both beforeCreate and created are replaced with the setup function itself and we
 
 Change in naming lifecycle hooks from Options to Composition API.
 
-beforeMount -> onBeforeMount
+- beforeMount ---> onBeforeMount
 
-beforeDestroy -> onBeforeUnmount
+- beforeDestroy ---> onBeforeUnmount
 
-beforeUpdate -> onBeforeUpdate
+- beforeUpdate ---> onBeforeUpdate
 
-mounted> onMounted
+- mounted ---> onMounted
 
-updated -> onUpdated
+- updated ---> onUpdated
 
-destroyed -> onUnmounted
+- destroyed ---> onUnmounted
 
 **Props and props definition**
 
@@ -290,3 +293,5 @@ It is also important to note that the Composition API is an alternative of the O
 How’s your experience working with Composition API and what are the changes you have noticed so far?
 
 Occasionally, I send out an exclusive email with tips, articles, apps, books, and ideas I have found useful and related to technical writing 👇.
+
+[Technical writing issues newsletter](https://artisanal-thinker-2556.ck.page/6e2ba71172)

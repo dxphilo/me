@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer pb-12">
     <div class="font-semibold text-center text-xl leading-9 tracking-wide">
       <div class="coded text-sm" />
       Made with
@@ -40,7 +40,7 @@
       by John Philip &copy; Terms {{ date }}
     </div>
     <Socialmedia />
-    <p class="py-4 text-center font-bold">Have a nice {{ day }} &#128075;</p>
+    <p class="text-center font-bold">Have a super {{ day }} &#128075;</p>
   </div>
 </template>
 <script>
@@ -67,8 +67,6 @@ export default {
 .footer {
   font-size: 1.22rem;
   letter-spacing: 1px;
-  padding-bottom: 0.3rem;
-  padding-top: 0.5rem;
 }
 svg {
   display: inline;

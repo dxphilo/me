@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center content-center items-center pb-1">
+  <div class="flex justify-center content-center items-center py-2">
     <ul>
       <!-- github social media svg -->
       <li>
@@ -9,7 +9,7 @@
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <GithubIcon />
+          <GithubIcon class="fill-white" />
         </a>
       </li>
       <!-- twitter social media -->
@@ -82,25 +82,25 @@ ul {
   height: 50px;
 }
 ul li {
-  width: 50px;
   margin: 0;
   padding: 0;
 }
 
 ul li a {
   display: inline-block;
-  border: 2px solid #1a6183;
-  width: 55px;
-  height: 55px;
+  background: hsl(200, 25%, 88%);
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   transform: scale(0.7);
   transition: 0.5s;
   fill: #1a6183;
 }
 ul li a:hover {
-  fill: #6cc2b1;
   transform: scale(0.7) translateY(-10px);
+  background: #066895;
+  fill: #eeeeee;
 }
 </style>

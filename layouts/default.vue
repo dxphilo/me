@@ -1,7 +1,7 @@
 <template>
   <div class="bg-bgwhite text-txcolor">
     <!-- component -->
-    <div class="header sticky top-0 z-50">
+    <div class="header sticky top-0 z-20">
       <!-- Text shadow utilities will be cool -->
       <nav class="flex justify-around pt-4 items-center mb-1 font-bold">
         <div>
@@ -93,7 +93,7 @@
         </ul>
       </nav>
     </div>
-    <div class="relative">
+    <div>
       <Nuxt />
       <Footer />
     </div>

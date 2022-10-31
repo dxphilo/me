@@ -1,6 +1,8 @@
 ---
 title: Routing in Vuejs3 with Vue Router
 
+subtitle: Routing in Vuejs3 with Vue Router
+
 description: Routing with Vue Router 4 - A Complete Guide
 
 alt: Routing in Vuejs3 with Vue Router
@@ -9,7 +11,7 @@ excerpt: Routing in Vuejs3 with Vue Router
 
 imgurl: https://images.pexels.com/photos/793088/pexels-photo-793088.jpeg?cs=srgb&dl=pexels-francesco-paggiaro-793088.jpg&fm=jpg
 
-tag: vuejs Routing
+tags: ['vuejs', 'Routing']
 
 attribution: Photo by Francesco Paggiaro from Pexels
 

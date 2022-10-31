@@ -1,13 +1,15 @@
 ---
 title: Scroll Indicator in Nuxtjs
 
+subtitle: Scroll Indicator in Nuxtjs
+
 description: Make a scroll indicator in Nuxtjs
 
 alt: scroll idicator Nuxtjs
 
 excerpt: Make a scroll indicator in Nuxtjs
 
-tag: Nuxtjs
+tags: ['Nuxtjs']
 
 imgurl: https://images.pexels.com/photos/5986492/pexels-photo-5986492.jpeg?auto=compress&cs=tinysrgb&w=1600
 
