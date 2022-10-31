@@ -1,6 +1,8 @@
 ---
 title: Loading Routes Automatically
 
+subtitle: Loading Routes Automatically
+
 description: Loading Routes Automatically
 
 alt: Loading Routes Automatically
@@ -9,7 +11,7 @@ excerpt: Loading Routes Automatically
 
 imgurl: https://images.pexels.com/photos/226460/pexels-photo-226460.jpeg?auto=compress&cs=tinysrgb&w=1600
 
-tag: Vue 3
+tags: ['Vue 3']
 
 createdAt: 1/8/2021
 

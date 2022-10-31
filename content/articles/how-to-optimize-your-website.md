@@ -1,6 +1,8 @@
 ---
 title: How to Optimize Your Website for Speed
 
+subtitle: How to Optimize Your Website for Speed
+
 description: Speed up your website to improve performance and implement best practices
 
 alt: How to Optimize Your Website for Speed
@@ -9,7 +11,7 @@ excerpt: How to Optimize Your Website for Speed
 
 imgurl: https://images.pexels.com/photos/379419/pexels-photo-379419.jpeg?auto=compress&cs=tinysrgb&w=1600
 
-tag: WEBSITE OPTIMIZATION
+tags: ['WEBSITE OPTIMIZATION']
 
 createdAt: 7/3/2021
 

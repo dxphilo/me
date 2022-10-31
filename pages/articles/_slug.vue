@@ -1,86 +1,67 @@
 <template>
   <article>
     <div>
-      <div>
-        <h1 class="text-4xl text-center font-bold py-6">
-          {{ article.title }}
-        </h1>
+      <h1 class="text-4xl text-center font-bold py-6 leading-tight">
+        {{ article.title }}
+      </h1>
+      <div
+        class="header-details w-96 my-0 mx-auto flex items-center text-center mb-2"
+      >
+        <div>
+          <img
+            :src="require('~/assets/me/johnphilip.jpg')"
+            alt="authorimage"
+            srcset=""
+            class="h-12 w-12 rounded-full bg-cover border-2 border-slate-400"
+          />
+        </div>
+        <div class="text-xl flex items-center text-center font-semibold mb-2">
+          <span class="ml-2">{{ formatDate(article.createdAt) }}</span>
+          <span class="ml-2">{{ article.readingStats.text }}</span>
+        </div>
       </div>
-      <!-- start of revamping here -->
       <div class="w-screen">
         <img
-          v-if="article.imgurl"
           :src="article.imgurl"
           :alt="article.title"
           srcset=""
-          class="rounded-md pt-4 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
+          class="pt-4 mx-auto bg-no-repeat bg-center bg-auto object-cover bg-cover post-header items-center h-96 md:h-[800] md:w-[900]"
         />
-        <img
-          v-else
-          :src="require(`~/assets/${article.img}`)"
-          :alt="article.title"
-          srcset=""
-          class="rounded-md pt-4 mx-auto bg-no-repeat bg-center bg-auto bg-center bg-cover post-header"
-        />
-        <a :href="article.imgurl" target="_blank" rel="noopener noreferrer">
-          <p class="text-center py-4 text-lg">{{ article.attribution }}</p></a
-        >
-      </div>
-      <!-- end revamping here -->
-      <div>
-        <div
-          class="header-details w-96 my-0 mx-auto flex items-center text-center"
-        >
-          <div>
-            <img
-              :src="require('~/assets/me/johnphilip.jpg')"
-              alt="authorimage"
-              srcset=""
-              class="h-14 w-14 rounded-full bg-no-repeat bg-cover"
-            />
-          </div>
-          <div class="text-xl flex flex-wrap pl-4 font-normal font-semibold">
-            <div>
-              <p class="pl-2">John Philip</p>
-              <p class="font-light">{{ formatDate(article.createdAt) }}</p>
-            </div>
-            <div class="pl-8">
-              <p class="text-lg">{{ article.readingStats.text }}</p>
-            </div>
-          </div>
-        </div>
+        <p class="text-center py-4 text-lg">
+          <a :href="article.imgurl" target="_blank" rel="noopener noreferrer">
+            {{ article.attribution }}</a
+          >
+        </p>
       </div>
     </div>
     <Scroll />
     <div
-      class="sm:w-2/3 md:w-3/5 lg:w-2/5 xl:2/5 my-0 leading-10 tracking-wider mx-auto pl-5 pt-12 text-lg font-medium"
+      class="sm:w-2/3 md:w-3/5 lg:w-2/5 xl:2/5 my-0 leading-10 tracking-wider mx-auto pl-5 pt-6 text-lg font-medium"
     >
       <nuxt-content :document="article" />
     </div>
-    <div class="text-center">
-      <button
-        class="rounded-full w-20 h-20 text-center text-teal-500 font-bold text-2xl"
-        @click.prevent="socialShare"
-      >
-        Share
-      </button>
+    <div
+      class="font-bold text-2xl flex justify-center items-center text-center my-4 cursor-pointer"
+      @click.prevent="socialShare"
+    >
+      <ShareIcon class="pr-1" /> share
     </div>
-    <hr class="mb-8 w-2/3 border border-gray-200 mx-auto" />
-    <div class="flex justify-center py-12">
-      <p
+    <hr class="w-2/3 border border-gray-200 mx-auto" />
+    <div class="flex justify-center py-10">
+      <nuxt-link
         v-if="prev"
         class="font-bold hover:underline text-teal-500 inline items-center mr-6 text-xl"
+        :to="prev.slug"
       >
-        <nuxt-link :to="prev.slug">
-          <span><ArrowLeft /></span>Previous
-        </nuxt-link>
-      </p>
-      <p
+        Previous<ArrowLeft />
+      </nuxt-link>
+      <nuxt-link
         v-if="next"
         class="font-bold hover:underline text-teal-500 inline items-center text-xl"
+        :to="next.slug"
       >
-        <nuxt-link :to="next.slug"> <ArrowRight /> Next </nuxt-link>
-      </p>
+        Next<ArrowRight />
+      </nuxt-link>
     </div>
     <div v-if="showShare">
       <socialShareVue
@@ -98,12 +79,14 @@ import getSiteMeta from '@/utils/getSiteMeta'
 import socialShareVue from '@/components/socialShare.vue'
 import ArrowRight from '~/components/icons/ArrowRight.vue'
 import ArrowLeft from '~/components/icons/ArrowLeft.vue'
+import ShareIcon from '~/components/icons/ShareIcon.vue'
 export default Vue.extend({
   name: 'ArticlePage',
   components: {
     socialShareVue,
     ArrowRight,
     ArrowLeft,
+    ShareIcon,
   },
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
@@ -127,7 +110,6 @@ export default Vue.extend({
     return {
       title: `John Philip - ${this.article.title}`,
       meta: [
-        ...this.meta,
         {
           property: 'article:published_time',
           content: this.article.createdAt,
@@ -223,17 +205,14 @@ strong {
   font-weight: bold;
   font-size: 1.1rem;
 }
-img {
-  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0, 0.18);
-}
 
 @media (max-width: 800px) {
-  img {
+  /* img {
     width: 600px;
     height: 400px;
     object-fit: cover;
     margin: 0 auto;
-  }
+  } */
   .article-section {
     width: 100%;
     margin: 0 auto;

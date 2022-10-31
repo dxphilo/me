@@ -6,16 +6,12 @@
   >
     <div
       style="backdrop-filter: blur(10px)"
-      class="popup w-2/4 lg:w-600 bg-white dark:bg-darkBGStop card-animation max-h-90 z-10 overflow-y-auto rounded-lg px-6 pt-4 pb-6 shadow-lg"
+      class="popup w-full md:w-2/5 bg-white dark:bg-darkBGStop card-animation max-h-90 z-10 overflow-y-auto rounded-lg px-6 pt-4 pb-6 shadow-lg mx-10"
     >
-      <div class="sticky flex items-center justify-center pt-10">
-        <h2
-          class="text-lightPrimaryText dark:text-darkPrimaryText text-2xl font-semibold"
-        >
-          Share this post
-        </h2>
+      <div class="sticky flex justify-between pt-10">
+        <h2 class="text-3xl font-semibold">Share this post</h2>
         <button
-          class="bg-gray-300 dark:bg-gray5 focus:outline-none rounded-full p-1.5 ml-20"
+          class="bg-gray-300 dark:bg-gray5 focus:outline-none rounded-full p-1.5 ml-20 hover:bg-gray-400"
           @click="$emit(`close`)"
         >
           <Close />
@@ -25,32 +21,53 @@
         <div
           class="flex flex-row flex-wrap text-primary h-52 items-center justify-center"
         >
-          <button
-            class="p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
-            @click="twitterShare"
-          >
-            <TwitterIcon class="icon" />
-          </button>
-          <button
-            class="p-5 rounded-lg flex flex-row items-center mr-4 mb-2"
-            @click="linkedinShare"
-          >
-            <LinkedinIcon class="icon" />
-          </button>
+          <div class="flex justify-center content-center items-center py-2">
+            <ul>
+              <!-- twitter social media -->
+              <li>
+                <button @click="twitterShare">
+                  <TwitterIcon />
+                </button>
+              </li>
+              <!-- linkedin  -->
+              <li>
+                <button @click="linkedinShare">
+                  <LinkedinIcon />
+                </button>
+              </li>
+              <!-- facebook media tag svg -->
+              <li>
+                <button @click="facebookShare">
+                  <FacebookIcon />
+                </button>
+              </li>
+              <!-- Reddit-->
+              <li>
+                <button @click="redditShare">
+                  <RedditIcon />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import TwitterIcon from '@/components/icons/TwitterIcon.vue'
-import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
-import Close from '@/components/icons/Close.vue'
+import TwitterIcon from './icons/TwitterIcon.vue'
+import LinkedinIcon from './icons/LinkedinIcon.vue'
+import FacebookIcon from './icons/FacebookIcon.vue'
+import RedditIcon from './icons/RedditIcon.vue'
+
+import Close from './icons/Close.vue'
 export default {
   name: 'SocialShare',
   components: {
     TwitterIcon,
     LinkedinIcon,
+    FacebookIcon,
+    RedditIcon,
     Close,
   },
   props: {
@@ -79,21 +96,45 @@ export default {
         '_blank'
       )
     },
+    facebookShare() {
+      window.open(
+        `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`,
+        '_blank'
+      )
+    },
+    redditShare() {
+      window.open(
+        `https://reddit.com/submit?url=${window.location.href}&title=${this.title}`
+      )
+    },
   },
 }
 </script>
 <style scoped>
-.icon {
-  display: inline-block;
-  width: 55px;
+ul {
+  display: flex;
+  height: 50px;
+}
+ul li {
   margin: 0;
   padding: 0;
+}
+
+ul li button {
+  display: inline-block;
+  background: hsl(200, 25%, 88%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 2px;
   transform: scale(0.7);
   transition: 0.5s;
   fill: #1a6183;
 }
-.icon:hover {
-  fill: #6cc2b1;
+ul li button:hover {
   transform: scale(0.7) translateY(-10px);
+  background: #066895;
+  fill: #eeeeee;
 }
 </style>

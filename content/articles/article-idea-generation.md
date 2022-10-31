@@ -1,6 +1,8 @@
 ---
 title: Article Idea Generation
 
+subtitle: Article Idea Generation
+
 description: idea generation
 
 alt: my first blog post
@@ -11,7 +13,7 @@ img: pexels-cottonbro-4101143.jpg
 
 imgurl: https://images.pexels.com/photos/4855376/pexels-photo-4855376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-tag: IDEATION WRITING
+tags: ['IDEATION', 'WRITING']
 
 attribution: Photo by cottonbro from Pexels
 
