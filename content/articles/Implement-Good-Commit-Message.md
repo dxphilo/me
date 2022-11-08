@@ -11,20 +11,20 @@ excerpt: Good Commit Message Conventions
 
 imgurl: https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
-tags: ['commmit convention']
+tags: ["commmit convention"]
 
 attribution: Photo by Pixabay from Pexels
 
 createdAt: 07/25/2022
 ---
 
-**Write better commit messages with conventional commits workflow**
+## Write better commit messages with conventional commits workflow
 
 Implementing a better way of improving and writing good commit messages can save a development team lots of time and effort as opposed to having none. Commit messages are everyday tea for any software developer in the modern day. Writing good readable commit messages comes in handy, especially when you have a larger team collaborating together on a project.
 
 Commit message helps easily understand the nature of changes made and pushed to a code base. Writing better commit messages can be a huge hustle especially when you do not have better commit conventions configured in your development workflows.
 
-**Why Better commit messages?**
+## Why Better commit messages?
 
 Writing better commit messages comes with lots of benefits such as:
 
@@ -62,7 +62,7 @@ The body and footer are optional and you can provide to improve and explain furt
 
 The descriptions is mandatory and contains the actual summary message of what changes have been committed. If you want to further explain your changes, you can provide them in the optional body section.
 
-**Caution breaking changes**
+## Caution breaking changes
 
 You can also append ! at the end of the scope to draw attention to breaking change.
 
@@ -72,7 +72,7 @@ chore!: drop support for Vue 2
 
 Consider the scenario of the two commit message below
 
-**Regular commit message**
+## Regular commit message
 
 endpoint to check if user is a publication member
 Conventional commit message
@@ -89,11 +89,11 @@ Configuring conventional commits in your development workflow
 
 In this part, we will dive in and configure conventional commits in a development workflow. This configuration will be on a JavaScript based dev environment.
 
-**Installation**
+## Installation
 
 You can use NPM or YARN depending on your favorite package manager.
 
-**Using Npm**
+## Using Npm
 
 ```js{1,3-5}
 npm install --save-dev @commitlint/config-conventional @commitlint/cli
@@ -107,7 +107,7 @@ Configure commitlint to use conventional config
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 ```
 
-**Using Yarn**
+## Using Yarn
 
 ```js{1,3-5}
 yarn add --dev @commitlint/{config-conventional,cli}
@@ -131,13 +131,13 @@ To this point, you should have conventional commits successfully configured in y
 
 Now anytime you write a commit message, git hooks will check if the message conforms with the format prescribed by conventional commits. If you provide a commit message that doesn't apply the rules, commit-lint will throw an error and a possible way to resolve.
 
-**Resources**
+## Resources
 
 https://github.com/conventional-changelog
 
 https://www.conventionalcommits.org/en/v1.0.0/#specification
 
-**Before you go**
+## Before you go
 
 Having a better convention for managing commit message is very handy in your development workflow. It makes is easier for small and larger team members to contribute to the project with less worry.
 

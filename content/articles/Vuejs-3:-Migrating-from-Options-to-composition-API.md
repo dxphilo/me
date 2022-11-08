@@ -9,7 +9,7 @@ alt: Easily switch to Composition API
 
 excerpt: Easily switch to Composition API
 
-tags: ['Vuejs 3', 'Composition API']
+tags: ["Vuejs 3", "Composition API"]
 
 imgurl: https://images.pexels.com/photos/735988/pexels-photo-735988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
@@ -33,7 +33,7 @@ Some notable benefits of Composition API include:
 
 Let us take a glimpse at what has changed from the Options API to the new Composition API.
 
-**Options API & Composition API structure**
+## Options API & Composition API structure
 
 Illustration of the Options and Composition API logic structure.
 
@@ -52,7 +52,7 @@ Part of what we will cover in this article include:
 - Composition API Setup Method
 - Composition API logic is written inside a setup function. This is where all our component’s logic lives.
 
-**Components Basics**
+## Components Basics
 
 Components make it easier to separate the application logic, UI concerns, while maintaining reusability across your application. In Vue 2, we have to import and register the component before we use them as shown below.
 
@@ -75,7 +75,7 @@ export default {
 
 Vue 3 introduced global and automatic component imports. We only need to import the component and Vue will auto register the component for us. Similarly, you can declare components as global to reuse them all over your application without default import.
 
-**Global component registration**
+## Global component registration
 
 We can register global components by importing and injecting them into the application entry file of main.jsas shown below.
 
@@ -137,13 +137,13 @@ state.value= true;
 </template>
 ```
 
-**Lifecycle Hooks**
+## Lifecycle Hooks
 
 Vuejs 3 introduced the script setup function. This has eliminated the need for the created lifecycle hook. Some component lifecycle hooks have been introduced to replace the hooks from Options API. See them below.
 
 Both beforeCreate and created are replaced with the setup function itself and we don’t need to declare them as we do with the Options API. You will need to import the lifecycle hooks from vue to use them in our application.
 
-**Options to Composition API lifecycle hooks**
+## Options to Composition API lifecycle hooks
 
 Change in naming lifecycle hooks from Options to Composition API.
 
@@ -159,7 +159,7 @@ Change in naming lifecycle hooks from Options to Composition API.
 
 - destroyed ---> onUnmounted
 
-**Props and props definition**
+## Props and props definition
 
 Props allow us to pass data from parent to child components. While we can pass as much prop data as we require, we need to be cautious to prevent our component from being bloated with too many props (prop drilling).
 
@@ -210,11 +210,11 @@ text: `Vuejs is awesome`,
 )
 ```
 
-**Emitting events**
+## Emitting events
 
 Emitting events is very essential when developing applications with Vuejs. It allows us to pass actions, methods, and properties up to the Parent component from the child components. To emit events in Composition API, we use the $emit macro.
 
-**Declaring emits**
+## Declaring emits
 
 To declare emitted events, we use the defineEmits macro inside the child component script setup function. defineEmits macro takes in an argument containing the string array of events to be emitted. We can emit and register emitted events in child components as shown below.
 
@@ -245,7 +245,7 @@ const cancelPopup = ref(false);
 </template>
 ```
 
-**Template Refs**
+## Template Refs
 
 Templates Refs in Options API made it possible to access methods inside the child components. Vuejs components using either Options API or Composition API without <script setup> are open by default. Template refs make it possible to access a components properties due the default open nature of Vue 2 components.
 
@@ -257,7 +257,7 @@ In our case here, we want to expose theupdateBlogmethod from child component. Re
 defineExpose({ updateBlog, updateDate});
 ```
 
-**Accessing exposed component properties**
+## Accessing exposed component properties
 
 To access exposed properties, the parent component will use the Template ref from the child component.
 
@@ -284,7 +284,7 @@ function update() {
 
 Check out defineExpose from the Official Vuejs Documentation for more related information
 
-**Final Thoughts**
+## Final Thoughts
 
 Having laid hands on Composition API in Vuejs 3 , these were my noticeable changes from the default Options API pattern to the Composition API. Vue has changed a lot and it is for the better with general improvement in application performance.
 

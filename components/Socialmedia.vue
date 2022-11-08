@@ -9,7 +9,7 @@
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <GithubIcon class="fill-white" />
+          <GithubIcon />
         </a>
       </li>
       <!-- twitter social media -->
@@ -37,7 +37,7 @@
       <!-- youtube -->
       <li>
         <a
-          href="https://www.youtube.com/channel/UCNCzNrpq0fHxFqQYCmbwAcA"
+          href="https://www.youtube.com/@dxphilo"
           target="_blank"
           rel="noopener noreferrer"
           title="YouTube"
@@ -46,7 +46,7 @@
         </a>
       </li>
       <!-- facebook media tag svg -->
-      <li>
+      <li v-if="$route.path !== `/`">
         <a
           href="https://www.facebook.com/profile.php?id=100059350125541"
           target="_blank"
@@ -56,25 +56,27 @@
           <FacebookIcon />
         </a>
       </li>
+      <!-- email -->
+      <li v-if="$route.path === `/about`">
+        <a
+          :href="`mailto:developerphilo@gmail.com`"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Email"
+        >
+          <EmailIcon />
+        </a>
+      </li>
     </ul>
   </div>
 </template>
-<script>
-import GithubIcon from './icons/GithubIcon.vue'
-import TwitterIcon from './icons/TwitterIcon.vue'
-import LinkedinIcon from './icons/LinkedinIcon.vue'
-import FacebookIcon from './icons/FacebookIcon.vue'
-import YoutubeIcon from './icons/YouTubeIcon.vue'
-export default {
-  name: 'Socialmedia',
-  components: {
-    GithubIcon,
-    TwitterIcon,
-    LinkedinIcon,
-    FacebookIcon,
-    YoutubeIcon,
-  },
-}
+<script setup>
+import GithubIcon from "./icons/GithubIcon.vue";
+import TwitterIcon from "./icons/TwitterIcon.vue";
+import LinkedinIcon from "./icons/LinkedinIcon.vue";
+import FacebookIcon from "./icons/FacebookIcon.vue";
+import YoutubeIcon from "./icons/YouTubeIcon.vue";
+import EmailIcon from "./icons/EmailIcon.vue";
 </script>
 <style scoped>
 ul {
@@ -88,7 +90,7 @@ ul li {
 
 ul li a {
   display: inline-block;
-  background: hsl(200, 25%, 88%);
+  background-color: rgb(229 231 235);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -96,11 +98,12 @@ ul li a {
   padding: 2px;
   transform: scale(0.7);
   transition: 0.5s;
-  fill: #1a6183;
+  background: #eeeeee;
+  fill: rgb(51 65 85 / var(--tw-text-opacity));
 }
 ul li a:hover {
   transform: scale(0.7) translateY(-10px);
-  background: #066895;
+  background: rgb(51 65 85 / var(--tw-text-opacity));
   fill: #eeeeee;
 }
 </style>

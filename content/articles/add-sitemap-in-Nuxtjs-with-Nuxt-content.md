@@ -9,18 +9,16 @@ alt: Improve your website’s SEO by adding a sitemap 🎉
 
 excerpt: Improve your website’s SEO by adding a sitemap 🎉
 
-img: pexels-cottonbro-4101143.jpg
-
 imgurl: https://images.pexels.com/photos/3861437/pexels-photo-3861437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
-tags: ['SEO', 'NuxtJS']
+tags: ["SEO", "NuxtJS"]
 
 attribution: Photo by ThisIsEngineering from Pexels
 
 createdAt: 07/19/2022
 ---
 
-**Add Sitemap in NuxtJs Using Nuxt Content**
+## Add Sitemap in NuxtJs Using Nuxt Content
 
 Improving your website’s Search Engine Optimization (SEO) is very critical especially when you want to improve your rankings in search engine results.
 
@@ -32,7 +30,7 @@ Having a properly configured sitemap will enable web crawlers to easily discover
 
 > “A sitemap helps search engines discover URLs on your site, but it doesn’t guarantee that all the items in your sitemap will be crawled and indexed. However, in most cases, your site will benefit from having a sitemap.”~ Google.
 
-**Why you might need a sitemap**
+## Why you might need a sitemap
 
 While it might be necessary to have a sitemap configured for your websites, it might not be too necessary for some scenarios. Some scenarios that you should consider having a sitemap.
 
@@ -43,9 +41,9 @@ While it might be necessary to have a sitemap configured for your websites, it m
 - When you want to improve your Search Engine (SEO) indexing ranks.
 - Provide a natural way to drive visitors.
 
-**Configuring sitemap in Nuxt with Nuxt Content**
+## Configuring sitemap in Nuxt with Nuxt Content
 
-Installing Nuxt/sitemap
+## Installing Nuxt/sitemap
 
 We are going to leverage @nuxt/sitemap module to add sitemap configuration to our site.
 
@@ -98,6 +96,6 @@ sitemap: {
 
 These automatically generated routes will be used added to our sitemap file when the application is built. To test if the sitemap.xml file was successfully generated with relevant path and information, build your application and navigate to the root of the dist directory. Here you will find the sitemap.xml file with necessary information related to your site.
 
-**Final thoughts**
+## Final thoughts
 
 Thank you for taking your time and reading through this piece. Have a nice time building websites that drive forward amazing user experience.

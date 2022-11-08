@@ -11,7 +11,7 @@ excerpt: How to Optimize Your Website for Speed
 
 imgurl: https://images.pexels.com/photos/379419/pexels-photo-379419.jpeg?auto=compress&cs=tinysrgb&w=1600
 
-tags: ['WEBSITE OPTIMIZATION']
+tags: ["WEBSITE OPTIMIZATION"]
 
 createdAt: 7/3/2021
 
@@ -25,7 +25,7 @@ Having a fully-fledged and optimized website is essential, especially if you put
 What does this mean to you and your users? If you optimize your website to load faster than your competitor, then you are at the forefront of grabbing users from competitors with lower loading times.
 In this piece, you will look at some of the ways you can implement to improve the performance and speed of your website. This includes loading times, time to interact, and many other things.
 
-**Optimizing images**
+## Optimizing images
 
 Images serve a huge role in websites these days. Apart from impacting a visual representation, they also easily attract users. On the same note, prints can slow your website, especially when you use many of them a lot without optimizing.
 These are some of the ways you can implement to improve and optimize image performance on your website.
@@ -49,19 +49,19 @@ Big size images are always heavy and require a lot of time to fully render, whil
 
 This involves showing the right images on various devices. You don’t want to show desktop size images on mobile devices. We can tailor the right size images for both mobile and desktop devices.
 
-**Leverage lazy loading techniques**
+## Leverage lazy loading techniques
 
 Lazy loading has become very crucial for improving and optimizing the performance of any modern website. Most renowned websites (Medium etc.) implement these techniques in one way or another. Lazy loading improves the web performance without also hurting the performance and speed of the servers.
 
 Lazy loading ensures that the necessary components/ sections of the pages are shown to the user when they are needed and not immediately when the user visits the page. This also gives more demanding sections of the page time to load while others wait until their initial print.
 
-**Implement browser caching**
+## Implement browser caching
 
 Caching involves storing copies of data or files relating to your website temporarily on the browser or cache so they can be accessed faster. For data that doesn’t change often, you can implement browser caching, so the websites have to load faster and only load parts that change so often.
 
 Caching ensures the browser will only download information that isn't cached, and this saves a lot of time that could be used to load the whole page.
 
-**Conclusion**
+## Conclusion
 
 Implementing the above techniques into your website will help improve the page speed and provide your users with a better user experience. It will also improve your user retention rate, which is very helpful for your product.
 

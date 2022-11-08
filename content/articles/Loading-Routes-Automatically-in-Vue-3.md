@@ -11,7 +11,7 @@ excerpt: Loading Routes Automatically
 
 imgurl: https://images.pexels.com/photos/226460/pexels-photo-226460.jpeg?auto=compress&cs=tinysrgb&w=1600
 
-tags: ['Vue 3']
+tags: ["Vue 3"]
 
 createdAt: 1/8/2021
 
@@ -27,7 +27,7 @@ Pre-requisites
 - Have Node.js installed
 - @vue/cli
 
-**Create a Vue 3 application**
+## Create a Vue 3 application
 
 We will need to create a new Vue project with Vue-CLI, so open your terminal and run the following commands
 
@@ -141,7 +141,7 @@ export default {
 
 Now any file with the .vue extension inside the components folder will be populated to a route.
 
-**Conclusion**
+## Conclusion
 
 Just to recap that we have seen:
 

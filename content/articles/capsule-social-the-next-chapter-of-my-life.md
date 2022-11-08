@@ -9,11 +9,9 @@ alt: Capsule Social — Next Chapter of My Life
 
 excerpt: Capsule Social — Next Chapter of My Life
 
-img: 1626177013782.png
+imgurl: https://cdn-images-1.medium.com/max/800/1*SyuQtbuK2m1MUHo7f7xe1g.png
 
-imgurl:
-
-tags: ['JOB', 'WRITING']
+tags: ["JOB", "WRITING"]
 
 attribution: photo by Capsule Social
 

@@ -9,7 +9,7 @@ alt: scroll idicator Nuxtjs
 
 excerpt: Make a scroll indicator in Nuxtjs
 
-tags: ['Nuxtjs']
+tags: ["Nuxtjs"]
 
 imgurl: https://images.pexels.com/photos/5986492/pexels-photo-5986492.jpeg?auto=compress&cs=tinysrgb&w=1600
 
@@ -34,7 +34,7 @@ To install vue-scroll-indicator open your terminal and run the command below.
 npm install vue-scroll-indicator
 This command will install this plugin into our application.
 
-**Register the plugin**
+## Register the plugin
 
 To register the plugin and make it available within our application, we need to navigate to the plugins folder located on the root of your Nuxt application structure and create a file named vue-scroll-indicator.js and include the codes below in the file.
 
@@ -63,7 +63,7 @@ plugins: [
 
 ```
 
-**Render it into our application components**
+## Render it into our application components
 
 To render the plugin into our components we do not need to import it like other components. We just include it as follows.
 
@@ -73,12 +73,12 @@ To render the plugin into our components we do not need to import it like other 
 <vue-scroll-indicator></vue-scroll-indicator>
 ```
 
-**Style our vue-scroll indicator**
+## Style our vue-scroll indicator
 
 Another beautiful feature of this package is that we can style our scroll indicator.
 We can set a different background color to match our site and increase the height of the scroll bar indicator.
 
-**How do we apply the style?**
+## How do we apply the style?
 
 ```js{1,3-5}
 // <! — vue-scroll-indicator →
@@ -94,7 +94,7 @@ _The height_: here we specify the height of the scroll indicator.
 
 _Colour_: here we provide the hexadecimal value of our preferred colour. This will be the colour of the vue scroll indicator.
 
-**Conclusion**
+## Conclusion
 
 To use the plugin in server-side rendered Nuxt application, you need to set the **SSR** to **false.**
 This will prevent the plugin from being rendered in the server.
