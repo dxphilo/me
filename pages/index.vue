@@ -5,7 +5,7 @@
 </template>
 <script setup>
 useHead({
-  title: "John Philip - Blog",
+  title: "John Philip",
   meta: [{ name: "description", content: "My online corner" }],
 });
 </script>

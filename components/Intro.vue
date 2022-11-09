@@ -9,12 +9,26 @@
         <h1>Life long Learner .</h1>
       </div>
       <div class="text-xl leading-normal">
-        <p class="my-4">
-          I’m currently working at Capsule Social building decentralised
-          discource. Apart from writing and debugging code, I love stories, all
-          things cycling 🚴 and exploring new places. I am available on most of
-          the socials if you want to hit me up and have a chat (check my socials
-          down below).
+        <p>
+          Hi I am John Philip, I go by the pronouns (He/Him). I’m currently
+          working at Capsule Social building decentralised discource. I am an
+          enthusiast of Open Source and communities currently Co-leading at
+          Vuejs-Kenya.
+        </p>
+        <p class="my-4 relative">
+          Occasionally, I send out
+          <a
+            href="https://artisanal-thinker-2556.ck.page/6e2ba71172"
+            target="_blank"
+            class="border px-1 shadow-xl"
+            rel="noopener noreferrer"
+            >Technical Writing Issue's</a
+          >
+          newsletter with insightful guides and resources to help you level up
+          your technical writing skills. Apart from writing and debugging code,
+          I love stories, and all things cycling 🚴. I am available on most of
+          the socials if you want to reach out and have a chat (socials down
+          below).
         </p>
       </div>
       <div class="flex">
@@ -35,3 +49,23 @@
     </div>
   </div>
 </template>
+<style scoped>
+a {
+  text-decoration: none;
+  position: relative;
+}
+a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(79, 192, 141, 0.5);
+}
+a:hover:after {
+  top: 0%;
+}
+</style>
