@@ -46,6 +46,7 @@
   </div>
 </template>
 <script setup>
+import SocialMedia from "@/components/SocialMedia.vue";
 const date = new Date().getFullYear();
 const today = new Date().toLocaleDateString("default", {
   weekday: "long",

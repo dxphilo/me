@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import SocialMedia from "@/components/SocialMedia.vue";
+</script>
 <template>
   <!-- component -->
   <div class="w-full lg:w-[53%] mx-auto">
