@@ -1,9 +1,0 @@
-{
-  "builds": [
-    {
-      "config": {
-        "serverFiles": ["content/**"]
-      }
-    }
-  ]
-}
