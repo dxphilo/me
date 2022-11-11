@@ -1,3 +1,11 @@
+<script setup>
+import GithubIcon from "./icons/GithubIcon.vue";
+import TwitterIcon from "./icons/TwitterIcon.vue";
+import LinkedinIcon from "./icons/LinkedinIcon.vue";
+import FacebookIcon from "./icons/FacebookIcon.vue";
+import YoutubeIcon from "./icons/YouTubeIcon.vue";
+import EmailIcon from "./icons/EmailIcon.vue";
+</script>
 <template>
   <div class="flex justify-center content-center items-center py-2">
     <ul>
@@ -70,14 +78,6 @@
     </ul>
   </div>
 </template>
-<script setup>
-import GithubIcon from "./icons/GithubIcon.vue";
-import TwitterIcon from "./icons/TwitterIcon.vue";
-import LinkedinIcon from "./icons/LinkedinIcon.vue";
-import FacebookIcon from "./icons/FacebookIcon.vue";
-import YoutubeIcon from "./icons/YouTubeIcon.vue";
-import EmailIcon from "./icons/EmailIcon.vue";
-</script>
 <style scoped>
 ul {
   display: flex;
