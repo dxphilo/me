@@ -1,6 +1,4 @@
-import { defineNuxtConfig } from "nuxt";
-
-export default defineNuxtConfig({
+export default {
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   content: {
     highlight: {
@@ -20,4 +18,4 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
-});
+};
