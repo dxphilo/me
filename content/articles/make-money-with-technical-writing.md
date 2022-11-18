@@ -9,13 +9,13 @@ alt: 5 ways to make money with technical writing
 
 excerpt: 5 ways to make money with technical writing
 
-imgurl: https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+imgurl: https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["WRITING"]
 
 createdAt: 11/7/2021
 
-attribution: photo by John Philip from Pexelry
+attribution: Photo by Lisa Fotios
 ---
 
 As a developer, there are various ways in which you can make money. More to your chances is you have the skillset and technical know-how to write. If you have experience writing blog posts, articles, and user guides, you can take a leap and try technical writing.

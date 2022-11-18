@@ -13,7 +13,7 @@ imgurl: https://cdn-images-1.medium.com/max/800/1*SyuQtbuK2m1MUHo7f7xe1g.png
 
 tags: ["JOB", "WRITING"]
 
-attribution: photo by Capsule Social
+attribution: Photo by Capsule Social
 
 createdAt: 11/30/2021
 ---

@@ -9,7 +9,7 @@ alt: Routing in Vuejs3 with Vue Router
 
 excerpt: Routing in Vuejs3 with Vue Router
 
-imgurl: https://images.pexels.com/photos/793088/pexels-photo-793088.jpeg?cs=srgb&dl=pexels-francesco-paggiaro-793088.jpg&fm=jpg
+imgurl: https://images.pexels.com/photos/7078687/pexels-photo-7078687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["vuejs", "Routing"]
 
