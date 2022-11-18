@@ -9,13 +9,13 @@ alt: How to Optimize Your Website for Speed
 
 excerpt: How to Optimize Your Website for Speed
 
-imgurl: https://images.pexels.com/photos/379419/pexels-photo-379419.jpeg?auto=compress&cs=tinysrgb&w=1600
+imgurl: https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["WEBSITE OPTIMIZATION"]
 
 createdAt: 7/3/2021
 
-attribution: photo by John Philip from Pexelry
+attribution: Photo by Pixabay
 ---
 
 With the new dawn on the internet, having a website is a very desirable thing to have. No matter what kind of niche you are in, you need to have your website. Your website is more like your online self to other people who don’t know you.

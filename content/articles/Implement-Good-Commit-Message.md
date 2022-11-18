@@ -9,11 +9,11 @@ alt: Good Commit Message Conventions
 
 excerpt: Good Commit Message Conventions
 
-imgurl: https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+imgurl: https://images.unsplash.com/photo-1522096823084-2d1aa8411c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
 
 tags: ["commmit convention"]
 
-attribution: Photo by Pixabay from Pexels
+attribution: Photo by Daria Nepriakhina on Unsplash
 
 createdAt: 07/25/2022
 ---

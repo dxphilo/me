@@ -11,13 +11,13 @@ excerpt: Documenting RESTFul API's
 
 img: digi-black.jpg
 
-imgurl: https://images.pexels.com/photos/12210049/pexels-photo-12210049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+imgurl: https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["API DOCUMENTATION"]
 
 createdAt: 4/11/2022
 
-attribution: photo by John Philip from Pexelry
+attribution: Photo by Steve Pancrate from Pexels
 ---
 
 ## Introduction

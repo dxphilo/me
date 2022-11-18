@@ -11,13 +11,13 @@ excerpt: Conditional rendering in Vue
 
 img: vue.jpeg
 
-imgurl: https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+imgurl: https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80
 
 tags: ["VueJS"]
 
 createdAt: 9/15/2021
 
-attribution: photo by John Philip from Pexelry
+attribution: Photo by Sebastian Svenson on Unsplash
 ---
 
 Vue.js comes bundled with some amazing features. One of the amazing features is conditional rendering that allows us to render templates on certain conditions.

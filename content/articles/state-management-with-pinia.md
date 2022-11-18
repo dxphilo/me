@@ -9,11 +9,11 @@ alt: Introduction to state management with Pinia
 
 excerpt: Introduction to state management with Pinia
 
-imgurl: https://images.unsplash.com/photo-1526991902737-3cd476541629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+imgurl: https://images.pexels.com/photos/7319318/pexels-photo-7319318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["vuejs", "Pinia"]
 
-attribution: Photo by Kei on Unsplash
+attribution: Photo by Angela Roma
 
 createdAt: 11/02/2022
 ---

@@ -24,10 +24,10 @@
               </ul>
             </div>
 
-            <h4 class="mt-1 font-medium leading-tight text-lg truncate">
+            <h4 class="my-2 py-0 font-semibold leading-tight text-lg truncate">
               {{ title }}
             </h4>
-            <div class="mt-4 flex items-center leading-relaxed">
+            <div class="mt-2 flex items-center leading-relaxed">
               <div class="author-image">
                 <img
                   class="h-8 w-8 rounded-full bg-no-repeat bg-cover border-2 border-slate-400"

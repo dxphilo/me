@@ -1,7 +1,7 @@
 ---
 title: Add Sitemap in NuxtJs Using Nuxt Content
 
-subtitle: Add Sitemap in NuxtJs Using Nuxt Content
+subtitle: Add Sitemap Using Nuxt Content
 
 description: Improve your website’s SEO by adding a sitemap 🎉
 
@@ -9,11 +9,11 @@ alt: Improve your website’s SEO by adding a sitemap 🎉
 
 excerpt: Improve your website’s SEO by adding a sitemap 🎉
 
-imgurl: https://images.pexels.com/photos/3861437/pexels-photo-3861437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+imgurl: https://images.unsplash.com/photo-1499363153295-198bd26fb759?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2084&q=80
 
 tags: ["SEO", "NuxtJS"]
 
-attribution: Photo by ThisIsEngineering from Pexels
+attribution: Photo by Anton Darius on Unsplash
 
 createdAt: 07/19/2022
 ---
