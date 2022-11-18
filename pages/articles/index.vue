@@ -12,7 +12,7 @@ useHead({
 
     <section>
       <ContentList path="/articles" v-slot="{ list }">
-        <div class="max-w-4xl my-4 mx-auto flex flex-wrap">
+        <div class="w-4/5 my-4 mx-auto flex flex-wrap">
           <Article
             v-for="article in list"
             :key="article._path"
