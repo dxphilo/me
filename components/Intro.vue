@@ -1,5 +1,5 @@
 <script setup>
-import SocialMedia from "@/components/SocialMedia.vue";
+import SocialMedia from "~~/components/Social.vue";
 </script>
 <template>
   <!-- component -->
@@ -33,7 +33,7 @@ import SocialMedia from "@/components/SocialMedia.vue";
         </p>
       </div>
       <div class="flex">
-        <SocialMedia />
+        <Social />
       </div>
       <Hr />
       <div class="h-2/5 mb-32">

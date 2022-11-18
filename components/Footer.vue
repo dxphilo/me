@@ -39,14 +39,14 @@
 
       by John Philip &copy; Terms {{ date }}
     </div>
-    <SocialMedia />
+    <Social />
     <p class="text-lg leading-normal mb-8">
       Have a super {{ today }} &#128075;
     </p>
   </div>
 </template>
 <script setup>
-import SocialMedia from "@/components/SocialMedia.vue";
+import Social from "~~/components/Social.vue";
 const date = new Date().getFullYear();
 const today = new Date().toLocaleDateString("default", {
   weekday: "long",
