@@ -11,7 +11,7 @@ excerpt: Routing in Vuejs3 with Vue Router
 
 imgurl: https://images.pexels.com/photos/793088/pexels-photo-793088.jpeg?cs=srgb&dl=pexels-francesco-paggiaro-793088.jpg&fm=jpg
 
-tags: ['vuejs', 'Routing']
+tags: ["vuejs", "Routing"]
 
 attribution: Photo by Francesco Paggiaro from Pexels
 
@@ -42,7 +42,7 @@ yarn add vue-router@4
 
 After successfully installation, we will now configure vue-router so we handle routing in our application.
 
-**Configuring routes**
+## Configuring routes
 
 On the root directory of your file, create a folder and name it router. Inside the folder, create a file named index.ts. This file will contain all of our application routes/paths with the necessary configurations.
 
@@ -96,7 +96,7 @@ Locate app.vue file and have router-view somewhere in the template. This is the 
 
 ```
 
-**Mounting the router**
+## Mounting the router
 
 Now we have set up our simple routing but yet we cant access the necessary paths. We need to mount the whole router instance to the application entry file so that our application can be aware of the routing we provided.
 
@@ -126,7 +126,7 @@ To link between the routes we have setup, you need to use router-link as shown b
 
 ```
 
-**Redirects**
+## Redirects
 
 We can handle redirects seamlessly with vue-router. Assume a case where you want users visiting the path /home to be redirected to / , we can handle that as shown below.
 
@@ -142,7 +142,7 @@ const routes = [
 
 Now when a user navigate to /home , they will be redirect to / route. Redirects can also be useful when you want to allow certain routes to be only accessed by certain users.
 
-**Lazy loading routes**
+## Lazy loading routes
 
 Lazy loading routes ensures that only needed routes are loaded and others are loaded on demand when necessarily needed. This provides some performance improvement especially when you have a large application with lots of routes and components.
 
@@ -162,7 +162,7 @@ const routes = [
 ]
 ```
 
-**Nested routes**
+## Nested routes
 
 With vue-router, we can configure nested routes, i.e parent to child routes. We can have components branch off into child components as shown in the image below. When nesting child routes from parent, we need to include /router-view in oder to render the matched child routes.
 
@@ -191,7 +191,7 @@ const routes = [
 ]
 ```
 
-**Route meta fields**
+## Route meta fields
 
 Route meta fields gives us the capability to append information on routes that we can manipulate later. We can specify routes that either need authentication for access or other relevant information we may want.
 
@@ -211,7 +211,7 @@ const routes = [
 
 Here we have provided the /meta field property with some information. On the router instance, we can check if the user is authenticated we grant access to that particular path. We can also provide information such as the /title .
 
-**Not Found Routes**
+## Not Found Routes
 
 We can also catch some routes that are not configured in our routing. We can return a dedicated 404 Not Found component. To catch routes not configured we use the /catchall \* .
 
@@ -225,7 +225,7 @@ const routes = [
  ]
 ```
 
-**Dynamic Routing**
+## Dynamic Routing
 
 Dynamic routing ensures that you map different routes to the same component. Assume you have various posts containing different cid and you would want to render the same component depending on the cidparam provided.
 
@@ -241,7 +241,7 @@ const routes = [
 ]
 ```
 
-**Accessing route params**
+## Accessing route params
 
 In the component template you can access the cid param as shown below 👇.
 
@@ -249,7 +249,7 @@ In the component template you can access the cid param as shown below 👇.
 <template>{{ $route.param.cid }}</template>
 ```
 
-**Before you go**
+## Before you go
 
 I hope you found this piece helpful on how to handle routing with vue-router 4 in a Vuejs 3 application.
 

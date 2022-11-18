@@ -1,6 +1,6 @@
 <template>
-  <div class="footer pb-12">
-    <div class="font-semibold text-center text-xl leading-9 tracking-wide">
+  <div class="footer my-12 text-center font-semibold">
+    <div class="text-lg leading-normal leading-9 tracking-wide">
       <div class="coded text-sm" />
       Made with
       <span
@@ -39,29 +39,18 @@
 
       by John Philip &copy; Terms {{ date }}
     </div>
-    <Socialmedia />
-    <p class="text-center font-bold">Have a super {{ day }} &#128075;</p>
+    <Social />
+    <p class="text-lg leading-normal mb-8">
+      Have a super {{ today }} &#128075;
+    </p>
   </div>
 </template>
-<script>
-const date = new Date()
-const today = date.toLocaleDateString('default', {
-  weekday: 'long',
-})
-const Socialmedia = () =>
-  import(/* WebpackChunkName: "Socialmedia" */ '@/components/Socialmedia')
-export default {
-  name: 'Footer',
-  components: {
-    Socialmedia,
-  },
-  data() {
-    return {
-      date: new Date().getFullYear(),
-      day: today,
-    }
-  },
-}
+<script setup>
+import Social from "~~/components/Social.vue";
+const date = new Date().getFullYear();
+const today = new Date().toLocaleDateString("default", {
+  weekday: "long",
+});
 </script>
 <style scoped>
 .footer {

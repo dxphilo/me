@@ -1,50 +1,43 @@
 <template>
   <article class="pt-8 mx-auto pb-2">
     <div
-      class="flex items-center antialiased ml-4 transform transition duration-500 ease-in-out hover:scale-105"
+      class="flex items-center antialiased ml-2 transform transition duration-500 ease-in-out hover:scale-105"
     >
-      <nuxt-link :to="blog.path">
+      <nuxt-link :to="path">
         <img
-          v-if="blog.imgurl"
-          :src="blog.imgurl"
-          :alt="blog.title"
+          :src="img"
+          :alt="title"
           class="object-cover object-center rounded-lg shadow-md img"
-        />
-        <img
-          v-else
-          :src="require(`~/assets/${blog.img}`)"
-          :alt="blog.description"
-          class="object-cover shadow-md img left-0 top-0 w-full rounded-lg"
         />
 
         <div class="relative px-4 -mt-16">
           <div class="bg-white p-6 rounded-lg shadow-lg">
             <div class="flex items-baseline">
-              <span
-                v-for="tag in blog.tags"
-                :key="tag"
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 uppercase"
-              >
-                {{ tag }}
-              </span>
+              <ul>
+                <li
+                  v-for="tag in tags"
+                  :key="tag"
+                  class="inline-block bg-gray-200 rounded-full text-xs px-2 py-0.5 mr-2 mb-1 uppercase leading-relaxed"
+                >
+                  {{ tag }}
+                </li>
+              </ul>
             </div>
 
-            <h4 class="mt-1 font-bold text-xl leading-tight truncate">
-              {{ blog.subtitle }}
+            <h4 class="mt-1 font-medium leading-tight text-lg truncate">
+              {{ title }}
             </h4>
-            <div
-              class="mt-4 flex items-center text-lg leading-relaxed font-semibold"
-            >
+            <div class="mt-4 flex items-center leading-relaxed">
               <div class="author-image">
                 <img
                   class="h-8 w-8 rounded-full bg-no-repeat bg-cover border-2 border-slate-400"
-                  src="../assets/me/johnphilip.jpg"
+                  src="~/assets/img/me/johnphilipavatar.jpeg"
                   alt="Author image of John Philip"
                 />
               </div>
-              <span class="px-2">{{ published }} </span>
+              <span class="px-2 text-sm">{{ convertDate(date) }} </span>
               •
-              <span class="pl-2">John Philip</span>
+              <span class="pl-2 text-sm font-semibold">John Philip</span>
             </div>
           </div>
         </div>
@@ -53,28 +46,27 @@
   </article>
 </template>
 
-<script>
-export default {
-  name: 'Singlearticle',
-  props: {
-    blog: {
-      type: Object,
-      required: true,
-      default() {
-        return {}
-      },
-    },
-    published: {
-      type: String,
-      required: true,
-      default: '',
-    },
-  },
+<script setup>
+defineProps({
+  path: String,
+  img: String,
+  title: String,
+  tags: Object,
+  date: String,
+});
+
+function convertDate(date) {
+  const da = new Date(date);
+  return da.toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 }
 </script>
-<style scoped>
+<style>
 .img {
-  width: 420px;
-  height: 270px;
+  width: 400px;
+  height: 250px;
 }
 </style>

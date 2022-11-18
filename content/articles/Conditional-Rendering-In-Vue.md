@@ -13,7 +13,7 @@ img: vue.jpeg
 
 imgurl: https://images.pexels.com/photos/7897470/pexels-photo-7897470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-tags: ['VueJS']
+tags: ["VueJS"]
 
 createdAt: 9/15/2021
 
@@ -29,7 +29,7 @@ Vue.js even makes it easy by introducing a directive that we can easily implemen
 Conditional rendering in Vue.js can be implemented with the v-if, v-else, and v-else-if directives.
 Another directive that we can use to conditionally render objects is the v-show directive.
 
-**Use cases of conditional rendering**
+## Use cases of conditional rendering
 
 - Show or hide blocks.
 - Toggling between the application.
@@ -94,6 +94,6 @@ Vue.js has your back. You can implement the use of v-else-if directive instead.
 
 The v-else-if directive acts as an else if statement. This directive comes in handy when you want to conditionally render elements based on various conditions.
 
-**Before you go**
+## Before you go
 
 Thank you for reading through this article so far. If you found it helpful please don’t hesitate to let me know in the comments sections and share.
