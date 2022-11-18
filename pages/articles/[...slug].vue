@@ -1,4 +1,5 @@
 <script setup>
+import readingTime from "@/helpers/helpers";
 const { path } = useRoute();
 
 const { data } = await useAsyncData(`content-${path}`, async () => {
@@ -34,7 +35,17 @@ useHead({
       <h1 class="heading text-center">
         {{ data.article.title }}
       </h1>
-      <p class="supporting my-4 text-center">{{ data.article.description }}</p>
+      <div class="flex flex-wrap justify-center supporting my-3">
+        <span>
+          {{ data.article.description }}
+        </span>
+        <span>
+          <span class="font-bold ml-4 mt-0.5"
+            >{{ readingTime(data.article) }}
+          </span>
+          Min read
+        </span>
+      </div>
 
       <div class="img-cont h-[300] my-4">
         <img
