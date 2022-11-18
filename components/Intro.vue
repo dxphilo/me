@@ -29,8 +29,7 @@ import SocialMedia from "@/components/SocialMedia.vue";
           newsletter with insightful guides and resources to help you level up
           your technical writing skills. Apart from writing and debugging code,
           I love stories, and all things cycling 🚴. I am available on most of
-          the socials if you want to reach out and have a chat (socials down
-          below).
+          the socials if you want to reach out and have a chat.
         </p>
       </div>
       <div class="flex">

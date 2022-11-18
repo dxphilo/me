@@ -31,7 +31,7 @@
               <div class="author-image">
                 <img
                   class="h-8 w-8 rounded-full bg-no-repeat bg-cover border-2 border-slate-400"
-                  src="~/assets/img/me/johnphilip.jpg"
+                  src="~/assets/img/me/johnphilipavatar.jpeg"
                   alt="Author image of John Philip"
                 />
               </div>

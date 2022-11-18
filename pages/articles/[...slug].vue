@@ -14,7 +14,6 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
     surround: await surround,
   };
 });
-
 const [prev, next] = data.value.surround;
 
 useHead({
@@ -64,7 +63,7 @@ useHead({
       </aside>
       <article class="article">
         <ContentRenderer :value="data.article">
-          <MarkdownRenderer :value="data.article" />
+          <ContentRendererMarkdown :value="data.article" />
         </ContentRenderer>
       </article>
     </section>
@@ -110,10 +109,10 @@ useHead({
 .article[data-v-2c96bb26] :where(ul > li):not(:where([class~="not-prose"] *)) {
   @apply text-base;
 }
-.article[data-v-2c96bb26] :where(a):not(:where([class~="not-prose"] *)) {
+.article[data-v-02b6418b] :where(a):not(:where([class~="not-prose"] *)) {
   @apply no-underline text-2xl;
 }
-.article[data-v-2c96bb26] :where(a):not(:where([class~="not-prose"] *)):hover {
+.article[data-v-02b6418b] :where(a):not(:where([class~="not-prose"] *)):hover {
   @apply underline;
 }
 </style>
