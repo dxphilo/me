@@ -38,7 +38,7 @@ function convertDate(date) {
             <p class="text-base leading-tight truncate pr-2">
               {{ convertDate(date) }}
             </p>
-            •
+            <p class="h-1 w-1 rounded-full bg-stone-900 mx-2 mt-2"></p>
             <p class="pl-2 text-base leading-tight truncate font-semibold">
               John Philip
             </p>
