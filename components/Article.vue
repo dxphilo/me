@@ -36,7 +36,7 @@
                 />
               </div>
               <span class="px-2 text-sm">{{ convertDate(date) }} </span>
-              •
+              <p class="h-1 w-1 rounded-full bg-stone-900 mx-1"></p>
               <span class="pl-2 text-sm font-semibold">John Philip</span>
             </div>
           </div>
