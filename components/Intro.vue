@@ -14,7 +14,7 @@ import SocialMedia from "~~/components/Social.vue";
         <p>
           Hi I am John Philip, I go by the pronouns (He/Him). I’m currently
           working at Capsule Social building decentralised discource. I am an
-          enthusiast of Open Source communities and currently Co-leading at
+          enthusiast of Open-source communities and currently co-leading at
           Vuejs-Kenya.
         </p>
         <p class="my-4 relative">
