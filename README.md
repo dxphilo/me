@@ -6,7 +6,7 @@ This is my portfolio and blog website
 
 </div>
 
-![Blogsite website](/assets/img/webscreenshot.png')
+![Blogsite website](/assets/img/webscreenshot.png)
 
 #### Built with
 
