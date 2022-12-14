@@ -13,8 +13,6 @@ This is my portfolio and blog website
     - NuxtJs
     - Nuxt-content
     - Tailwind CSS
-    - Prism Themes
-    - Vue Scroll Indicator
     - Markdown
 
 #### Image Resources
