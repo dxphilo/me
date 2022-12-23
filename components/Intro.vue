@@ -20,14 +20,13 @@ import SocialMedia from "~~/components/Social.vue";
         <p class="my-4 relative">
           Occasionally, I send out
           <a
-            href="https://artisanal-thinker-2556.ck.page/6e2ba71172"
+            href="https://codenotes.substack.com/"
             target="_blank"
             class="border px-1 shadow-xl"
             rel="noopener noreferrer"
-            >Technical Writing Issue's</a
+            >CodeNotes</a
           >
-          newsletter with insightful guides and resources to help you level up
-          your technical writing skills. Apart from writing and debugging code,
+          newsletter on latest developments in the world of software engineering, and technical writing for developers. Apart from writing and debugging code,
           I love stories, and all things cycling 🚴. I am available on most of
           the socials if you want to reach out and have a chat.
         </p>
