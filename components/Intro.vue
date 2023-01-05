@@ -8,7 +8,7 @@ import SocialMedia from "~~/components/Social.vue";
       <div class="text-5xl my-10 leading-snug tracking-wide font-semibold">
         <h1>Software Developer</h1>
         <h1>Technical Writer,</h1>
-        <h1>Life long Learner .</h1>
+        <h1>Lifelong Learner .</h1>
       </div>
       <div class="text-xl leading-normal">
         <p>
