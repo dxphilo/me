@@ -12,23 +12,17 @@ import SocialMedia from "~~/components/Social.vue";
       </div>
       <div class="text-xl leading-normal">
         <p>
-          Hi I am John Philip, I go by the pronouns (He/Him). I’m currently
-          working at Capsule Social building decentralised discource. I am an
-          enthusiast of Open-source communities and currently co-leading at
-          Vuejs-Kenya.
+Hi there! My name is John Philip, and I prefer the pronouns He/Him. I'm currently open and searching for my next role. I'm a big fan of open-source communities, and I'm also the co-leader of Vuejs-Kenya.
         </p>
         <p class="my-4 relative">
-          Occasionally, I send out
-          <a
+In my free time, I like to write and share my thoughts on programming through my           <a
             href="https://codenotes.substack.com/"
             target="_blank"
             class="border px-1 shadow-xl"
             rel="noopener noreferrer"
             >CodeNotes</a
-          >
-          newsletter on Substack. Apart from writing and debugging code,
-          I love stories, and all things cycling 🚴. I am available on most of
-          the socials if you want to reach out and have a chat.
+          > newsletter on Substack. When I'm not coding or writing, you can find me cycling or enjoying a good story. Feel free to reach out to me on social media if you'd like to chat. I'm always happy to connect with fellow tech enthusiasts.
+
         </p>
       </div>
       <div class="flex">
