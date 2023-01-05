@@ -26,7 +26,7 @@ import SocialMedia from "~~/components/Social.vue";
             rel="noopener noreferrer"
             >CodeNotes</a
           >
-          newsletter on latest developments in the world of software engineering, and technical writing for developers. Apart from writing and debugging code,
+          newsletter on Substack. Apart from writing and debugging code,
           I love stories, and all things cycling 🚴. I am available on most of
           the socials if you want to reach out and have a chat.
         </p>
