@@ -47,7 +47,7 @@ useHead({
         </span>
       </div>
 
-      <div class="img-cont h-[300] my-4">
+      <div class="img-cont h-[450px] my-4">
         <img
           :src="`${data.article.imgurl}`"
           :alt="data.article.title"
