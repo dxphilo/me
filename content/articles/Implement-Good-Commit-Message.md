@@ -15,7 +15,7 @@ tags: ["commmit convention"]
 
 attribution: Photo by Daria Nepriakhina on Unsplash
 
-createdAt: 07/25/2022
+createdAt: 07-25-2022
 ---
 
 ## Write better commit messages with conventional commits workflow

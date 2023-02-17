@@ -17,7 +17,7 @@ tags: ["IDEATION", "WRITING"]
 
 attribution: Photo by Kelly Sikkema on Unsplash
 
-createdAt: 11/16/2021
+createdAt: 11-16-2021
 ---
 
 ## How to Generate Article Ideas for Technical Writing

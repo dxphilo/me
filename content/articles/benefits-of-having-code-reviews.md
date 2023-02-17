@@ -15,7 +15,7 @@ tags: ["code-reviews"]
 
 attribution: Photo by stefanovskyi
 
-createdAt: 12/14/2022
+createdAt: 12-14-2022
 ---
 
 Code review is a crucial part of every software development process. It involves having one or more team members review the code written by another team member to ensure that it is of high quality, follows coding standards, and is free of bugs.

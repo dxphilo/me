@@ -15,7 +15,7 @@ tags: ["VUEJS", "TIP"]
 
 attribution: Photo by Pixabay on Pexelry
 
-createdAt: 12/10/2022
+createdAt: 12-10-2022
 ---
 
 When building Vuejs applications, you may need to access child component properties from an outside component. This may be in scenarios where the need to emit events is unnecessary.

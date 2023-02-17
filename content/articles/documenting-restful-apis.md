@@ -15,7 +15,7 @@ imgurl: https://images.pexels.com/photos/3318582/pexels-photo-3318582.jpeg?auto=
 
 tags: ["API DOCUMENTATION"]
 
-createdAt: 4/11/2022
+createdAt: 4-11-2022
 
 attribution: Photo by Steve Pancrate from Pexels
 ---

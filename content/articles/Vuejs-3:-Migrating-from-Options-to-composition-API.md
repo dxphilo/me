@@ -13,7 +13,7 @@ tags: ["Vuejs 3", "Composition API"]
 
 imgurl: https://images.pexels.com/photos/735988/pexels-photo-735988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
-createdAt: 10/25/2022
+createdAt: 10-25-2022
 
 attribution: Photo by Annika Thierfeld from Pexels
 ---

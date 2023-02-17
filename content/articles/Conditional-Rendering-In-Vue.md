@@ -15,7 +15,7 @@ imgurl: https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.
 
 tags: ["VueJS"]
 
-createdAt: 9/15/2021
+createdAt: 9-15-2021
 
 attribution: Photo by Sebastian Svenson on Unsplash
 ---

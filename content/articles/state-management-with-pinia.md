@@ -15,7 +15,7 @@ tags: ["vuejs", "Pinia"]
 
 attribution: Photo by Angela Roma
 
-createdAt: 11/02/2022
+createdAt: 11-02-2022
 ---
 
 ## Why State Management

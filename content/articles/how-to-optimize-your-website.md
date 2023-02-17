@@ -13,7 +13,7 @@ imgurl: https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg?auto=co
 
 tags: ["WEBSITE OPTIMIZATION"]
 
-createdAt: 7/3/2021
+createdAt: 7-3-2021
 
 attribution: Photo by Pixabay
 ---

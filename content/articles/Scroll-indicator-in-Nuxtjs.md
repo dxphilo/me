@@ -13,7 +13,7 @@ tags: ["Nuxtjs"]
 
 imgurl: https://images.pexels.com/photos/5986492/pexels-photo-5986492.jpeg?auto=compress&cs=tinysrgb&w=1600
 
-createdAt: 4/6/2021
+createdAt: 4-6-2021
 
 attribution: Photo by Cottonbro from Pexels
 ---

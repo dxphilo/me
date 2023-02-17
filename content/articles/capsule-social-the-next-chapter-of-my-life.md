@@ -15,7 +15,7 @@ tags: ["JOB", "WRITING"]
 
 attribution: Photo by Capsule Social
 
-createdAt: 11/30/2021
+createdAt: 11-30-2021
 ---
 
 Hi a little introduction about myself.

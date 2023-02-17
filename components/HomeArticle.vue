@@ -1,9 +1,9 @@
 <script setup>
-const articles = await (
-  await queryContent("articles").sort({ createdAt: 1 }).find()
+const articles = (
+  await queryContent("articles").sort({ createdAt: -1 }).limit(5).find()
 )
-  .slice(0, 3)
-  .reverse();
+  .reverse()
+  .slice(0, 4);
 </script>
 <template>
   <section>
