@@ -10,13 +10,13 @@ alt: Vuejs Tips
 excerpt: Vuejs Tips
 
 
-imgurl: https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+imgurl: https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
 tags: ["VueJS"]
 
-createdAt: 9-15-2021
+createdAt: 03-09-2023
 
-attribution: Photo by Iva Muškić from Pexels
+attribution: Photo by Pixabay from Pexels
 ---
 
 In this article, we will explore five useful Vue.js tips that can make your day-to-day coding with Vue.js more efficient and productive. Whether you are a beginner or an experienced Vue developer, these tips can help you write cleaner, simpler, and more effective code. So, let’s dive in.
