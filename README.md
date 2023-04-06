@@ -24,18 +24,18 @@ This is my portfolio and blog website
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn run dev
 
 # build for production and launch server
-$ npm run build
+$ yarn run build
 
-$ npm run start
+$ yarn run start
 
 # generate static project
-$ npm run generate
+$ yarn run generate
 ```
 
 ## Authors
