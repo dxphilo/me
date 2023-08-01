@@ -6,23 +6,11 @@ import SocialMedia from "~~/components/Social.vue";
   <div class="w-full lg:w-[53%] mx-auto">
     <div>
       <div class="text-5xl my-10 leading-snug tracking-wide font-semibold">
-        <h1>Software Developer</h1>
-        <h1>Technical Writer,</h1>
-        <h1>Lifelong Learner .</h1>
+        <h1>Hi there! 👋</h1>
       </div>
       <div class="text-xl leading-normal">
-        <p>
-Hi there! My name is John Philip, and I prefer the pronouns He/Him. I'm currently open and searching for my next role. I'm a big fan of open-source communities, and I'm also the co-leader of Vuejs-Kenya.
-        </p>
         <p class="my-4 relative">
-In my free time, I like to write and share my thoughts on programming through my           <a
-            href="https://codenotes.substack.com/"
-            target="_blank"
-            class="border px-1 shadow-xl"
-            rel="noopener noreferrer"
-            >CodeNotes</a
-          > newsletter on Substack. When I'm not coding or writing, you can find me cycling or enjoying a good story. Feel free to reach out to me on social media if you'd like to chat. I'm always happy to connect with fellow tech enthusiasts.
-
+          I invite you to my corner on the internet, where I share my learning journey, life experiences, and random thoughts.
         </p>
       </div>
       <div class="flex">
