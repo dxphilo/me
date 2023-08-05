@@ -13,11 +13,11 @@ import SocialMedia from "~~/components/Social.vue";
           I invite you to my corner on the internet, where I share my learning journey, life experiences, and random thoughts.
         </p>
       </div>
-      <div class="flex">
+      <div class="flex py-5">
         <Social />
       </div>
       <Hr />
-      <div class="h-2/5 mb-32">
+      <div class="h-2/5">
         <h1 class="text-4xl leading-snug tracking-wide font-semibold">
           Featured blogs
         </h1>

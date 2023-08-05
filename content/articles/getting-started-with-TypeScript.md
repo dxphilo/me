@@ -1,13 +1,13 @@
 ---
 title: Getting started with TypeScript 
 
-subtitle: Getting started with TypeScript as a beginner
+subtitle: Getting started with TypeScript
 
-description: Getting started with TypeScript as a beginner
+description: Getting started with TypeScript
 
-alt: Getting started with TypeScript as a beginner
+alt: Getting started with TypeScript
 
-excerpt: Getting started with TypeScript as a beginner
+excerpt: Getting started with TypeScript
 
 imgurl: https://images.pexels.com/photos/2130475/pexels-photo-2130475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 

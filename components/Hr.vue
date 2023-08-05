@@ -1,5 +1,5 @@
 <template>
-<div class="pt-20">
+<div class="py-10">
   <hr class="w-full border border-gray-300 mx-auto hri" />
 </div>
 </template>
