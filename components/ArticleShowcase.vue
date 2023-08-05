@@ -34,12 +34,12 @@ function convertDate(date) {
           <h1 class="font-bold text-xl leading-tight truncate">
             {{ title }}
           </h1>
-          <div class="my-2 flex">
-            <p class="text-base leading-tight truncate pr-2">
+          <div class="flex items-center gap-x-3 pt-3">
+            <p class="text-base leading-tight font-light truncate pr-2">
               {{ convertDate(date) }}
             </p>
-            <p class="h-1 w-1 rounded-full bg-stone-900 mx-2 mt-2"></p>
-            <p class="pl-2 text-base leading-tight truncate font-semibold">
+            <p class="h-1 w-1 rounded-full bg-gray-400"></p>
+            <p class="text-base leading-tight truncate font-semibold">
               John Philip
             </p>
           </div>

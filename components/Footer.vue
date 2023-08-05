@@ -1,7 +1,6 @@
 <template>
-  <div class="footer my-12 text-center font-semibold">
-    <div class="text-lg leading-normal leading-9 tracking-wide">
-      <div class="coded text-sm" />
+  <div class="footer py-12 text-center font-semibold">
+    <div class="leading-normal text-base font-light leading-9 tracking-wide">
       Made with
       <span
         ><span class="sr-only">love</span>
@@ -39,8 +38,10 @@
 
       by John Philip &copy; Terms {{ date }}
     </div>
-    <Social />
-    <p class="text-lg leading-normal mb-8">
+<div class="pt-4">
+  <Social />
+</div>
+    <p class="text-base font-light leading-normal pt-4">
       Have a super {{ today }} &#128075;
     </p>
   </div>

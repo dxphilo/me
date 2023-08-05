@@ -35,16 +35,16 @@ useHead({
       <h1 class="heading text-center">
         {{ data.article.title }}
       </h1>
-      <div class="flex flex-wrap justify-center supporting my-3">
-        <span>
+      <div class="flex flex-wrap justify-center supporting py-3">
+        <p>
           {{ data.article.description }}
-        </span>
-        <span>
+        </p>
+        <p>
           <span class="font-bold ml-4 mt-0.5"
             >{{ readingTime(data.article) }}
           </span>
           Min read
-        </span>
+        </p>
       </div>
 
       <div class="img-cont h-[450px] my-4">
@@ -58,7 +58,7 @@ useHead({
         :href="`${data.article.imgurl}`"
         target="_blank"
         rel="noopener noreferrer"
-        class="no-underline hover:underline text-sm my-2 flex justify-center"
+        class="no-underline hover:underline text-sm my-2 flex justify-center font-light"
         >{{ data.article.attribution }}</a
       >
       <ul class="article-tags">
@@ -78,8 +78,6 @@ useHead({
         </ContentRenderer>
       </article>
     </section>
-
-    <!-- social media share button -->
     <PrevNext :prev="prev" :next="next" />
     <Hr />
   </main>
@@ -99,7 +97,7 @@ useHead({
 }
 
 .article-header .supporting {
-  @apply font-medium text-lg;
+  @apply font-light text-lg;
 }
 
 .article-section {

@@ -4,12 +4,12 @@ import SocialMedia from "~~/components/Social.vue";
 <template>
   <!-- component -->
   <div class="w-full lg:w-[53%] mx-auto">
-    <div>
-      <div class="text-5xl my-10 leading-snug tracking-wide font-semibold">
+    <div class="pt-5">
+      <div class="text-3xl py-4 leading-snug tracking-wide font-semibold">
         <h1>Hi there! 👋</h1>
       </div>
-      <div class="text-xl leading-normal">
-        <p class="my-4 relative">
+      <div >
+        <p class="py-2 relative text-base font-light text-xl leading-normal">
           I invite you to my corner on the internet, where I share my learning journey, life experiences, and random thoughts.
         </p>
       </div>
@@ -21,7 +21,7 @@ import SocialMedia from "~~/components/Social.vue";
         <h1 class="text-4xl leading-snug tracking-wide font-semibold">
           Featured blogs
         </h1>
-        <p class="text-xl leading-normal my-3">
+        <p class="text-base leading-normal my-3 font-light">
           A collection of some articles I have written recently
         </p>
         <div>

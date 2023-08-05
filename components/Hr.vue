@@ -1,5 +1,7 @@
 <template>
-  <hr class="w-full my-6 border border-gray-300 mx-auto hri" />
+<div class="pt-20">
+  <hr class="w-full border border-gray-300 mx-auto hri" />
+</div>
 </template>
 <style scoped>
 .hri {

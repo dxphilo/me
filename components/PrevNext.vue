@@ -3,7 +3,7 @@ defineProps(["prev", "next"]);
 </script>
 
 <template>
-  <ul class="prev-next-cont">
+  <ul class="prev-next-cont my-5">
     <li class="link-item prev">
       <NuxtLink v-if="prev" :to="prev._path">
         <IconsArrowLeft class="icon stroke" />

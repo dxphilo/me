@@ -17,27 +17,25 @@
                 <li
                   v-for="tag in tags"
                   :key="tag"
-                  class="inline-block bg-gray-200 rounded-full text-xs px-2 py-0.5 mr-2 mb-1 uppercase leading-relaxed"
+                  class="inline-block bg-gray-200 rounded-full text-xs border px-2 py-0.5 mr-2 mb-1 uppercase leading-relaxed"
                 >
                   {{ tag }}
                 </li>
               </ul>
             </div>
 
-            <h4 class="my-2 py-0 font-semibold leading-tight text-lg truncate">
+            <h4 class="py-2 font-semibold leading-tight text-lg truncate">
               {{ title }}
             </h4>
-            <div class="mt-2 flex items-center leading-relaxed">
-              <div class="author-image">
+            <div class="pt-1 flex items-center leading-relaxed gap-x-3">
                 <img
-                  class="h-8 w-8 rounded-full bg-no-repeat bg-cover border-2 border-slate-400"
+                  class="h-9 w-9 rounded-full bg-no-repeat bg-cover object-cover"
                   src="~/assets/img/me/johnphilipavatar.jpeg"
                   alt="Author image of John Philip"
                 />
-              </div>
-              <span class="px-2 text-sm">{{ convertDate(date) }} </span>
-              <p class="h-1 w-1 rounded-full bg-stone-900 mx-1"></p>
-              <span class="pl-2 text-sm font-semibold">John Philip</span>
+              <p class="px-2 text-sm">{{ convertDate(date) }}</p>
+              <p class="h-1 w-1 rounded-full bg-gray-400"></p>
+              <p class="pl-2 text-sm font-semibold">John Philip</p>
             </div>
           </div>
         </div>
