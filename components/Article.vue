@@ -1,47 +1,35 @@
 <template>
-  <article class="pt-8 mx-auto pb-2">
-    <div
-      class="flex items-center antialiased ml-2 transform transition duration-500 ease-in-out hover:scale-105"
-    >
-      <nuxt-link :to="path">
+      <nuxt-link :to="path" class="w-[340px] h-[380px] border-b border-gray-300">
         <img
           :src="img"
           :alt="title"
-          class="object-cover object-center rounded-lg shadow-md img"
+          class="object-cover w-full rounded-md img h-[180px] border border-gray-300"
         />
 
-        <div class="relative px-4 -mt-16">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="flex items-baseline">
-              <ul>
+        <div class="pt-4">
+          <div class="">
+<div class="flex items-center gap-x-3">
+  <ul class="flex items-baseline py-2 gap-x-2">
                 <li
                   v-for="tag in tags"
                   :key="tag"
-                  class="inline-block bg-gray-200 rounded-full text-xs border px-2 py-0.5 mr-2 mb-1 uppercase leading-relaxed"
+                  class="inline-block bg-gray-200 font-light rounded text-xs border px-3 py-0.5 uppercase leading-relaxed"
                 >
                   {{ tag }}
                 </li>
               </ul>
-            </div>
+              <p class="text-sm text-gray-500 uppercase font-light">{{ convertDate(date) }}</p>
+</div>
 
-            <h4 class="py-2 font-semibold leading-tight text-lg truncate">
+            <h4 class="font-semibold leading-loose leading-tight text-lg break-words overflow-hidden">
               {{ title }}
             </h4>
-            <div class="pt-1 flex items-center leading-relaxed gap-x-3">
-                <img
-                  class="h-9 w-9 rounded-full bg-no-repeat bg-cover object-cover"
-                  src="~/assets/img/me/johnphilipavatar.jpeg"
-                  alt="Author image of John Philip"
-                />
-              <p class="px-2 text-sm">{{ convertDate(date) }}</p>
-              <p class="h-1 w-1 rounded-full bg-gray-400"></p>
-              <p class="pl-2 text-sm font-semibold">John Philip</p>
-            </div>
+            <p class="leading-relaxed tracking-wide text-gray-500 font-light text-base  break-words overflow-hidden">
+              {{ description }}
+            </p>
           </div>
         </div>
       </nuxt-link>
-    </div>
-  </article>
 </template>
 
 <script setup>
@@ -51,6 +39,7 @@ defineProps({
   title: String,
   tags: Object,
   date: String,
+  description: String
 });
 
 function convertDate(date) {
@@ -63,8 +52,4 @@ function convertDate(date) {
 }
 </script>
 <style>
-.img {
-  width: 400px;
-  height: 250px;
-}
 </style>
