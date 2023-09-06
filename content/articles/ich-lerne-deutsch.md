@@ -15,7 +15,7 @@ tags: ["DEUTSCH"]
 
 attribution: Photo by Luna Groothedde from Pexels
 
-createdAt: 2-16-2023
+createdAt: 2023-02-16
 ---
 
 Have you wondered why the title and subtitle of this article are in German? Well, I'm learning German! I have always wanted to learn a third language, and some of the languages that interested me were Japanese, Greek, Dutch, Deutsch, and French.

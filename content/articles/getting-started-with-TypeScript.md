@@ -14,7 +14,8 @@ imgurl: https://images.pexels.com/photos/2130475/pexels-photo-2130475.jpeg?auto=
 tags: ["TypeScript" ]
 
 attribution: Photo by Steve Johnson from Pexels
-createdAt: 8-05-2023
+
+createdAt: 2023-08-05
 ---
 
 ## TypeScript - An Introduction

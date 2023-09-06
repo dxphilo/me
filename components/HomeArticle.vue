@@ -2,7 +2,6 @@
 const articles = (
   await queryContent("articles").sort({ createdAt: -1 }).limit(5).find()
 )
-  .reverse()
   .slice(0, 4);
 </script>
 <template>

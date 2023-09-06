@@ -6,7 +6,7 @@ useHead({
   ],
 });
 
-const articles = await queryContent("articles").sort({ createdAt: 1 }).find();
+const articles = await queryContent("articles").sort({ createdAt: -1 }).find();
 </script>
 <template>
   <div>

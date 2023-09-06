@@ -14,7 +14,7 @@ imgurl: https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=co
 
 tags: ["VueJS"]
 
-createdAt: 03-09-2023
+createdAt: 2023-03-09
 
 attribution: Photo by Pixabay from Pexels
 ---

@@ -15,7 +15,7 @@ tags: ["Apple Watch 8", "Review"]
 
 attribution: Photo by Cottonbro on Pexels
 
-createdAt: 09-05-2023
+createdAt: 2023-09-05
 ---
 
 Earlier this year, I expanded my collection of Apple products and integrated them into my daily routine. I had been contemplating getting a smartwatch, with several options in mind, including Fitbit and the Samsung Galaxy Watch. However, since I already owned a MacBook and an iPhone, I ultimately decided to get an Apple Watch to fully enjoy the seamless ecosystem that connects all my Apple devices.

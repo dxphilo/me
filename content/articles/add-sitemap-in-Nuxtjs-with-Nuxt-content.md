@@ -15,7 +15,7 @@ tags: ["SEO", "NuxtJS"]
 
 attribution: Photo by Anton Darius on Unsplash
 
-createdAt: 07-19-2022
+createdAt: 2022-07-19
 ---
 
 ## Add Sitemap in NuxtJs Using Nuxt Content

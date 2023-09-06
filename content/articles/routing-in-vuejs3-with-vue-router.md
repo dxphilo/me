@@ -15,7 +15,7 @@ tags: ["vuejs", "Routing"]
 
 attribution: Photo by Francesco Paggiaro from Pexels
 
-createdAt: 08-05-2022
+createdAt: 2022-08-05
 ---
 
 Vuejs 3 comes bundled with some new and amazing features. Some of these features include but are not limited to: optimizations, improved TypeScript support, global mounting, migration to the new composition-API among others.

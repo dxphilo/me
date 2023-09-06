@@ -13,7 +13,7 @@ imgurl: https://images.pexels.com/photos/226460/pexels-photo-226460.jpeg?auto=co
 
 tags: ["Vue 3"]
 
-createdAt: 1-8-2021
+createdAt: 2021-01-08
 
 attribution: photo by John Philip from Pexelry
 ---

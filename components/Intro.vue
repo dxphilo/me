@@ -21,7 +21,7 @@ import SocialMedia from "~~/components/Social.vue";
         <h1 class="text-4xl leading-snug tracking-wide font-semibold">
           Featured blogs
         </h1>
-        <p class="text-base leading-normal my-3 font-light">
+        <p class="text-base leading-normal my-3 font-light text-xl"> 
           A collection of some articles I have written recently
         </p>
         <div>

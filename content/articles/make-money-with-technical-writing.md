@@ -13,7 +13,7 @@ imgurl: https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=co
 
 tags: ["WRITING"]
 
-createdAt: 11-7-2021
+createdAt: 2021-11-07
 
 attribution: Photo by Lisa Fotios
 ---
