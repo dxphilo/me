@@ -5,6 +5,7 @@ import LinkedinIcon from "./icons/LinkedinIcon.vue";
 import FacebookIcon from "./icons/FacebookIcon.vue";
 import YoutubeIcon from "./icons/YouTubeIcon.vue";
 import EmailIcon from "./icons/EmailIcon.vue";
+import StackOverflow from "./icons/StackOverflow.vue";
 </script>
 <template>
   <div class="flex justify-center content-center items-center py-2">
@@ -18,6 +19,17 @@ import EmailIcon from "./icons/EmailIcon.vue";
           title="GitHub"
         >
           <GithubIcon />
+        </a>
+      </li>
+      <!-- stackoverflow -->
+      <li>
+        <a
+          href="https://stackoverflow.com/users/11594100/john-philip"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="StackOverflow"
+        >
+          <StackOverflow />
         </a>
       </li>
       <!-- twitter social media -->
