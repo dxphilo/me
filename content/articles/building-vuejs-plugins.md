@@ -1,11 +1,11 @@
 ---
-title: VueJS: How To Build a Package and Publish It to Npm
+title: How To Build a VueJs Package and Publish It to Npm
 
 subtitle: We'll build a vuejs plugin and publish it publicly on npm
 
 description: We'll build a vuejs plugin and publish it publicly on npm
 
-alt: Vue Plugins
+alt: VueJs
 
 excerpt: We'll build a vuejs plugin and publish it publicly on npm
 
