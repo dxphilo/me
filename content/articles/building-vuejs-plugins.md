@@ -13,7 +13,7 @@ imgurl: https://www.orientsoftware.com/Themes/OrientSoftwareTheme/Content/Images
 
 tags: ["VueJS", "PlugIns"]
 
-createdAt: 2023-01-8
+createdAt: 2024-01-8
 
 attribution: Photo by www.orientsoftware.com
 ---
