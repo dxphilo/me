@@ -60,7 +60,7 @@ pnpm add v-safe-url
 ```
 Its registration in a Vue.js application will be as follows:
 
-```
+```typescript
   // In main.js or similar
   import { createApp } from 'vue';
   import VueSafeUrl from 'v-safe-url'; // importing the plugin
@@ -73,7 +73,7 @@ Its registration in a Vue.js application will be as follows:
 
 Then, within our components, we can utilize the directive as illustrated below to safely and securely sanitize URLs. It's important to note that the directive will be available exclusively for anchor tags (a tags), as it automatically injects the href attribute with the sanitized URL as its value.
 
-```
+```typescript
 <script setup>
 import { ref } from 'vue';
 
@@ -92,7 +92,7 @@ Contrarily, we will also provide another helper function that can be used outsid
 
 The usage is demonstrated below
 
-```
+```typescript
 <script setup>
 import { useSafeUrl } from 'v-safe-url';
 import { ref } from 'vue';
@@ -123,7 +123,7 @@ Since we wont be writing our own safe URL parser and sanitizer from the ground u
 
 Navigate to your entry file main.ts and have the code shown below.
 
-```
+```typescript
 import type { App } from 'vue'
 import { useSafeUrl, vSafeUrl } from './api'
 
@@ -143,7 +143,7 @@ The useSafeUrl will be imported for scenarios where a directive is not suitable.
 
 Create a file named `api.ts` file in the same directory as the entry file `main.ts` file. This file will be the file to house our helper functions.
 
-```
+```typescript
 import { sanitizeUrl } from '@braintree/sanitize-url'
 import type { Directive, DirectiveBinding } from 'vue'
 
@@ -186,7 +186,7 @@ pnpm add v-safe-url
 
 In your Vue.js entry file (main.js or main.ts).
 
-```
+```typescript
   // In main.js or similar
   import { createApp } from 'vue';
   import VueSafeUrl from 'v-safe-url';
@@ -198,7 +198,7 @@ In your Vue.js entry file (main.js or main.ts).
 
 We can now use this directive in any of our Single File Components (SFC) as shown below. Remember that our v-safe-url is specifically designed for a HTML tags, as it automatically injects the href attribute and assigns it the value of the sanitized and secure URL.
 
-```
+```typescript
 <script setup>
 import { ref } from 'vue';
 
