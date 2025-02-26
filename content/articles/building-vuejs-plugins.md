@@ -9,7 +9,7 @@ alt: VueJs
 
 excerpt: We'll build a vuejs plugin and publish it publicly on npm
 
-imgurl: https://www.orientsoftware.com/Themes/OrientSoftwareTheme/Content/Images/blog/2023-07-05/hire-vuejs-developers-what-is-vuejs.jpg
+imgurl: https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/03/npm.png?resize=1024%2C512&ssl=1
 
 tags: ["VueJS", "PlugIns"]
 
