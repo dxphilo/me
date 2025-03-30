@@ -18,11 +18,10 @@ function convertDate(date) {
 </script>
 <template>
   <div
-    class="w-full my-10 border rounded bg-gray-100 shadow-lg overflow-hidden antialiased transform transition duration-500 ease-in-out hover:scale-105"
+    class="w-full my-10 border bg-gray-100 shadow-lg overflow-hidden antialiased transform transition duration-500 ease-in-out hover:scale-105"
   >
     <nuxt-link :to="path">
       <div class="flex flex-wrap">
-        <p>{{ path }}</p>
         <div class="w-full shadow-md overflow-hidden h-40 lg:w-64 lg:h-auto">
           <img
             :src="img"
@@ -45,7 +44,7 @@ function convertDate(date) {
                 <li
                   v-for="tag in tags"
                   :key="tag"
-                  class="inline-block bg-gray-200 font-light rounded text-xs border px-3 py-0.5 uppercase leading-relaxed"
+                  class="inline-block bg-gray-200 font-normal text-xs border px-3 py-0.5 uppercase leading-relaxed"
                 >
                   {{ tag }}
                 </li>

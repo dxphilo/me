@@ -20,11 +20,11 @@ const { data: articles } = await useAsyncData("blog", () =>
         <Article
           v-for="article in articles"
           :key="article.path"
-          :path="article.meta.path"
+          :path="article.path"
           :img="article.meta.imgurl"
-          :title="article.meta.subtitle"
+          :title="article.title"
           :tags="article.meta.tags"
-          :date="article.meta.createdAt"
+          :date="article.createdAt"
           :description="article.meta.description"
         />
       </div>

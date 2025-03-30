@@ -2,18 +2,20 @@
 const { data: articles } = await useAsyncData("blog", () =>
   queryCollection("blog").order("createdAt", "DESC").all()
 );
+console.log(articles);
+console.log("In between!");
 </script>
 <template>
   <section>
     <div class="w-full my-4 mx-auto">
       <ArticleShowcase
-        v-for="article in articles.splice(0, 4)"
+        v-for="article in articles.slice(0, 4)"
         :key="article.path"
-        :path="article.meta.path"
+        :path="article.path"
         :img="article.meta.imgurl"
-        :title="article.meta.subtitle"
+        :title="article.title"
         :tags="article.meta.tags"
-        :date="article.meta.createdAt"
+        :date="article.createdAt"
       />
     </div>
   </section>

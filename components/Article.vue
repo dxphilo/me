@@ -3,7 +3,7 @@
     <img
       :src="img"
       :alt="title"
-      class="object-cover w-full rounded-md img h-[180px] border border-gray-300"
+      class="object-cover w-full img h-[180px] border border-gray-300"
     />
 
     <div class="pt-3">
@@ -13,7 +13,7 @@
             <li
               v-for="tag in tags"
               :key="tag"
-              class="inline-block bg-gray-200 font-light rounded text-xs border px-3 py-0.5 uppercase leading-relaxed"
+              class="inline-block bg-gray-200 font-normal text-xs border px-3 py-0.5 uppercase leading-relaxed"
             >
               {{ tag }}
             </li>

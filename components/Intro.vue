@@ -13,10 +13,10 @@ const { data: articles } = await useAsyncData("blog", () =>
         <h1>Hi there! 👋</h1>
       </div>
       <div>
-        <p class="py-2 relative text-base font-light text-xl leading-normal">
+        <p class="py-2 relative font-light text-xl leading-normal">
           I invite you to my corner on the internet.
         </p>
-        <p class="py-2 relative text-base font-light text-xl leading-normal">
+        <p class="py-2 relative font-light text-xl leading-normal">
           Here I share my learning journey, life experiences, and random rants.
         </p>
       </div>
