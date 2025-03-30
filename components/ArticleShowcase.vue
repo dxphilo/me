@@ -22,6 +22,7 @@ function convertDate(date) {
   >
     <nuxt-link :to="path">
       <div class="flex flex-wrap">
+        <p>{{ path }}</p>
         <div class="w-full shadow-md overflow-hidden h-40 lg:w-64 lg:h-auto">
           <img
             :src="img"
@@ -39,9 +40,17 @@ function convertDate(date) {
               {{ convertDate(date) }}
             </p>
             <p class="h-1 w-1 rounded-full bg-gray-400"></p>
-            <p class="text-base leading-tight truncate font-semibold">
-              John Philip
-            </p>
+            <div class="flex flex-row gap-x-2">
+              <ul class="flex items-baseline py-2 gap-x-2">
+                <li
+                  v-for="tag in tags"
+                  :key="tag"
+                  class="inline-block bg-gray-200 font-light rounded text-xs border px-3 py-0.5 uppercase leading-relaxed"
+                >
+                  {{ tag }}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

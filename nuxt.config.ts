@@ -1,5 +1,6 @@
 export default {
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
+
   content: {
     highlight: {
       theme: {
@@ -14,8 +15,12 @@ export default {
       },
     },
   },
+
   link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+
   tailwindcss: {
     cssPath: "~/assets/css/main.css",
   },
+
+  compatibilityDate: "2025-03-28",
 };
