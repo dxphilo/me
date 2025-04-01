@@ -6,12 +6,12 @@ const { data: page } = await useAsyncData(path, () => {
   return queryCollection("blog").path(path).first();
 });
 
-let surround = queryCollectionItemSurroundings("blog", "content/articles", {
-  fields: ["title", "description", "navigation"],
+const { data: prevNext } = await useAsyncData("surround", () => {
+  return queryCollectionItemSurroundings("blog", path).order(
+    "createdAt",
+    "DESC"
+  );
 });
-
-console.log(page);
-// const [prev, next] = surround;
 
 useHead({
   title: page.value.title,
@@ -32,23 +32,26 @@ useHead({
         {{ page.title }}
       </h1>
 
-      <div class="flex flex-col gap-y-5 pt-8 justify-center">
-        <p class="text-center text-lg">
+      <div class="flex flex-col gap-y-2 justify-center items-center">
+        <p class="text-center text-lg pt-2">
           {{ page.description }}
         </p>
-        <div class="flex flex-row gap-x-2 items-center">
+        <div class="flex flex-row gap-x-4 py-2 items-center">
           <p>
             <span class="text-gray-400">{{ convertDate(page.createdAt) }}</span>
           </p>
-          <span class="h-4 w-4 rounded-full bg-black"></span>
           <p class="text-center text-gray-400">
             <span>{{ readingTime(page.body) }}</span> Minutes read
           </p>
         </div>
       </div>
 
-      <div class="img-cont h-[250px] my-4">
-        <img :src="`${page.meta.imgurl}`" :alt="page.title" class="rounded" />
+      <div class="img-cont my-4">
+        <img
+          :src="`${page.meta.imgurl}`"
+          :alt="page.title"
+          class="rounded h-[250px]"
+        />
       </div>
       <a
         :href="`${page.meta.imgurl}`"
@@ -71,7 +74,7 @@ useHead({
         <ContentRenderer v-if="page" :value="page" />
       </article>
     </section>
-    <PrevNext :prev="prev" :next="next" />
+    <PrevNext :prev="prevNext[0]" :next="prevNext[1]" />
   </main>
 </template>
 

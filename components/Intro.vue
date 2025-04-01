@@ -8,7 +8,9 @@ const { data: articles } = await useAsyncData("blog", () =>
   <div class="w-full lg:w-[50%] mx-auto">
     <div class="pt-5">
       <div class="text-3xl py-4 leading-snug tracking-wide font-semibold">
-        <h1>Hi there! 👋</h1>
+        <h1>
+          Hi there! <span class="inline-block animate-shake">&#128075;</span>
+        </h1>
       </div>
       <div>
         <p class="py-2 relative font-light text-xl leading-normal">

@@ -103,9 +103,9 @@ ul li {
 ul li a {
   display: inline-block;
   background-color: rgb(229 231 235);
-  width: 50px;
+  width: 40px;
   border-width: 1px;
-  height: 50px;
+  height: 40px;
   border-radius: 50%;
   margin: 0;
   padding: 2px;

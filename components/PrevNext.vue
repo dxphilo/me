@@ -5,13 +5,13 @@ defineProps(["prev", "next"]);
 <template>
   <ul class="prev-next-cont my-5">
     <li class="link-item prev">
-      <NuxtLink v-if="prev" :to="prev._path">
+      <NuxtLink v-if="prev" :to="prev.path">
         <IconsArrowLeft class="icon stroke" />
         <span class="text-lg"> {{ prev.title }} </span>
       </NuxtLink>
     </li>
     <li class="link-item next">
-      <NuxtLink v-if="next" :to="next._path">
+      <NuxtLink v-if="next" :to="next.path">
         <span class="text-lg"> {{ next.title }} </span>
         <IconsArrowRight class="icon stroke" />
       </NuxtLink>

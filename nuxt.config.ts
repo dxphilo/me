@@ -1,17 +1,16 @@
 export default {
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
-
   content: {
-    highlight: {
-      theme: {
-        default: "material-palenight",
-        dark: "github-dark",
-      },
-    },
-    markdown: {
-      toc: {
-        depth: 5,
-        searchDepth: 5,
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            // Default theme (same as single string)
+            default: "github-light",
+            // Theme used if `html.dark`
+            dark: "github-dark",
+          },
+        },
       },
     },
   },

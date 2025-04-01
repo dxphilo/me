@@ -1,5 +1,13 @@
 <template>
-  <div class="footer py-12 text-center font-semibold">
+  <div class="footer pb-20 text-center font-semibold">
+    <p class="text-sm font-light leading-normal pt-4">
+      Have a productive {{ today }}
+      <span class="inline-block animate-shake"> &#128075;</span>
+    </p>
+    <div class="py-4">
+      <Social />
+    </div>
+
     <div class="leading-normal text-base font-light leading-9 tracking-wide">
       Made with
       <span
@@ -38,12 +46,6 @@
 
       by John Philip &copy; Terms {{ date }}
     </div>
-<div class="pt-4">
-  <Social />
-</div>
-    <p class="text-base font-light leading-normal pt-4">
-      Have a super {{ today }} &#128075;
-    </p>
   </div>
 </template>
 <script setup>

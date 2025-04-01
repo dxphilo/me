@@ -15,7 +15,7 @@ const { data: articles } = await useAsyncData("blog", () =>
     <Btemplate />
     <section>
       <div
-        class="w-8/12 gap-x-10 py-20 items-center mx-auto justify-center flex flex-wrap"
+        class="w-8/12 gap-x-10 pt-20 items-center mx-auto justify-center flex flex-wrap"
       >
         <Article
           v-for="article in articles"
