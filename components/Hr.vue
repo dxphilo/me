@@ -1,7 +1,7 @@
 <template>
-<div class="py-10">
-  <hr class="w-full border border-gray-300 mx-auto hri" />
-</div>
+  <div class="py-5 h-4">
+    <hr class="w-full border border-gray-300 mx-auto hri" />
+  </div>
 </template>
 <style scoped>
 .hri {

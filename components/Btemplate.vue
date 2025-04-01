@@ -2,15 +2,11 @@
 <template>
   <!-- component -->
   <div
-    class="w-full bg-cover bg-center bg-no-repeat h-48 md:h-64 object-cover text-center bg-cover flex justify-center items-center"
+    class="w-full bg-cover bg-center bg-no-repeat h-48 object-cover text-center bg-cover flex flex-col gap-y-6 justify-center items-center"
   >
-    <h1 class="text-gray-300 text-4xl md:text-5xl">My Blog</h1>
+    <h1 class="text-5xl md:text-6xl font-semibold">My Blog</h1>
+    <p class="text-xl">A collection of some articles I have written.</p>
   </div>
 </template>
 
-<style scoped>
-.w-full {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.518)),
-    url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1600");
-}
-</style>
+<style scoped></style>
