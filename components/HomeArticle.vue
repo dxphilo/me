@@ -2,8 +2,6 @@
 const { data: articles } = await useAsyncData("blog", () =>
   queryCollection("blog").order("createdAt", "DESC").all()
 );
-console.log(articles);
-console.log("In between!");
 </script>
 <template>
   <section>

@@ -1,85 +1,77 @@
 <script setup>
-import readingTime from "@/helpers/helpers";
+import { convertDate, readingTime } from "@/helpers/helpers";
 const { path } = useRoute();
 
-const { data } = await useAsyncData(`content-${path}`, async () => {
-  let article = queryContent().where({ _path: path }).findOne();
-
-  let surround = queryContent()
-    .only(["_path", "title", "description"])
-    .sort({ date: 1 })
-    .findSurround(path);
-
-  return {
-    article: await article,
-    surround: await surround,
-  };
+const { data: page } = await useAsyncData(path, () => {
+  return queryCollection("blog").path(path).first();
 });
-const [prev, next] = data.value.surround;
+
+let surround = queryCollectionItemSurroundings("blog", "content/articles", {
+  fields: ["title", "description", "navigation"],
+});
+
+console.log(page);
+// const [prev, next] = surround;
 
 useHead({
-  title: data.value.article.title,
+  title: page.value.title,
   meta: [
-    { name: "description", content: data.value.article.description },
+    { name: "description", content: page.value.description },
     {
-      hid: `${data.value.imgurl}`,
-      property: `${data.value.imgurl}`,
-      content: `https://johnphilip.dev/${data.value.article.img}`,
+      hid: `${page.value.meta.imgurl}`,
+      property: `${page.value.meta.imgurl}`,
+      content: `https://johnphilip.dev/${page.value.meta.imgurl}`,
     },
   ],
 });
 </script>
 <template>
   <main id="main" class="article-main">
-    <header v-if="data.article" class="article-header">
+    <header v-if="page" class="article-header">
       <h1 class="heading text-center">
-        {{ data.article.title }}
+        {{ page.title }}
       </h1>
-      <div class="flex flex-wrap justify-center supporting py-3">
-        <p>
-          {{ data.article.description }}
+
+      <div class="flex flex-col gap-y-5 pt-8 justify-center">
+        <p class="text-center text-lg">
+          {{ page.description }}
         </p>
-        <p>
-          <span class="font-bold ml-4 mt-0.5"
-            >{{ readingTime(data.article) }}
-          </span>
-          Min read
-        </p>
+        <div class="flex flex-row gap-x-2 items-center">
+          <p>
+            <span class="text-gray-400">{{ convertDate(page.createdAt) }}</span>
+          </p>
+          <span class="h-4 w-4 rounded-full bg-black"></span>
+          <p class="text-center text-gray-400">
+            <span>{{ readingTime(page.body) }}</span> Minutes read
+          </p>
+        </div>
       </div>
 
-      <div class="img-cont h-[450px] my-4">
-        <img
-          :src="`${data.article.imgurl}`"
-          :alt="data.article.title"
-          class="rounded"
-        />
+      <div class="img-cont h-[250px] my-4">
+        <img :src="`${page.meta.imgurl}`" :alt="page.title" class="rounded" />
       </div>
       <a
-        :href="`${data.article.imgurl}`"
+        :href="`${page.meta.imgurl}`"
         target="_blank"
         rel="noopener noreferrer"
         class="no-underline hover:underline text-sm my-2 flex justify-center font-light"
-        >{{ data.article.attribution }}</a
+        >{{ page.meta.attribution }}</a
       >
       <ul class="article-tags">
-        <li class="tag" v-for="(tag, i) in data.article.tags" :key="i">
+        <li class="tag" v-for="(tag, i) in page.meta.tags" :key="i">
           {{ tag }}
         </li>
       </ul>
     </header>
-    <Hr />
     <section class="article-section mb-2">
       <aside class="aside">
-        <Toc :links="data.article.body.toc.links" />
+        <Toc :links="page.body.toc.links" />
       </aside>
       <article class="article">
-        <ContentRenderer :value="data.article">
-          <ContentRendererMarkdown :value="data.article" />
-        </ContentRenderer>
+        <ContentRenderer v-if="page" :value="page" />
       </article>
     </section>
     <PrevNext :prev="prev" :next="next" />
-    <Hr />
   </main>
 </template>
 

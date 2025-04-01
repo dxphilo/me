@@ -1,6 +1,4 @@
 <script setup>
-import SocialMedia from "~~/components/Social.vue";
-
 const { data: articles } = await useAsyncData("blog", () =>
   queryCollection("blog").order("createdAt", "DESC").all()
 );

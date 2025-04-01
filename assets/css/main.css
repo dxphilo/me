@@ -52,7 +52,7 @@ h6 {
 }
 
 .img-cont img {
-  @apply h-full w-full object-cover;
+  @apply w-full object-cover;
 }
 
 .article-tags {
@@ -60,7 +60,7 @@ h6 {
 }
 
 .article-tags .tag {
-  @apply bg-slate-100 text-slate-700 text-sm p-3 py-2 border rounded-md;
+  @apply bg-slate-100 text-slate-700 text-sm p-3 py-2 border;
   @apply transition-all !py-0.5 hover:-translate-y-0.5;
 }
 
