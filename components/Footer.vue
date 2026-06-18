@@ -1,17 +1,32 @@
 <template>
-  <div class="footer pb-20 text-center font-semibold">
+  <footer class="footer pb-20 text-center font-semibold">
     <p class="text-sm font-light leading-normal pt-4">
       Have a productive {{ today }}
       <span class="inline-block animate-shake"> &#128075;</span>
     </p>
+
+    <address class="contact not-italic text-sm font-light leading-relaxed pt-4 space-y-1">
+      <p>{{ site.contact.address }}</p>
+      <p>
+        <a :href="`mailto:${site.contact.email}`" class="contact-link">
+          {{ site.contact.email }}
+        </a>
+      </p>
+      <p>
+        <a :href="`tel:${phoneHref}`" class="contact-link">
+          {{ site.contact.phone }}
+        </a>
+      </p>
+    </address>
+
     <div class="py-4">
       <Social />
     </div>
 
     <div class="leading-normal text-base font-light leading-9 tracking-wide">
       Made with
-      <span
-        ><span class="sr-only">love</span>
+      <span>
+        <span class="sr-only">love</span>
         <svg
           aria-hidden="true"
           focusable="false"
@@ -44,27 +59,45 @@
         </svg>
       </span>
 
-      by John Philip &copy; Terms {{ date }}
+      by {{ site.name }} &copy; {{ date }}
     </div>
-  </div>
+  </footer>
 </template>
+
 <script setup>
 import Social from "~~/components/Social.vue";
+
+const { site } = useAppConfig();
 const date = new Date().getFullYear();
 const today = new Date().toLocaleDateString("default", {
   weekday: "long",
 });
+
+const phoneHref = computed(() => site.contact.phone.replace(/[^\d+]/g, ""));
 </script>
+
 <style scoped>
 .footer {
   font-size: 1.22rem;
   letter-spacing: 1px;
 }
+
+.contact-link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: rgb(51 65 85);
+  text-decoration: underline;
+}
+
 svg {
   display: inline;
   height: inherit;
   width: 9px;
 }
+
 .svg-inline--fa,
 svg:not(:root).svg-inline--fa {
   overflow: visible;
@@ -73,6 +106,7 @@ svg:not(:root).svg-inline--fa {
 .svg-inline--fa.fa-w-16 {
   width: 1em;
 }
+
 .heart-background {
   min-width: 1em;
   min-height: 1em;
@@ -80,23 +114,20 @@ svg:not(:root).svg-inline--fa {
   margin-top: 4px;
   opacity: 0.2;
 }
+
 .animate-ping {
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+
 .z-10 {
   z-index: 10;
 }
+
 .text-red-300 {
   opacity: 1;
   color: rgba(254, 178, 178, 1);
 }
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  vertical-align: -0.125em;
-}
+
 .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
